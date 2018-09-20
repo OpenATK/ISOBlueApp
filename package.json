@@ -1,0 +1,22 @@
+{
+  "name": "isoblue",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@cerebral/react": "^3.2.2",
+    "@material-ui/core": "^3.0.3",
+    "@material-ui/icons": "^3.0.1",
+    "cerebral": "^4.2.2",
+    "leaflet": "^1.3.4",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-leaflet": "^2.0.1",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
