@@ -1,8 +1,5 @@
 const stateTree = {
-  213: 578,
-  547: 957,
-  869: 547,
-  365: 967,
+  units: [1, 2, 3, 4, 5],
 }
 
 export default stateTree

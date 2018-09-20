@@ -38,17 +38,15 @@ class Summary extends React.Component {
             primary={"My ISOBlues:"}/>
         </ListItem>
         <List className={classes.list}>
-          {[0, 1, 2, 3, 4].map(sectionId => (
-            <li key={`section-${sectionId}`}>
-              <ul>
-              {[0, 1, 2].map(item => ( 
-                <ListItem key={`item-${sectionId}-${item}`}>
-                  <ListItemText primary={`Item ${item}`}/>
-                </ListItem>
-              ))}
-              </ul>
-            </li>
-          ))}
+          <ul>
+            {this.props.units.map(unit => ( 
+              <ListItem 
+                key={`-${unit}`}
+                onClick={() => {this.props.selectUnit({})}}>
+                <ListItemText primary={`Unit ${unit}`}/>
+              </ListItem>
+            ))}
+          </ul>
         </List>
         <Divider/>
         <ListItem>
@@ -95,8 +93,10 @@ class Summary extends React.Component {
 
 export default connect({
   displayCutOffTime: state`map.displayCutOffTime`,
+  units: state`units.units`,
 
   setCutOffTime: signal`map.setCutOffTime`,  
+  selectUnit: signal`session.selectUnit`,  
 
   },
   withStyles(styles)(Summary)
