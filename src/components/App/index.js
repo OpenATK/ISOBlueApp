@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from '@cerebral/react';
-//import { signal } from 'cerebral/tags';
+import { signal } from 'cerebral/tags';
 
 import { withStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -31,7 +31,7 @@ const styles = theme => ({
 class App extends React.Component {
 
   componentWillMount() {
-    //this.props.init({});
+    this.props.init({});
   }
  
   render() {
@@ -55,7 +55,7 @@ class App extends React.Component {
 
 export default connect (
   {
-    //init: signal`init`
+    init: signal`init`
   },
   withStyles(styles, { withTheme: true })(App)
 );

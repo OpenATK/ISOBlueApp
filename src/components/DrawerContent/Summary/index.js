@@ -4,11 +4,16 @@ import { withStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
+import TextField from '@material-ui/core/TextField';
+import SyncIcon from '@material-ui/icons/Sync';
+import SyncProblemIcon from '@material-ui/icons/SyncProblem';
+import SyncDisabledIcon from '@material-ui/icons/SyncDisabled';
 
 import { connect } from '@cerebral/react';
 import { state, signal } from 'cerebral/tags';
@@ -16,20 +21,54 @@ import { state, signal } from 'cerebral/tags';
 
 const styles = theme => ({
   list: {
-    maxWidth: 360,
+    width: '90%',
     backgroundColor: theme.palette.background.paper,
-    position: 'relative',
+    //position: 'relative',
     overflow: 'auto',
-    maxHeight: 200,
+    height: 200,
     margin: 1.5*theme.spacing.unit,
   },
+  textField: {
+    margin: 1.5*theme.spacing.unit,
+  },
+  healthy: {color: "#008000"},
+  sick: {color: "#ffbf00"},
+  down: {color: "#ff0000"},
 });
 
 class Summary extends React.Component {
 
   render() {
     const { classes } = this.props
-   
+ 
+ 
+    var units;
+    if (Object.keys(this.props.snapshots).length > 0) {
+      units =
+        <List className={classes.list} component="nav">
+        {Object.keys(this.props.snapshots).map(unit => ( 
+          <ListItem button
+            key={`-${unit}`}
+            onClick={() => {this.props.selectUnit({})}}>
+            <ListItemText primary={unit}/>
+            <ListItemIcon>
+              {(() => {
+                switch (this.props.snapshots[unit].health) {
+                  case "Healthy": return <SyncIcon className={classes.healthy}/>;
+                  case "Sick":    return <SyncProblemIcon className={classes.sick}/>;
+                  case "Down":    return <SyncDisabledIcon className={classes.down}/>;
+                  default:        return <SyncIcon/>;
+                } 
+              })()}
+            </ListItemIcon>
+          </ListItem>
+        ))}
+        </List>
+    } else {
+      units =  
+        <List className={classes.list} component="nav"/>
+    }
+
     return (
       <List>
         <ListItem>
@@ -37,19 +76,18 @@ class Summary extends React.Component {
             align="center" 
             primary={"My ISOBlues:"}/>
         </ListItem>
-        <List className={classes.list}>
-          <ul>
-            {this.props.units.map(unit => ( 
-              <ListItem 
-                key={`-${unit}`}
-                onClick={() => {this.props.selectUnit({})}}>
-                <ListItemText primary={`Unit ${unit}`}/>
-              </ListItem>
-            ))}
-          </ul>
-        </List>
+          {units}
         <Divider/>
         <ListItem>
+          <TextField
+            type="date"
+            defaultValue={this.props.date}
+            className={classes.textField}
+            onChange={(e) => this.props.setDate({date: e.target.value})}
+          />
+        </ListItem>
+        <Divider/>
+        {/*<ListItem>
           <ListItemText
             align="center"
             primary={"Over the last:"}/>
@@ -72,7 +110,7 @@ class Summary extends React.Component {
             </FormControl>
           </ListItemText>
         </ListItem>
-        <Divider/>
+        <Divider/>*/}
         <ListItem>
           <ListItemText
             align="center"
@@ -92,11 +130,15 @@ class Summary extends React.Component {
 }
 
 export default connect({
-  displayCutOffTime: state`map.displayCutOffTime`,
-  units: state`units.units`,
+  //displayCutOffTime: state`map.displayCutOffTime`,
+  data: state`data`,
+  snapshots: state`snapshots`,
+  date: state`session.date`,
 
-  setCutOffTime: signal`map.setCutOffTime`,  
+  //setCutOffTime: signal`map.setCutOffTime`,  
   selectUnit: signal`session.selectUnit`,  
+  setDate: signal`session.setDate`,
+
 
   },
   withStyles(styles)(Summary)

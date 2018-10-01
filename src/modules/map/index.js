@@ -8,8 +8,8 @@ export default Module({
     targetCenter: { lat: 40.428641, lng: -86.913783 },
     userLocation: { lat: 40.428641, lng: -86.913783 },
     userLocationAvailable: false,
-    cutOffTime: 1,
-    displayCutOffTime: "1 hour",
+    //cutOffTime: 1,
+    //displayCutOffTime: "1 hour",
   },
 
   signals: {
@@ -28,10 +28,12 @@ export default Module({
       }
     ]),
 
+    /*
     setCutOffTime: sequence("setCutOffTime", [
       ({state, props}) => state.set('map.cutOffTime', props.cutOffTime),
       ({state, props}) => state.set('map.displayCutOffTime', props.displayCutOffTime),
     ]),
+    */
 
   },
 });

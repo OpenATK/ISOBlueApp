@@ -7,6 +7,7 @@ import stateTree from './stateTree.js'
 export default Module({
 
   state: stateTree,
+  //state: {},
 
   signals: {
   
