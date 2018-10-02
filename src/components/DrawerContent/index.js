@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from '@cerebral/react';
-import { signal, state } from 'cerebral/tags';
+import { state } from 'cerebral/tags';
 
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -23,7 +23,7 @@ class DrawerContent extends React.Component {
     const { classes } = this.props
 
     var content; 
-    if (this.props.unitSelected) {
+    if (this.props.selectedUnit) {
       content = <Diagnostics/>
     } else {
       content = <Summary/>
@@ -43,7 +43,7 @@ class DrawerContent extends React.Component {
 }
 
 export default connect({
-  unitSelected: state`session.unitSelected`,
+  selectedUnit: state`diagnostics.selectedUnit`,
   },
   withStyles(styles)(DrawerContent)
 );

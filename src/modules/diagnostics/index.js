@@ -1,23 +1,12 @@
-import { Module, sequence } from 'cerebral';
-import { set } from 'cerebral/operators';
+import { Module } from 'cerebral';
+import * as signals from './sequences';
 
 export default Module({
   state: {
     timePeriod: '60',
     displayTimePeriod: '1 hour',
     measurement: 'LTE Strength',
+    selectedUnit: null,
   },
-  signals: {
- 
-    setTimePeriod: sequence("setTimePeriod", [
-      ({state, props}) => state.set('diagnostics.timePeriod', props.timePeriod),
-      ({state, props}) => state.set('diagnostics.displayTimePeriod', props.displayTimePeriod),
-    ]),
-
-
-    setMeasurement: sequence("setMeasurement", [
-      ({state, props}) => state.set('diagnostics.measurement', props.measurement),
-    ]),
-
-  },
+  signals,
 });

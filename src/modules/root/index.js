@@ -1,4 +1,4 @@
-import { Module, sequence } from 'cerebral';
+import { Module } from 'cerebral';
 
 import session from '../session/';
 import diagnostics from '../diagnostics/';

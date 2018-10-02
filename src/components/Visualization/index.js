@@ -4,7 +4,7 @@ import { connect } from '@cerebral/react';
 import {state, signal} from 'cerebral/tags';
 //import uuid from 'uuid';
 //import Leaflet from 'leaflet';
-import { Map, Marker, TileLayer } from 'react-leaflet';
+import { Map, Marker, CircleMarker, Tooltip, TileLayer } from 'react-leaflet';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
@@ -43,6 +43,40 @@ class Visualization extends React.Component {
     );
     }
  
+    const unitMarkers=[];
+    Object.keys(this.props.snapshots).map(unit => (
+      unitMarkers.push(
+        <CircleMarker
+          ref={unit => {this.unit = unit}}
+          key={unit}
+          center={[
+            this.props.snapshots[unit].location.lat, 
+            this.props.snapshots[unit].location.lng
+          ]}
+          color={'#ffffff'}
+          fillColor={
+            (() => {
+              switch (this.props.snapshots[unit].health) {
+                case "Healthy": return '#008000'
+                case "Sick":    return '#ffbf00'
+                case "Down":    return '#ff0000'
+                default:        return '#ffffff'
+              }
+          })()} 
+          fillOpacity={1}
+          radius={12}
+          onClick={(e) => this.props.selectUnit({unit: unit})}>
+          <Tooltip 
+            direction='top'
+            offset={[0,-10]}>
+            <b>Unit: {unit}</b><br/>
+            <center><b>{this.props.snapshots[unit].health}</b></center> 
+          </Tooltip>
+        </CircleMarker>
+      )
+    ))
+
+
     return (
       <div className={classes.map}>
         <Map
@@ -56,6 +90,7 @@ class Visualization extends React.Component {
             attribution={attrib}
           />
           {currentMarker}
+          {unitMarkers}
         </Map>
       </div>
     );
@@ -71,11 +106,14 @@ export default connect({
   targetCenter: state`map.targetCenter`,
   userLocation: state`map.userLocation`,
   userLocationAvailable: state`map.userLocationAvailable`,
+  snapshots: state`snapshots`,
 
   storeUserLocation: signal`map.storeUserLocation`,
+  selectUnit: signal`diagnostics.selectUnit`,
 
   },
   withStyles(styles, { withTheme: true })(Visualization)
 );
 
 
+//onMouseOver={() => {this.unit.leafletElement.bindPopup(`<b>Unit: ${unit} <br> <center>${this.props.snapshots[unit].health}</center></b>`).openPopup()}}

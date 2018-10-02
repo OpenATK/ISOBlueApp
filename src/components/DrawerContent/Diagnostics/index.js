@@ -45,7 +45,7 @@ class Diagnostics extends React.Component {
         </ListItem>
            <ListItemText 
             align="center" 
-            primary={"ABC123"}/>
+            primary={this.props.selectedUnit}/>
         <Divider/>
         <ListItem>
           <ListItemText
@@ -53,7 +53,7 @@ class Diagnostics extends React.Component {
             primary={"Quick Health:"}/>
            <ListItemText
             align="center"
-            primary={"Healthy"}/>
+            primary={this.props.snapshots[this.props.selectedUnit].health}/>
         </ListItem>
         <ListItem>
           <ListItemText
@@ -61,7 +61,7 @@ class Diagnostics extends React.Component {
             primary={"Last Report:"}/>
            <ListItemText
             align="center"
-            primary={"< 1 min"}/>
+            primary={"< "+this.props.snapshots[this.props.selectedUnit].lastReport+" min"}/>
         </ListItem>
         <ListItem>
           <ListItemText
@@ -69,7 +69,7 @@ class Diagnostics extends React.Component {
             primary={"Coverage:"}/>
            <ListItemText
             align="center"
-            primary={"Wifi"}/>
+            primary={this.props.snapshots[this.props.selectedUnit].connected}/>
         </ListItem>
         <Divider/>
         <ListItem>
@@ -128,8 +128,10 @@ class Diagnostics extends React.Component {
 export default connect({
   displayTimePeriod: state`diagnostics.displayTimePeriod`,
   measurement: state`diagnostics.measurement`,
+  selectedUnit: state`diagnostics.selectedUnit`,
+  snapshots: state`snapshots`,
 
-  selectUnit: signal`session.selectUnit`,
+  selectUnit: signal`diagnostics.selectUnit`,
   setTimePeriod: signal`diagnostics.setTimePeriod`,  
   setMeasurement: signal`diagnostics.setMeasurement`,  
 

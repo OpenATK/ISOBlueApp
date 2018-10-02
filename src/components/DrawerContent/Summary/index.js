@@ -7,9 +7,6 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
-import Select from '@material-ui/core/Select';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
 import TextField from '@material-ui/core/TextField';
 import SyncIcon from '@material-ui/icons/Sync';
 import SyncProblemIcon from '@material-ui/icons/SyncProblem';
@@ -49,7 +46,7 @@ class Summary extends React.Component {
         {Object.keys(this.props.snapshots).map(unit => ( 
           <ListItem button
             key={`-${unit}`}
-            onClick={() => {this.props.selectUnit({})}}>
+            onClick={() => this.props.selectUnit({unit: unit})}>
             <ListItemText primary={unit}/>
             <ListItemIcon>
               {(() => {
@@ -136,7 +133,7 @@ export default connect({
   date: state`session.date`,
 
   //setCutOffTime: signal`map.setCutOffTime`,  
-  selectUnit: signal`session.selectUnit`,  
+  selectUnit: signal`diagnostics.selectUnit`,  
   setDate: signal`session.setDate`,
 
 

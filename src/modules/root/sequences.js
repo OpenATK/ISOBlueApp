@@ -1,4 +1,4 @@
-import { Module, sequence } from 'cerebral';
+import { sequence } from 'cerebral';
 
 import * as session from '../session/sequences';
 import * as snapshots from '../snapshots/sequences';
