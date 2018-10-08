@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { withStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -67,10 +66,8 @@ class AppBarContent extends React.Component {
 
 export default connect({
   userLocationAvailable: state`map.userLocationAvailable`,
-  //date: state`session.date`,
 
   centerOnUser: signal`map.centerOnUser`,  
-  //setDate: signal`session.setDate`,  
 
   },
   withStyles(styles)(AppBarContent)

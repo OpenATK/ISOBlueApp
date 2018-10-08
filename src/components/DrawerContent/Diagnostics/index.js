@@ -5,12 +5,9 @@ import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
-import ListSubheader from '@material-ui/core/ListSubheader';
 import Button from '@material-ui/core/Button';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
-import FormControl from '@material-ui/core/FormControl';
-import InputLabel from '@material-ui/core/InputLabel';
 
 import { connect } from '@cerebral/react';
 import { state, signal } from 'cerebral/tags';
@@ -24,16 +21,40 @@ class Diagnostics extends React.Component {
 
   render() {
     const { classes } = this.props
+    
 
     const visualizing = ( 
       <ListItem>
         <ListItemText align="center">
           <Button
+            onClick = {() => this.props.toggleMode({})}
             variant="contained">
-            Map View
+            {(this.props.mode === "map") ? "View Graph" : "View Map"}
           </Button>
         </ListItemText>
       </ListItem>
+    );
+
+    const dateSelect = (
+      <Select 
+        value={this.props.date}
+        renderValue={value => `${value}`}
+        onChange={(value) => this.props.setDate({date: value.target.value})}>
+        {Object.keys(this.props.data[this.props.selectedUnit]).map(date => (
+          <MenuItem key={date} value={date}>{date}</MenuItem>
+        ))};
+      </Select>
+    );
+ 
+    const hourSelect = (
+      <Select 
+        value={this.props.hour}
+        renderValue={value => `${value}`}
+        onChange={(value) => this.props.setHour({hour: value.target.value})}>
+        {Object.keys(this.props.data[this.props.selectedUnit][this.props.date]).map(hour => (
+          <MenuItem key={hour} value={hour}>{hour}</MenuItem>
+        ))};
+      </Select>
     );
       
     return (
@@ -43,10 +64,17 @@ class Diagnostics extends React.Component {
             align="center" 
             primary={"Selected Unit:"}/>
         </ListItem>
+        <ListItem>
            <ListItemText 
             align="center" 
             primary={this.props.selectedUnit}/>
+        </ListItem>
         <Divider/>
+        <ListItem>
+          <ListItemText
+            align="center"
+            primary="Live Snapshot:"/>
+        </ListItem>
         <ListItem>
           <ListItemText
             align="center"
@@ -61,7 +89,7 @@ class Diagnostics extends React.Component {
             primary={"Last Report:"}/>
            <ListItemText
             align="center"
-            primary={"< "+this.props.snapshots[this.props.selectedUnit].lastReport+" min"}/>
+            primary={(this.props.snapshots[this.props.selectedUnit].lastReport === "NA")  ? "NA"  : this.props.snapshots[this.props.selectedUnit].lastReport+" min"}/>
         </ListItem>
         <ListItem>
           <ListItemText
@@ -69,32 +97,13 @@ class Diagnostics extends React.Component {
             primary={"Coverage:"}/>
            <ListItemText
             align="center"
-            primary={this.props.snapshots[this.props.selectedUnit].connected}/>
+            primary={this.props.snapshots[this.props.selectedUnit].connection}/>
         </ListItem>
         <Divider/>
         <ListItem>
           <ListItemText 
             align="center" 
-            primary={"Diagnostics"}/>
-        </ListItem>
-        <ListItem> 
-          <ListItemText 
-            align="center" 
-            primary={"Time Period:"}/>
-          <ListItemText
-            align="center">
-            <Select 
-              value={this.props.displayTimePeriod}
-              renderValue={value => `${value}`}
-              onChange={(value) => this.props.setTimePeriod({timePeriod: value.target.value[0], displayTimePeriod: value.target.value[1]})}>
-              <MenuItem value={[1, "1 min"]}>1 min</MenuItem>
-              <MenuItem value={[5, "5 mins"]}>5 mins</MenuItem>
-              <MenuItem value={[20, "20 mins"]}>20 mins</MenuItem>
-              <MenuItem value={[60, "1 hour"]}>1 hour</MenuItem>
-              <MenuItem value={[480, "8 hours"]}>8 hours</MenuItem>
-              <MenuItem value={[1440, "24 hours"]}>24 hours</MenuItem>
-            </Select>
-          </ListItemText>
+            primary={"Available Data:"}/>
         </ListItem>
         <ListItem> 
           <ListItemText
@@ -103,13 +112,25 @@ class Diagnostics extends React.Component {
               value={this.props.measurement}
               renderValue={value => `${value}`}
               onChange={(value) => this.props.setMeasurement({measurement: value.target.value})}>
-              <MenuItem value={"Connections"}>Connections</MenuItem>
-              <MenuItem value={"LTE Strength"}>LTE Strength</MenuItem>
-              <MenuItem value={"Network"}>Network</MenuItem>
+              <MenuItem value={"Latency"}>Latency</MenuItem>
+              <MenuItem value={"Active RSSI"}>Active RSSI</MenuItem>
+              <MenuItem value={"All RSSI's"}>All RSSIs</MenuItem>
             </Select>
           </ListItemText>
+        </ListItem> 
+        <ListItem> 
+          <ListItemText
+            align="center">
+            {dateSelect}
+          </ListItemText>
         </ListItem>
-        {visualizing}
+        <ListItem> 
+          <ListItemText
+            align="center">
+            {hourSelect}
+          </ListItemText>
+        </ListItem>
+       {visualizing}
         <Divider/>
         <ListItem>
           <ListItemText align="center">
@@ -126,14 +147,19 @@ class Diagnostics extends React.Component {
 }
 
 export default connect({
-  displayTimePeriod: state`diagnostics.displayTimePeriod`,
+  date: state`diagnostics.date`,
+  hour: state`diagnostics.hour`,
   measurement: state`diagnostics.measurement`,
   selectedUnit: state`diagnostics.selectedUnit`,
   snapshots: state`snapshots`,
+  data: state`data`,
+  mode: state`diagnostics.mode`,
 
   selectUnit: signal`diagnostics.selectUnit`,
-  setTimePeriod: signal`diagnostics.setTimePeriod`,  
+  setDate: signal`diagnostics.setDate`,  
+  setHour: signal`diagnostics.setHour`,  
   setMeasurement: signal`diagnostics.setMeasurement`,  
+  toggleMode: signal`diagnostics.toggleMode`,  
 
   },
   withStyles(styles)(Diagnostics)

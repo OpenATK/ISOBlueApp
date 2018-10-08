@@ -22,7 +22,7 @@ const styles = theme => ({
     backgroundColor: theme.palette.background.paper,
     //position: 'relative',
     overflow: 'auto',
-    height: 200,
+    height: 300,
     margin: 1.5*theme.spacing.unit,
   },
   textField: {
@@ -53,8 +53,8 @@ class Summary extends React.Component {
                 switch (this.props.snapshots[unit].health) {
                   case "Healthy": return <SyncIcon className={classes.healthy}/>;
                   case "Sick":    return <SyncProblemIcon className={classes.sick}/>;
-                  case "Down":    return <SyncDisabledIcon className={classes.down}/>;
-                  default:        return <SyncIcon/>;
+                  case "Down":    return <SyncDisabledIcon/>;
+                  default:        return <SyncDisabledIcon/>;
                 } 
               })()}
             </ListItemIcon>
@@ -75,7 +75,7 @@ class Summary extends React.Component {
         </ListItem>
           {units}
         <Divider/>
-        <ListItem>
+        {/*<ListItem>
           <TextField
             type="date"
             defaultValue={this.props.date}
@@ -83,7 +83,7 @@ class Summary extends React.Component {
             onChange={(e) => this.props.setDate({date: e.target.value})}
           />
         </ListItem>
-        <Divider/>
+        <Divider/>*/}
         {/*<ListItem>
           <ListItemText
             align="center"
@@ -108,7 +108,7 @@ class Summary extends React.Component {
           </ListItemText>
         </ListItem>
         <Divider/>*/}
-        <ListItem>
+        {/*<ListItem>
           <ListItemText
             align="center"
             primary={"Account: Gary Grower"}/>
@@ -120,7 +120,7 @@ class Summary extends React.Component {
               Log Out
             </Button>
           </ListItemText>
-        </ListItem>
+        </ListItem>*/}
       </List>
     );
   }

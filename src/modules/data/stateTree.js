@@ -1,3388 +1,7496 @@
 const stateTree = {
-  "2018-09-29": {
-    def456: {
-      gps: {
-        1538221600.0: [40.435165424259594, -86.92049274810509],
-        1538222200.0: [40.43205718732503, -86.91709365776563],
-        1538222800.0: [40.43380438756174, -86.9154793958673],
-        1538223400.0: [40.436673824312074, -86.9071900493443],
-        1538224000.0: [40.4208286823763, -86.91860483727307],
-        1538224600.0: [40.433170094241994, -86.90413812344708],
-        1538225200.0: [40.42652755564122, -86.92361334036096],
-        1538225800.0: [40.429584211139414, -86.9058831992274],
-        1538226400.0: [40.435320786903134, -86.90655388570786],
-        1538227000.0: [40.42708461305273, -86.92287069835888],
-        1538227600.0: [40.43628426568311, -86.91744424654833],
-        1538228200.0: [40.424411281404375, -86.90610648286267],
-        1538228800.0: [40.42277717957653, -86.91093070357459],
-        1538229400.0: [40.423500446071124, -86.91321528078741],
-        1538230000.0: [40.42048978418225, -86.90481808391274],
-        1538230600.0: [40.42172501303474, -86.91864942450576],
-        1538231200.0: [40.425677357418124, -86.90937292619658],
-        1538231800.0: [40.43849255731468, -86.91382996319423],
-        1538232400.0: [40.43315663573061, -86.91856520497713],
-        1538233000.0: [40.42913790294457, -86.90861976152539],
-        1538233600.0: [40.42818592831039, -86.91229253470966],
-        1538234200.0: [40.42949440696551, -86.90550654223124],
-        1538234800.0: [40.42636105142477, -86.91677481691512],
-        1538235400.0: [40.4200213199625, -86.90520134634514],
-        1538236000.0: [40.43514992741609, -86.92048996387872],
-        1538236600.0: [40.42035412829739, -86.91909994945568],
-        1538237200.0: [40.41897226844637, -86.92356091614411],
-        1538237800.0: [40.42382279434286, -86.90676448846133],
-        1538238400.0: [40.436120141588496, -86.92010319690064],
-        1538239000.0: [40.431734452166765, -86.92148284793862],
-        1538239600.0: [40.436399409526935, -86.9043677012952],
-        1538240200.0: [40.42531452423714, -86.91318149988946],
-        1538240800.0: [40.42677619402074, -86.90497017836478],
-        1538241400.0: [40.41985105856866, -86.9123011162212],
-        1538242000.0: [40.43831941874303, -86.9157419119603],
-        1538242600.0: [40.42363105711745, -86.91995711028842],
-        1538243200.0: [40.43163054916366, -86.92300614566904],
-        1538243800.0: [40.43211774684437, -86.917622100158],
-        1538244400.0: [40.43357372134507, -86.92121528146679],
-        1538245000.0: [40.43799219836878, -86.90678160968874],
-        1538245600.0: [40.426449375962136, -86.91221794325357],
-        1538246200.0: [40.433428416977776, -86.91335506544475],
-        1538246800.0: [40.42711822718229, -86.91507191690565],
-        1538247400.0: [40.435563353020605, -86.90827242243391],
-        1538248000.0: [40.42587239170631, -86.90806163534272],
-        1538248600.0: [40.430900747099514, -86.92053560437871],
-        1538249200.0: [40.42192110222958, -86.92033428977419],
-        1538249800.0: [40.43478045782138, -86.9148692136553],
-        1538250400.0: [40.419551557381126, -86.92371502803842],
-        1538251000.0: [40.425610191527205, -86.9120620337034],
-        1538251600.0: [40.42855617825615, -86.92308230658723],
-        1538252200.0: [40.438598665807, -86.91784777498273],
-        1538252800.0: [40.428879991484116, -86.92023727665965],
-        1538253400.0: [40.42459669584666, -86.90414711933101],
-        1538254000.0: [40.43847163968298, -86.91845757244865],
-        1538254600.0: [40.43541362521777, -86.90876361980804],
-      },
-      heartbeats: {
-        1538221600.0: {
-          genTime:1538221600.0,
-          recTime:1538221607.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-71, active: false},
-          },
+  "abc123": {
+    "2018-09-30": {
+      "00:00": {
+        gps: {
+          1538280000.0: { lat:40.42449896965209, lng:-86.91977539006949 },
+          1538280200.0: { lat:40.43241340942407, lng:-86.92247845128556 },
+          1538280400.0: { lat:40.43091409374124, lng:-86.91444065236145 },
+          1538280600.0: { lat:40.42855090117501, lng:-86.91851224563388 },
+          1538280800.0: { lat:40.42999711836322, lng:-86.91700402731102 },
+          1538281000.0: { lat:40.42533454130277, lng:-86.91098623214926 },
+          1538281200.0: { lat:40.434499503885014, lng:-86.91346272208615 },
+          1538281400.0: { lat:40.43562575475256, lng:-86.90574976299027 },
+          1538281600.0: { lat:40.42343531279575, lng:-86.91705720473578 },
+          1538281800.0: { lat:40.43714398913657, lng:-86.9205689550522 },
+          1538282000.0: { lat:40.4276706578055, lng:-86.908849480474 },
+          1538282200.0: { lat:40.4245597097991, lng:-86.92212398191809 },
+          1538282400.0: { lat:40.43678293791743, lng:-86.91407760200148 },
+          1538282600.0: { lat:40.43079013951973, lng:-86.92132568325866 },
+          1538282800.0: { lat:40.41871493894764, lng:-86.9149614218751 },
+          1538283000.0: { lat:40.43349302397248, lng:-86.91678952912315 },
+          1538283200.0: { lat:40.42339725643683, lng:-86.91186863884478 },
+          1538283400.0: { lat:40.4377579551586, lng:-86.91133684577663 },
         },
-        1538221995.0: {
-          genTime:1538221995.0,
-          recTime:1538221998.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-101, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+        heartbeats: {
+          1538280000.0: {
+            genTime:1538280000.0,
+            recTime:1538280004.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538222329.0: {
-          genTime:1538222329.0,
-          recTime:1538222332.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
+          1538280585.0: {
+            genTime:1538280585.0,
+            recTime:1538280591.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538223000.0: {
-          genTime:1538223000.0,
-          recTime:1538223009.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
+          1538280610.0: {
+            genTime:1538280610.0,
+            recTime:1538280613.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538223710.0: {
-          genTime:1538223710.0,
-          recTime:1538223713.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
+          1538281231.0: {
+            genTime:1538281231.0,
+            recTime:1538281233.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538224377.0: {
-          genTime:1538224377.0,
-          recTime:1538224380.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
+          1538281807.0: {
+            genTime:1538281807.0,
+            recTime:1538281809.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538224771.0: {
-          genTime:1538224771.0,
-          recTime:1538224774.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
+          1538282271.0: {
+            genTime:1538282271.0,
+            recTime:1538282273.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-121, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538225696.0: {
-          genTime:1538225696.0,
-          recTime:1538225700.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-77, active: false},
-          },
-        },
-        1538226061.0: {
-          genTime:1538226061.0,
-          recTime:1538226063.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-71, active: false},
-          },
-        },
-        1538226708.0: {
-          genTime:1538226708.0,
-          recTime:1538226712.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538227478.0: {
-          genTime:1538227478.0,
-          recTime:1538227480.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538228342.0: {
-          genTime:1538228342.0,
-          recTime:1538228343.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-107, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538229106.0: {
-          genTime:1538229106.0,
-          recTime:1538229111.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-69, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-113, active: false},
-          },
-        },
-        1538229805.0: {
-          genTime:1538229805.0,
-          recTime:1538229809.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538230323.0: {
-          genTime:1538230323.0,
-          recTime:1538230326.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538231198.0: {
-          genTime:1538231198.0,
-          recTime:1538231204.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-100, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
-          },
-        },
-        1538232072.0: {
-          genTime:1538232072.0,
-          recTime:1538232074.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538232727.0: {
-          genTime:1538232727.0,
-          recTime:1538232731.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538233323.0: {
-          genTime:1538233323.0,
-          recTime:1538233327.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-120, active: false},
-          },
-        },
-        1538234067.0: {
-          genTime:1538234067.0,
-          recTime:1538234074.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-97, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-64, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538234717.0: {
-          genTime:1538234717.0,
-          recTime:1538234719.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538234948.0: {
-          genTime:1538234948.0,
-          recTime:1538234950.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-100, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538235617.0: {
-          genTime:1538235617.0,
-          recTime:1538235624.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538236283.0: {
-          genTime:1538236283.0,
-          recTime:1538236291.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-107, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
-          },
-        },
-        1538236984.0: {
-          genTime:1538236984.0,
-          recTime:1538236987.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-96, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538237762.0: {
-          genTime:1538237762.0,
-          recTime:1538237771.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538238161.0: {
-          genTime:1538238161.0,
-          recTime:1538238163.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-62, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538238348.0: {
-          genTime:1538238348.0,
-          recTime:1538238353.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538238592.0: {
-          genTime:1538238592.0,
-          recTime:1538238600.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-106, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-79, active: false},
-          },
-        },
-        1538239071.0: {
-          genTime:1538239071.0,
-          recTime:1538239078.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-62, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538239877.0: {
-          genTime:1538239877.0,
-          recTime:1538239881.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-106, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-80, active: false},
-          },
-        },
-        1538240256.0: {
-          genTime:1538240256.0,
-          recTime:1538240259.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-122, active: false},
-          },
-        },
-        1538240637.0: {
-          genTime:1538240637.0,
-          recTime:1538240639.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538241136.0: {
-          genTime:1538241136.0,
-          recTime:1538241138.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538241708.0: {
-          genTime:1538241708.0,
-          recTime:1538241712.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-63, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538242073.0: {
-          genTime:1538242073.0,
-          recTime:1538242081.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-79, active: false},
-          },
-        },
-        1538242507.0: {
-          genTime:1538242507.0,
-          recTime:1538242510.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-102, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538243108.0: {
-          genTime:1538243108.0,
-          recTime:1538243110.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538243645.0: {
-          genTime:1538243645.0,
-          recTime:1538243655.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-114, active: false},
-          },
-        },
-        1538244105.0: {
-          genTime:1538244105.0,
-          recTime:1538244107.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-69, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-123, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538244882.0: {
-          genTime:1538244882.0,
-          recTime:1538244884.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538245511.0: {
-          genTime:1538245511.0,
-          recTime:1538245514.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-67, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538245980.0: {
-          genTime:1538245980.0,
-          recTime:1538245983.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-67, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-72, active: false},
-          },
-        },
-        1538246712.0: {
-          genTime:1538246712.0,
-          recTime:1538246715.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538247605.0: {
-          genTime:1538247605.0,
-          recTime:1538247609.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538248466.0: {
-          genTime:1538248466.0,
-          recTime:1538248469.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538249426.0: {
-          genTime:1538249426.0,
-          recTime:1538249431.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538249956.0: {
-          genTime:1538249956.0,
-          recTime:1538249966.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-107, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538250362.0: {
-          genTime:1538250362.0,
-          recTime:1538250368.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538251304.0: {
-          genTime:1538251304.0,
-          recTime:1538251310.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538251850.0: {
-          genTime:1538251850.0,
-          recTime:1538251856.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-108, active: false},
-          },
-        },
-        1538252399.0: {
-          genTime:1538252399.0,
-          recTime:1538252401.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538253277.0: {
-          genTime:1538253277.0,
-          recTime:1538253278.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-84, active: false},
-          },
-        },
-        1538254119.0: {
-          genTime:1538254119.0,
-          recTime:1538254121.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538254517.0: {
-          genTime:1538254517.0,
-          recTime:1538254525.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-109, active: false},
+          1538283302.0: {
+            genTime:1538283302.0,
+            recTime:1538283305.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
           },
         },
       },
-    },
-    ghi789: {
-      gps: {
-        1538221600.0: [40.43043636329568, -86.90460807656196],
-        1538222200.0: [40.433606245976925, -86.91311049601748],
-        1538222800.0: [40.42223620375452, -86.91126519716288],
-        1538223400.0: [40.42412426315323, -86.92166431246656],
-        1538224000.0: [40.43766742201879, -86.91266607461944],
-        1538224600.0: [40.42508882132375, -86.92132223153037],
-        1538225200.0: [40.4236592722526, -86.91961386103995],
-        1538225800.0: [40.41912282443466, -86.91757114302908],
-        1538226400.0: [40.42123383405316, -86.9130384127358],
-        1538227000.0: [40.42940629870638, -86.91863716506224],
-        1538227600.0: [40.42992607666507, -86.91058391025133],
-        1538228200.0: [40.43236337366209, -86.90631001040812],
-        1538228800.0: [40.43646446898824, -86.9203840366428],
-        1538229400.0: [40.43592767591804, -86.90831400062982],
-        1538230000.0: [40.421796898857984, -86.92181627012607],
-        1538230600.0: [40.42164389937342, -86.91980070245424],
-        1538231200.0: [40.43267717081934, -86.9044616610568],
-        1538231800.0: [40.432611547619885, -86.91320497801395],
-        1538232400.0: [40.43666069181798, -86.92252785240113],
-        1538233000.0: [40.41867503324807, -86.91685162922464],
-        1538233600.0: [40.43463101694346, -86.9077224384383],
-        1538234200.0: [40.4275969717644, -86.91412836650228],
-        1538234800.0: [40.43500871138268, -86.92217517215852],
-        1538235400.0: [40.431689079122975, -86.90837828755735],
-        1538236000.0: [40.43765669191388, -86.91277340874922],
-        1538236600.0: [40.43575160336701, -86.90806986327881],
-        1538237200.0: [40.42184399016582, -86.92145090525955],
-        1538237800.0: [40.41901362600094, -86.90406451521969],
-        1538238400.0: [40.428447188454406, -86.9223449165284],
-        1538239000.0: [40.42042991269025, -86.90425181063323],
-        1538239600.0: [40.43571490471859, -86.91468231663946],
-        1538240200.0: [40.435026995341104, -86.91780461740748],
-        1538240800.0: [40.41885800435181, -86.91093407713056],
-        1538241400.0: [40.43827808445293, -86.9072243871357],
-        1538242000.0: [40.438298406695296, -86.91760140994568],
-        1538242600.0: [40.43248754002835, -86.91625846680358],
-        1538243200.0: [40.43677372831758, -86.91676509935219],
-        1538243800.0: [40.43574529290006, -86.9088764264501],
-        1538244400.0: [40.43508762708967, -86.90995781830917],
-        1538245000.0: [40.42554458964041, -86.90583470675973],
-        1538245600.0: [40.425490397519134, -86.92368540462496],
-        1538246200.0: [40.434648433436756, -86.91830842214459],
-        1538246800.0: [40.42851384469914, -86.91102269325799],
-        1538247400.0: [40.42523860784296, -86.91440786098424],
-        1538248000.0: [40.42145041403824, -86.90619845456727],
-        1538248600.0: [40.41866991011099, -86.91265949357357],
-        1538249200.0: [40.420099597828994, -86.90394907975129],
-        1538249800.0: [40.43114830234299, -86.91015121314969],
-        1538250400.0: [40.4355103641935, -86.91365073181505],
-        1538251000.0: [40.422856570355265, -86.90417155159545],
-        1538251600.0: [40.42251905896355, -86.91017693712898],
-        1538252200.0: [40.42752322981518, -86.91548019423317],
-        1538252800.0: [40.43422082329582, -86.9213236702872],
-        1538253400.0: [40.42243693818982, -86.91366820994634],
-        1538254000.0: [40.42128960459114, -86.91214784036598],
-        1538254600.0: [40.4189827062551, -86.91353500042932],
-      },
-      heartbeats: {
-        1538221600.0: {
-          genTime:1538221600.0,
-          recTime:1538221603.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
+      "02:00": {
+        gps: {
+          1538287200.0: { lat:40.4293941765825, lng:-86.91441642347404 },
+          1538287400.0: { lat:40.42458505767733, lng:-86.91799177395654 },
+          1538287600.0: { lat:40.425125756610996, lng:-86.90970649785854 },
+          1538287800.0: { lat:40.42273902056928, lng:-86.92325471995143 },
+          1538288000.0: { lat:40.43713097493033, lng:-86.9185754995857 },
+          1538288200.0: { lat:40.435703611214024, lng:-86.9102342987085 },
+          1538288400.0: { lat:40.42920481433553, lng:-86.91356873227346 },
+          1538288600.0: { lat:40.4343063633734, lng:-86.91119367860776 },
+          1538288800.0: { lat:40.43283044001654, lng:-86.90464733330478 },
+          1538289000.0: { lat:40.438547083066084, lng:-86.90827654163368 },
+          1538289200.0: { lat:40.42912868890277, lng:-86.91298221176923 },
+          1538289400.0: { lat:40.42895557538272, lng:-86.90881710228413 },
+          1538289600.0: { lat:40.42024127096398, lng:-86.90701700155539 },
+          1538289800.0: { lat:40.419614322195734, lng:-86.92115132913457 },
+          1538290000.0: { lat:40.43338042556364, lng:-86.90437426805859 },
+          1538290200.0: { lat:40.42765260832786, lng:-86.90822335054652 },
+          1538290400.0: { lat:40.42793149673118, lng:-86.9084326380819 },
+          1538290600.0: { lat:40.420129595396645, lng:-86.90770119277698 },
         },
-        1538222173.0: {
-          genTime:1538222173.0,
-          recTime:1538222177.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
+        heartbeats: {
+          1538287200.0: {
+            genTime:1538287200.0,
+            recTime:1538287208.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538222744.0: {
-          genTime:1538222744.0,
-          recTime:1538222746.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
+          1538287912.0: {
+            genTime:1538287912.0,
+            recTime:1538287913.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538223394.0: {
-          genTime:1538223394.0,
-          recTime:1538223396.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+          1538288396.0: {
+            genTime:1538288396.0,
+            recTime:1538288399.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538224157.0: {
-          genTime:1538224157.0,
-          recTime:1538224164.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
+          1538289156.0: {
+            genTime:1538289156.0,
+            recTime:1538289164.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538224803.0: {
-          genTime:1538224803.0,
-          recTime:1538224807.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-84, active: false},
+          1538289872.0: {
+            genTime:1538289872.0,
+            recTime:1538289881.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538225465.0: {
-          genTime:1538225465.0,
-          recTime:1538225471.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538225981.0: {
-          genTime:1538225981.0,
-          recTime:1538225986.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-116, active: false},
-          },
-        },
-        1538226663.0: {
-          genTime:1538226663.0,
-          recTime:1538226665.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-76, active: false},
-          },
-        },
-        1538227149.0: {
-          genTime:1538227149.0,
-          recTime:1538227154.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538227936.0: {
-          genTime:1538227936.0,
-          recTime:1538227937.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-66, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-110, active: false},
-          },
-        },
-        1538228396.0: {
-          genTime:1538228396.0,
-          recTime:1538228401.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538229214.0: {
-          genTime:1538229214.0,
-          recTime:1538229216.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538229694.0: {
-          genTime:1538229694.0,
-          recTime:1538229698.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538230151.0: {
-          genTime:1538230151.0,
-          recTime:1538230155.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-69, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538230540.0: {
-          genTime:1538230540.0,
-          recTime:1538230546.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538231518.0: {
-          genTime:1538231518.0,
-          recTime:1538231521.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-101, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538232331.0: {
-          genTime:1538232331.0,
-          recTime:1538232335.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538232748.0: {
-          genTime:1538232748.0,
-          recTime:1538232753.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538233338.0: {
-          genTime:1538233338.0,
-          recTime:1538233341.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538234033.0: {
-          genTime:1538234033.0,
-          recTime:1538234036.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538234511.0: {
-          genTime:1538234511.0,
-          recTime:1538234517.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538235080.0: {
-          genTime:1538235080.0,
-          recTime:1538235085.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538235657.0: {
-          genTime:1538235657.0,
-          recTime:1538235660.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538236192.0: {
-          genTime:1538236192.0,
-          recTime:1538236198.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-105, active: false},
-            "AT&T":{type:"4G", rssi:-122, active: false},
-          },
-        },
-        1538236782.0: {
-          genTime:1538236782.0,
-          recTime:1538236787.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-108, active: false},
-          },
-        },
-        1538237191.0: {
-          genTime:1538237191.0,
-          recTime:1538237193.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-108, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538238224.0: {
-          genTime:1538238224.0,
-          recTime:1538238226.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-106, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538238846.0: {
-          genTime:1538238846.0,
-          recTime:1538238851.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
-          },
-        },
-        1538239631.0: {
-          genTime:1538239631.0,
-          recTime:1538239635.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538240473.0: {
-          genTime:1538240473.0,
-          recTime:1538240478.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538241483.0: {
-          genTime:1538241483.0,
-          recTime:1538241487.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538241956.0: {
-          genTime:1538241956.0,
-          recTime:1538241964.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538242522.0: {
-          genTime:1538242522.0,
-          recTime:1538242526.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538243086.0: {
-          genTime:1538243086.0,
-          recTime:1538243096.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538243438.0: {
-          genTime:1538243438.0,
-          recTime:1538243444.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-71, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538244246.0: {
-          genTime:1538244246.0,
-          recTime:1538244251.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538244630.0: {
-          genTime:1538244630.0,
-          recTime:1538244632.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-116, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538244847.0: {
-          genTime:1538244847.0,
-          recTime:1538244858.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-71, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538245329.0: {
-          genTime:1538245329.0,
-          recTime:1538245336.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-112, active: false},
-          },
-        },
-        1538245424.0: {
-          genTime:1538245424.0,
-          recTime:1538245426.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538246256.0: {
-          genTime:1538246256.0,
-          recTime:1538246261.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-96, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538246552.0: {
-          genTime:1538246552.0,
-          recTime:1538246555.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538247236.0: {
-          genTime:1538247236.0,
-          recTime:1538247238.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538248003.0: {
-          genTime:1538248003.0,
-          recTime:1538248006.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538248534.0: {
-          genTime:1538248534.0,
-          recTime:1538248540.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-64, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538249145.0: {
-          genTime:1538249145.0,
-          recTime:1538249148.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
-          },
-        },
-        1538250012.0: {
-          genTime:1538250012.0,
-          recTime:1538250016.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-78, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538250672.0: {
-          genTime:1538250672.0,
-          recTime:1538250676.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-78, active: false},
-          },
-        },
-        1538251359.0: {
-          genTime:1538251359.0,
-          recTime:1538251366.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538251956.0: {
-          genTime:1538251956.0,
-          recTime:1538251961.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538252922.0: {
-          genTime:1538252922.0,
-          recTime:1538252927.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-72, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-110, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538253702.0: {
-          genTime:1538253702.0,
-          recTime:1538253706.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-81, active: false},
-          },
-        },
-        1538254025.0: {
-          genTime:1538254025.0,
-          recTime:1538254033.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-64, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-111, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538254674.0: {
-          genTime:1538254674.0,
-          recTime:1538254679.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
+          1538290536.0: {
+            genTime:1538290536.0,
+            recTime:1538290539.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
           },
         },
       },
-    },
-  },
-  "2018-09-30": {
-    def456: {
-      gps: {
-        1538308000.0: [40.42918399121303, -86.90781563174],
-        1538308600.0: [40.43554527480405, -86.91689652473063],
-        1538309200.0: [40.428492812604674, -86.91431917302829],
-        1538309800.0: [40.42871245074776, -86.91848426266219],
-        1538310400.0: [40.4299720791695, -86.92193285476175],
-        1538311000.0: [40.42934170800627, -86.9228991357633],
-        1538311600.0: [40.42699272971282, -86.92327180240638],
-        1538312200.0: [40.423380513166016, -86.9121382861114],
-        1538312800.0: [40.424030497700954, -86.9141205460941],
-        1538313400.0: [40.41879701048213, -86.9184117890183],
-        1538314000.0: [40.432364545092405, -86.90662413906392],
-        1538314600.0: [40.427828372290115, -86.91460068904335],
-        1538315200.0: [40.42867285163899, -86.91651605078773],
-        1538315800.0: [40.41866468586398, -86.92155791973711],
-        1538316400.0: [40.42034759359827, -86.92240654347964],
-        1538317000.0: [40.43337495012875, -86.91899162462583],
-        1538317600.0: [40.42131028900259, -86.91561510428885],
-        1538318200.0: [40.42529758677241, -86.91024880241258],
-        1538318800.0: [40.4296015359325, -86.91460135622805],
-        1538319400.0: [40.421820624358766, -86.9178119717265],
-        1538320000.0: [40.42431996319035, -86.91051565526418],
-        1538320600.0: [40.437640859093094, -86.9062208256771],
-        1538321200.0: [40.42382744696931, -86.9041378151868],
-        1538321800.0: [40.421155810725395, -86.90822839297009],
-        1538322400.0: [40.43387351512099, -86.9185665102298],
-        1538323000.0: [40.42266714130155, -86.91637348424717],
-        1538323600.0: [40.422595976137515, -86.90640308777692],
-        1538324200.0: [40.437620264739564, -86.90963541462526],
-        1538324800.0: [40.4343863014831, -86.92355135460639],
-        1538325400.0: [40.4277022820559, -86.91952616442661],
-        1538326000.0: [40.43541157551836, -86.90800823358246],
-        1538326600.0: [40.43861172497604, -86.90569700949175],
-        1538327200.0: [40.42506200438262, -86.90930802476711],
-        1538327800.0: [40.42823125542908, -86.9068557624868],
-        1538328400.0: [40.429840798403646, -86.91795553939711],
-        1538329000.0: [40.42313709247226, -86.90417931727039],
-        1538329600.0: [40.435874443550354, -86.90620267851888],
-        1538330200.0: [40.424514506233194, -86.90479091341392],
-        1538330800.0: [40.43413428491008, -86.91680005858672],
-        1538331400.0: [40.432260120608746, -86.91033157694214],
-        1538332000.0: [40.42350249121004, -86.91316786631074],
-        1538332600.0: [40.42702557220982, -86.91337350029491],
-        1538333200.0: [40.436370294480426, -86.9161464991304],
-        1538333800.0: [40.43697542934795, -86.91612349217375],
-        1538334400.0: [40.43435995788537, -86.91352141326823],
-        1538335000.0: [40.42812827428942, -86.90584493430342],
-        1538335600.0: [40.42760089344809, -86.92336215194874],
-        1538336200.0: [40.4383595970016, -86.91379046118793],
-        1538336800.0: [40.427426143586, -86.92266867830274],
-        1538337400.0: [40.431994916792455, -86.91485103708622],
-        1538338000.0: [40.42873322686568, -86.90765903754348],
-        1538338600.0: [40.419879628626695, -86.90926508815109],
-        1538339200.0: [40.43771936831205, -86.91817828860268],
-        1538339800.0: [40.425508854503306, -86.91582560425778],
-        1538340400.0: [40.433151231688946, -86.91238735560155],
-        1538341000.0: [40.42453409041253, -86.9097772770398],
+      "03:00": {
+        gps: {
+          1538290800.0: { lat:40.425510839151094, lng:-86.90488046690201 },
+          1538291000.0: { lat:40.419140121587006, lng:-86.90964937484027 },
+          1538291200.0: { lat:40.41974446145312, lng:-86.91040847059136 },
+          1538291400.0: { lat:40.43601154845701, lng:-86.91800832612708 },
+          1538291600.0: { lat:40.43268801999797, lng:-86.9074750025491 },
+          1538291800.0: { lat:40.4298712013127, lng:-86.91545397791786 },
+          1538292000.0: { lat:40.41936304494955, lng:-86.91937023814074 },
+          1538292200.0: { lat:40.434685001428605, lng:-86.9180951860039 },
+          1538292400.0: { lat:40.4373597186988, lng:-86.91300423240165 },
+          1538292600.0: { lat:40.42773213396974, lng:-86.91071599360161 },
+          1538292800.0: { lat:40.42737118324895, lng:-86.92015867127512 },
+          1538293000.0: { lat:40.437095031073305, lng:-86.90403166523967 },
+          1538293200.0: { lat:40.431619810053185, lng:-86.91767848557386 },
+          1538293400.0: { lat:40.436642931991244, lng:-86.91417838733572 },
+          1538293600.0: { lat:40.42289874487013, lng:-86.91644790250109 },
+          1538293800.0: { lat:40.41912520583285, lng:-86.9234047581331 },
+          1538294000.0: { lat:40.429983011793574, lng:-86.9187066017952 },
+          1538294200.0: { lat:40.42466483911557, lng:-86.90486324600754 },
+        },
+        heartbeats: {
+          1538290800.0: {
+            genTime:1538290800.0,
+            recTime:1538290803.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538291056.0: {
+            genTime:1538291056.0,
+            recTime:1538291061.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538291517.0: {
+            genTime:1538291517.0,
+            recTime:1538291519.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538292280.0: {
+            genTime:1538292280.0,
+            recTime:1538292284.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538293037.0: {
+            genTime:1538293037.0,
+            recTime:1538293042.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538293827.0: {
+            genTime:1538293827.0,
+            recTime:1538293832.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538294313.0: {
+            genTime:1538294313.0,
+            recTime:1538294319.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+        },
       },
-      heartbeats: {
-        1538308000.0: {
-          genTime:1538308000.0,
-          recTime:1538308003.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+      "04:00": {
+        gps: {
+          1538294400.0: { lat:40.42379814953552, lng:-86.92078393341052 },
+          1538294600.0: { lat:40.42492602445903, lng:-86.90991660161318 },
+          1538294800.0: { lat:40.43270253568901, lng:-86.90786772485798 },
+          1538295000.0: { lat:40.421492542220655, lng:-86.92298099991145 },
+          1538295200.0: { lat:40.428219925272415, lng:-86.90502142502146 },
+          1538295400.0: { lat:40.4229706235512, lng:-86.92234231534043 },
+          1538295600.0: { lat:40.43353719101349, lng:-86.90426825035306 },
+          1538295800.0: { lat:40.4369786865928, lng:-86.90856002743621 },
+          1538296000.0: { lat:40.43822490406242, lng:-86.90766668561784 },
+          1538296200.0: { lat:40.43270438383416, lng:-86.91597210735063 },
+          1538296400.0: { lat:40.42087789505899, lng:-86.90476684224994 },
+          1538296600.0: { lat:40.42003739119333, lng:-86.91893464691924 },
+          1538296800.0: { lat:40.428498004728155, lng:-86.92052587745475 },
+          1538297000.0: { lat:40.42794562624635, lng:-86.92163136538748 },
+          1538297200.0: { lat:40.42465837443468, lng:-86.90922838316672 },
+          1538297400.0: { lat:40.4243103971556, lng:-86.91110781452494 },
+          1538297600.0: { lat:40.42172259877981, lng:-86.90869358231411 },
+          1538297800.0: { lat:40.431739242218704, lng:-86.90890748273615 },
+        },
+        heartbeats: {
+          1538294400.0: {
+            genTime:1538294400.0,
+            recTime:1538294404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538295212.0: {
+            genTime:1538295212.0,
+            recTime:1538295218.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538295777.0: {
+            genTime:1538295777.0,
+            recTime:1538295779.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538296206.0: {
+            genTime:1538296206.0,
+            recTime:1538296214.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538296711.0: {
+            genTime:1538296711.0,
+            recTime:1538296716.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538297252.0: {
+            genTime:1538297252.0,
+            recTime:1538297259.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-67, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538297931.0: {
+            genTime:1538297931.0,
+            recTime:1538297935.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-58, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
           },
         },
-        1538308438.0: {
-          genTime:1538308438.0,
-          recTime:1538308443.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+      },
+      "06:00": {
+        gps: {
+          1538301600.0: { lat:40.426787587732015, lng:-86.91730344666566 },
+          1538301800.0: { lat:40.4214289443964, lng:-86.90832496650987 },
+          1538302000.0: { lat:40.42673161312421, lng:-86.9060561015264 },
+          1538302200.0: { lat:40.432730287168056, lng:-86.90968880415237 },
+          1538302400.0: { lat:40.43267518068999, lng:-86.91854950425054 },
+          1538302600.0: { lat:40.43007169523108, lng:-86.90835356839115 },
+          1538302800.0: { lat:40.432433573856024, lng:-86.9065825261034 },
+          1538303000.0: { lat:40.435530423039836, lng:-86.92120260917144 },
+          1538303200.0: { lat:40.43732200136755, lng:-86.90818035011893 },
+          1538303400.0: { lat:40.43147581678819, lng:-86.92374693498893 },
+          1538303600.0: { lat:40.42312817711509, lng:-86.91036571346146 },
+          1538303800.0: { lat:40.429442815489395, lng:-86.91781493542081 },
+          1538304000.0: { lat:40.4237014424841, lng:-86.92138281744539 },
+          1538304200.0: { lat:40.42091233454281, lng:-86.92263870569353 },
+          1538304400.0: { lat:40.42021432670053, lng:-86.91152515440481 },
+          1538304600.0: { lat:40.42179409836955, lng:-86.91614750485513 },
+          1538304800.0: { lat:40.42109810447244, lng:-86.90523524382458 },
+          1538305000.0: { lat:40.42500546966453, lng:-86.92064066364591 },
+        },
+        heartbeats: {
+          1538301600.0: {
+            genTime:1538301600.0,
+            recTime:1538301609.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538302160.0: {
+            genTime:1538302160.0,
+            recTime:1538302162.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538302562.0: {
+            genTime:1538302562.0,
+            recTime:1538302565.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-80, active: false, name:"AT&T"},
+            },
+          },
+          1538302902.0: {
+            genTime:1538302902.0,
+            recTime:1538302908.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538303574.0: {
+            genTime:1538303574.0,
+            recTime:1538303578.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538304449.0: {
+            genTime:1538304449.0,
+            recTime:1538304458.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538305097.0: {
+            genTime:1538305097.0,
+            recTime:1538305099.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
           },
         },
-        1538309092.0: {
-          genTime:1538309092.0,
-          recTime:1538309093.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-73, active: false},
+      },
+      "07:00": {
+        gps: {
+          1538305200.0: { lat:40.43491203302461, lng:-86.90725401772922 },
+          1538305400.0: { lat:40.43145862799271, lng:-86.91077562987641 },
+          1538305600.0: { lat:40.43124348080598, lng:-86.91991375496033 },
+          1538305800.0: { lat:40.42600958415622, lng:-86.91134289389842 },
+          1538306000.0: { lat:40.436310454989005, lng:-86.9161348576109 },
+          1538306200.0: { lat:40.431640277121424, lng:-86.9057493928377 },
+          1538306400.0: { lat:40.42517988308339, lng:-86.92341015147055 },
+          1538306600.0: { lat:40.4197284088707, lng:-86.91556069815383 },
+          1538306800.0: { lat:40.42868461604819, lng:-86.91160080668902 },
+          1538307000.0: { lat:40.423031852341836, lng:-86.91405751135316 },
+          1538307200.0: { lat:40.432669201376754, lng:-86.91594163348049 },
+          1538307400.0: { lat:40.422727748805634, lng:-86.90520678874286 },
+          1538307600.0: { lat:40.43861334213976, lng:-86.91813224413993 },
+          1538307800.0: { lat:40.43739163682516, lng:-86.90453637695073 },
+          1538308000.0: { lat:40.43854011781783, lng:-86.91670869691163 },
+          1538308200.0: { lat:40.41904475399113, lng:-86.9052712647244 },
+          1538308400.0: { lat:40.422140285542355, lng:-86.9175601484751 },
+          1538308600.0: { lat:40.42154090638987, lng:-86.91551301087298 },
+        },
+        heartbeats: {
+          1538305200.0: {
+            genTime:1538305200.0,
+            recTime:1538305203.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538305856.0: {
+            genTime:1538305856.0,
+            recTime:1538305859.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538306171.0: {
+            genTime:1538306171.0,
+            recTime:1538306175.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538306531.0: {
+            genTime:1538306531.0,
+            recTime:1538306533.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538306878.0: {
+            genTime:1538306878.0,
+            recTime:1538306882.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538307456.0: {
+            genTime:1538307456.0,
+            recTime:1538307461.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538308328.0: {
+            genTime:1538308328.0,
+            recTime:1538308334.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
           },
         },
-        1538309427.0: {
-          genTime:1538309427.0,
-          recTime:1538309431.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-96, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
+      },
+      "08:00": {
+        gps: {
+          1538308800.0: { lat:40.42590014555884, lng:-86.91074362451812 },
+          1538309000.0: { lat:40.423495497249796, lng:-86.91635021354661 },
+          1538309200.0: { lat:40.427008766221796, lng:-86.91712077410975 },
+          1538309400.0: { lat:40.43746661484653, lng:-86.92194804007954 },
+          1538309600.0: { lat:40.424232854131546, lng:-86.91626133970809 },
+          1538309800.0: { lat:40.4347403672226, lng:-86.91203308540068 },
+          1538310000.0: { lat:40.432465634478206, lng:-86.92043965637758 },
+          1538310200.0: { lat:40.42425382473567, lng:-86.91510948609093 },
+          1538310400.0: { lat:40.43245256986159, lng:-86.90915559855453 },
+          1538310600.0: { lat:40.43140185889335, lng:-86.91822528243098 },
+          1538310800.0: { lat:40.430550333865014, lng:-86.90455076736968 },
+          1538311000.0: { lat:40.42069644143488, lng:-86.91449016947307 },
+          1538311200.0: { lat:40.422796965566725, lng:-86.92324308031714 },
+          1538311400.0: { lat:40.43154782869174, lng:-86.91400807781181 },
+          1538311600.0: { lat:40.41925290543194, lng:-86.90821500359297 },
+          1538311800.0: { lat:40.42658352687526, lng:-86.90669304411347 },
+          1538312000.0: { lat:40.41996332212441, lng:-86.91267805955461 },
+          1538312200.0: { lat:40.43447545385007, lng:-86.9040533786535 },
+        },
+        heartbeats: {
+          1538308800.0: {
+            genTime:1538308800.0,
+            recTime:1538308801.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538309669.0: {
+            genTime:1538309669.0,
+            recTime:1538309674.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538310370.0: {
+            genTime:1538310370.0,
+            recTime:1538310376.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-105, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538310840.0: {
+            genTime:1538310840.0,
+            recTime:1538310848.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-98, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-63, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538311164.0: {
+            genTime:1538311164.0,
+            recTime:1538311171.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538311811.0: {
+            genTime:1538311811.0,
+            recTime:1538311815.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538311980.0: {
+            genTime:1538311980.0,
+            recTime:1538311982.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
           },
         },
-        1538310044.0: {
-          genTime:1538310044.0,
-          recTime:1538310046.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+      },
+      "12:00": {
+        gps: {
+          1538323200.0: { lat:40.41995013142744, lng:-86.91622582770827 },
+          1538323400.0: { lat:40.43473823202661, lng:-86.91153306090696 },
+          1538323600.0: { lat:40.42113623508905, lng:-86.9209402907168 },
+          1538323800.0: { lat:40.41864655833806, lng:-86.9186829427629 },
+          1538324000.0: { lat:40.43390583120802, lng:-86.92294533412984 },
+          1538324200.0: { lat:40.43121341167758, lng:-86.91420186419383 },
+          1538324400.0: { lat:40.43118010107236, lng:-86.91467529164696 },
+          1538324600.0: { lat:40.42134463483833, lng:-86.9069296628251 },
+          1538324800.0: { lat:40.42397523809956, lng:-86.91108581963225 },
+          1538325000.0: { lat:40.42395649785897, lng:-86.91450225118969 },
+          1538325200.0: { lat:40.43091126369175, lng:-86.90970553255627 },
+          1538325400.0: { lat:40.43293653336405, lng:-86.91244361998366 },
+          1538325600.0: { lat:40.43034149464837, lng:-86.9132213808428 },
+          1538325800.0: { lat:40.41983493448985, lng:-86.91327163021289 },
+          1538326000.0: { lat:40.435552944842605, lng:-86.91239044268653 },
+          1538326200.0: { lat:40.43486180593021, lng:-86.91465330195388 },
+          1538326400.0: { lat:40.436015702603115, lng:-86.90926199206382 },
+          1538326600.0: { lat:40.42609032897106, lng:-86.91398991017144 },
+        },
+        heartbeats: {
+          1538323200.0: {
+            genTime:1538323200.0,
+            recTime:1538323202.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538323651.0: {
+            genTime:1538323651.0,
+            recTime:1538323658.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538324523.0: {
+            genTime:1538324523.0,
+            recTime:1538324527.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538325197.0: {
+            genTime:1538325197.0,
+            recTime:1538325203.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538325861.0: {
+            genTime:1538325861.0,
+            recTime:1538325862.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538326497.0: {
+            genTime:1538326497.0,
+            recTime:1538326499.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
           },
         },
-        1538310823.0: {
-          genTime:1538310823.0,
-          recTime:1538310829.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-105, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
+      },
+      "14:00": {
+        gps: {
+          1538330400.0: { lat:40.42638913896195, lng:-86.91156776313169 },
+          1538330600.0: { lat:40.436175589780625, lng:-86.91321962068042 },
+          1538330800.0: { lat:40.42675975655258, lng:-86.92091696299167 },
+          1538331000.0: { lat:40.4307402018048, lng:-86.92287672457024 },
+          1538331200.0: { lat:40.43584091347673, lng:-86.91762607001047 },
+          1538331400.0: { lat:40.432330386138254, lng:-86.90732037829174 },
+          1538331600.0: { lat:40.42476682016276, lng:-86.91815517962654 },
+          1538331800.0: { lat:40.43301991864291, lng:-86.9082618261476 },
+          1538332000.0: { lat:40.43560415563054, lng:-86.92210725334637 },
+          1538332200.0: { lat:40.4203990357035, lng:-86.91305395617867 },
+          1538332400.0: { lat:40.435984197587054, lng:-86.91787244386734 },
+          1538332600.0: { lat:40.425346119499295, lng:-86.91269143110559 },
+          1538332800.0: { lat:40.42694067318025, lng:-86.92338773343162 },
+          1538333000.0: { lat:40.436633142224125, lng:-86.91350675904415 },
+          1538333200.0: { lat:40.427570795218145, lng:-86.91966722702311 },
+          1538333400.0: { lat:40.43141063952095, lng:-86.90870375150388 },
+          1538333600.0: { lat:40.41951156020653, lng:-86.91571268854655 },
+          1538333800.0: { lat:40.427728742792844, lng:-86.90863413118937 },
+        },
+        heartbeats: {
+          1538330400.0: {
+            genTime:1538330400.0,
+            recTime:1538330404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538331047.0: {
+            genTime:1538331047.0,
+            recTime:1538331052.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538331606.0: {
+            genTime:1538331606.0,
+            recTime:1538331609.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538332150.0: {
+            genTime:1538332150.0,
+            recTime:1538332152.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538333171.0: {
+            genTime:1538333171.0,
+            recTime:1538333174.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538333636.0: {
+            genTime:1538333636.0,
+            recTime:1538333642.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
           },
         },
-        1538311316.0: {
-          genTime:1538311316.0,
-          recTime:1538311321.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
+      },
+      "15:00": {
+        gps: {
+          1538334000.0: { lat:40.43863125692084, lng:-86.91786427282855 },
+          1538334200.0: { lat:40.43844163282929, lng:-86.9107900173847 },
+          1538334400.0: { lat:40.4276330116877, lng:-86.91147605625869 },
+          1538334600.0: { lat:40.43028319121584, lng:-86.90426647695357 },
+          1538334800.0: { lat:40.43826789169357, lng:-86.91614465050584 },
+          1538335000.0: { lat:40.43463448051459, lng:-86.91641465380052 },
+          1538335200.0: { lat:40.42785117942705, lng:-86.9105792688206 },
+          1538335400.0: { lat:40.41947558766304, lng:-86.91951188167741 },
+          1538335600.0: { lat:40.4218701848471, lng:-86.91018961527949 },
+          1538335800.0: { lat:40.43424671533579, lng:-86.91567809153021 },
+          1538336000.0: { lat:40.42587893702282, lng:-86.9054228213363 },
+          1538336200.0: { lat:40.429753322340225, lng:-86.91192660853054 },
+          1538336400.0: { lat:40.43378143649653, lng:-86.90412653909316 },
+          1538336600.0: { lat:40.42154438825112, lng:-86.90509181350258 },
+          1538336800.0: { lat:40.41888438837579, lng:-86.9145411499296 },
+          1538337000.0: { lat:40.43781213439185, lng:-86.9083712711127 },
+          1538337200.0: { lat:40.430641287801706, lng:-86.9040410152546 },
+          1538337400.0: { lat:40.43466812435634, lng:-86.91307666661318 },
+        },
+        heartbeats: {
+          1538334000.0: {
+            genTime:1538334000.0,
+            recTime:1538334004.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538334417.0: {
+            genTime:1538334417.0,
+            recTime:1538334418.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538335080.0: {
+            genTime:1538335080.0,
+            recTime:1538335083.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538335412.0: {
+            genTime:1538335412.0,
+            recTime:1538335415.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538335690.0: {
+            genTime:1538335690.0,
+            recTime:1538335693.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538336337.0: {
+            genTime:1538336337.0,
+            recTime:1538336344.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-70, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538336714.0: {
+            genTime:1538336714.0,
+            recTime:1538336719.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538337279.0: {
+            genTime:1538337279.0,
+            recTime:1538337286.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
           },
         },
-        1538312071.0: {
-          genTime:1538312071.0,
-          recTime:1538312073.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-68, active: false},
+      },
+      "16:00": {
+        gps: {
+          1538337600.0: { lat:40.432951035077146, lng:-86.92159291396433 },
+          1538337800.0: { lat:40.42230286101536, lng:-86.90773024632702 },
+          1538338000.0: { lat:40.43397138550698, lng:-86.91825371121364 },
+          1538338200.0: { lat:40.418786144428346, lng:-86.90551135414324 },
+          1538338400.0: { lat:40.435114393288345, lng:-86.91914694701275 },
+          1538338600.0: { lat:40.426519707258194, lng:-86.91877774942648 },
+          1538338800.0: { lat:40.43063058179786, lng:-86.92225658442486 },
+          1538339000.0: { lat:40.43435354098089, lng:-86.90790919307477 },
+          1538339200.0: { lat:40.43443521138897, lng:-86.92267043694034 },
+          1538339400.0: { lat:40.42331950330458, lng:-86.92217841202 },
+          1538339600.0: { lat:40.431497968359224, lng:-86.9226708390907 },
+          1538339800.0: { lat:40.435314739333954, lng:-86.9089976648075 },
+          1538340000.0: { lat:40.4274659097912, lng:-86.91373049866735 },
+          1538340200.0: { lat:40.419301845882025, lng:-86.9213990043866 },
+          1538340400.0: { lat:40.43563425015242, lng:-86.92020491005724 },
+          1538340600.0: { lat:40.42422369439581, lng:-86.92084382135741 },
+          1538340800.0: { lat:40.426334743960126, lng:-86.91452593297583 },
+          1538341000.0: { lat:40.437800968461374, lng:-86.91513901676758 },
+        },
+        heartbeats: {
+          1538337600.0: {
+            genTime:1538337600.0,
+            recTime:1538337603.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538338177.0: {
+            genTime:1538338177.0,
+            recTime:1538338180.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538338918.0: {
+            genTime:1538338918.0,
+            recTime:1538338921.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
+          },
+          1538339497.0: {
+            genTime:1538339497.0,
+            recTime:1538339503.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538339827.0: {
+            genTime:1538339827.0,
+            recTime:1538339832.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538340435.0: {
+            genTime:1538340435.0,
+            recTime:1538340437.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-108, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538341107.0: {
+            genTime:1538341107.0,
+            recTime:1538341110.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
           },
         },
-        1538312533.0: {
-          genTime:1538312533.0,
-          recTime:1538312536.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-114, active: false},
+      },
+      "18:00": {
+        gps: {
+          1538344800.0: { lat:40.43711539143497, lng:-86.91854005466308 },
+          1538345000.0: { lat:40.421858649484584, lng:-86.91561068596053 },
+          1538345200.0: { lat:40.434121978604225, lng:-86.90512291823457 },
+          1538345400.0: { lat:40.43615739836443, lng:-86.9077772819207 },
+          1538345600.0: { lat:40.43493766711914, lng:-86.92097495731402 },
+          1538345800.0: { lat:40.43172814067756, lng:-86.90927457254598 },
+          1538346000.0: { lat:40.41882796295979, lng:-86.91705968052905 },
+          1538346200.0: { lat:40.437333314559716, lng:-86.90650531741778 },
+          1538346400.0: { lat:40.42955116573708, lng:-86.91236329126848 },
+          1538346600.0: { lat:40.41874695874056, lng:-86.91465537725635 },
+          1538346800.0: { lat:40.42146225301148, lng:-86.91633779740903 },
+          1538347000.0: { lat:40.43163406196605, lng:-86.92175243502788 },
+          1538347200.0: { lat:40.42060970374093, lng:-86.9199319116893 },
+          1538347400.0: { lat:40.430708473548556, lng:-86.91204891891698 },
+          1538347600.0: { lat:40.42616357608785, lng:-86.91446658901945 },
+          1538347800.0: { lat:40.437834762267734, lng:-86.91887432009865 },
+          1538348000.0: { lat:40.433002481123246, lng:-86.92218491063757 },
+          1538348200.0: { lat:40.419199817453475, lng:-86.92305596104602 },
+        },
+        heartbeats: {
+          1538344800.0: {
+            genTime:1538344800.0,
+            recTime:1538344802.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-71, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538345478.0: {
+            genTime:1538345478.0,
+            recTime:1538345482.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538345803.0: {
+            genTime:1538345803.0,
+            recTime:1538345805.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538346669.0: {
+            genTime:1538346669.0,
+            recTime:1538346671.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-109, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538347159.0: {
+            genTime:1538347159.0,
+            recTime:1538347165.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538347845.0: {
+            genTime:1538347845.0,
+            recTime:1538347846.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
           },
         },
-        1538313216.0: {
-          genTime:1538313216.0,
-          recTime:1538313221.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
+      },
+      "19:00": {
+        gps: {
+          1538348400.0: { lat:40.43352257894816, lng:-86.91158801901148 },
+          1538348600.0: { lat:40.419216757308384, lng:-86.91267855779127 },
+          1538348800.0: { lat:40.42967145828497, lng:-86.91979589501089 },
+          1538349000.0: { lat:40.43674858867413, lng:-86.91648077637754 },
+          1538349200.0: { lat:40.42715235278423, lng:-86.91741094065699 },
+          1538349400.0: { lat:40.4255053975921, lng:-86.91217348489947 },
+          1538349600.0: { lat:40.419143357333304, lng:-86.9128992904416 },
+          1538349800.0: { lat:40.43097942199977, lng:-86.90795262485821 },
+          1538350000.0: { lat:40.43057881256133, lng:-86.91533390834103 },
+          1538350200.0: { lat:40.43423614837693, lng:-86.9091628314891 },
+          1538350400.0: { lat:40.42471396846734, lng:-86.9187422763654 },
+          1538350600.0: { lat:40.4297302974804, lng:-86.91770125581353 },
+          1538350800.0: { lat:40.43070630928559, lng:-86.92132072153802 },
+          1538351000.0: { lat:40.436292182573425, lng:-86.9090398730762 },
+          1538351200.0: { lat:40.43816174773656, lng:-86.91597406827431 },
+          1538351400.0: { lat:40.43400793082095, lng:-86.915934416329 },
+          1538351600.0: { lat:40.430513738218345, lng:-86.91184355830555 },
+          1538351800.0: { lat:40.42750435654974, lng:-86.90811539818745 },
+        },
+        heartbeats: {
+          1538348400.0: {
+            genTime:1538348400.0,
+            recTime:1538348402.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538348794.0: {
+            genTime:1538348794.0,
+            recTime:1538348808.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-110, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538349593.0: {
+            genTime:1538349593.0,
+            recTime:1538349595.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-56, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538350281.0: {
+            genTime:1538350281.0,
+            recTime:1538350283.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-66, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538350699.0: {
+            genTime:1538350699.0,
+            recTime:1538350702.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538351116.0: {
+            genTime:1538351116.0,
+            recTime:1538351124.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538351976.0: {
+            genTime:1538351976.0,
+            recTime:1538351981.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
           },
         },
-        1538313509.0: {
-          genTime:1538313509.0,
-          recTime:1538313515.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
+      },
+      "20:00": {
+        gps: {
+          1538352000.0: { lat:40.43421254196876, lng:-86.90380726440546 },
+          1538352200.0: { lat:40.421696890957286, lng:-86.90975072544107 },
+          1538352400.0: { lat:40.43194807637951, lng:-86.90698631441245 },
+          1538352600.0: { lat:40.436072563198245, lng:-86.91752335375908 },
+          1538352800.0: { lat:40.427088975649696, lng:-86.90460458190158 },
+          1538353000.0: { lat:40.419427392599324, lng:-86.91423789194445 },
+          1538353200.0: { lat:40.4310740092609, lng:-86.90535864868123 },
+          1538353400.0: { lat:40.420933673621896, lng:-86.90612095123751 },
+          1538353600.0: { lat:40.432352099713256, lng:-86.92026985999125 },
+          1538353800.0: { lat:40.433491145316, lng:-86.91641019563734 },
+          1538354000.0: { lat:40.42470659876028, lng:-86.92337426208688 },
+          1538354200.0: { lat:40.43462286244233, lng:-86.91982204070293 },
+          1538354400.0: { lat:40.42975025679491, lng:-86.91091410463152 },
+          1538354600.0: { lat:40.42080223908734, lng:-86.91120490494619 },
+          1538354800.0: { lat:40.419024239606564, lng:-86.90516766575033 },
+          1538355000.0: { lat:40.43260383253937, lng:-86.91685847186285 },
+          1538355200.0: { lat:40.43348824981939, lng:-86.92205359977363 },
+          1538355400.0: { lat:40.437100521322776, lng:-86.9123267543322 },
+        },
+        heartbeats: {
+          1538352000.0: {
+            genTime:1538352000.0,
+            recTime:1538352002.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-108, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538352273.0: {
+            genTime:1538352273.0,
+            recTime:1538352275.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538353029.0: {
+            genTime:1538353029.0,
+            recTime:1538353030.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
+          },
+          1538353544.0: {
+            genTime:1538353544.0,
+            recTime:1538353549.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-105, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-73, active: false, name:"AT&T"},
+            },
+          },
+          1538353884.0: {
+            genTime:1538353884.0,
+            recTime:1538353885.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538354659.0: {
+            genTime:1538354659.0,
+            recTime:1538354666.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-74, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538355301.0: {
+            genTime:1538355301.0,
+            recTime:1538355303.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538355450.0: {
+            genTime:1538355450.0,
+            recTime:1538355457.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-60, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
           },
         },
-        1538314083.0: {
-          genTime:1538314083.0,
-          recTime:1538314085.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
+      },
+      "21:00": {
+        gps: {
+          1538355600.0: { lat:40.434893891273234, lng:-86.91945751454517 },
+          1538355800.0: { lat:40.427112074756856, lng:-86.91167964819154 },
+          1538356000.0: { lat:40.431645992970104, lng:-86.9061374789745 },
+          1538356200.0: { lat:40.43047743223235, lng:-86.90512610256674 },
+          1538356400.0: { lat:40.43633175397698, lng:-86.90497156483555 },
+          1538356600.0: { lat:40.42831418010839, lng:-86.90834968883881 },
+          1538356800.0: { lat:40.42435507698592, lng:-86.91342880339066 },
+          1538357000.0: { lat:40.423842261583715, lng:-86.92180560393892 },
+          1538357200.0: { lat:40.43022102174845, lng:-86.92261579324132 },
+          1538357400.0: { lat:40.43677174775616, lng:-86.91585956909125 },
+          1538357600.0: { lat:40.43427679380599, lng:-86.90817390649796 },
+          1538357800.0: { lat:40.42526497122777, lng:-86.90405227230643 },
+          1538358000.0: { lat:40.434723321218904, lng:-86.91060328933533 },
+          1538358200.0: { lat:40.427651515077535, lng:-86.90746781420967 },
+          1538358400.0: { lat:40.42817767348879, lng:-86.92016043415843 },
+          1538358600.0: { lat:40.421300566578, lng:-86.90553198935224 },
+          1538358800.0: { lat:40.43273130221869, lng:-86.90725212573577 },
+          1538359000.0: { lat:40.42665876647192, lng:-86.90816131881812 },
+        },
+        heartbeats: {
+          1538355600.0: {
+            genTime:1538355600.0,
+            recTime:1538355604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538356068.0: {
+            genTime:1538356068.0,
+            recTime:1538356069.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538356443.0: {
+            genTime:1538356443.0,
+            recTime:1538356447.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538356930.0: {
+            genTime:1538356930.0,
+            recTime:1538356933.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-123, active: false, name:"AT&T"},
+            },
+          },
+          1538357917.0: {
+            genTime:1538357917.0,
+            recTime:1538357925.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+          1538358101.0: {
+            genTime:1538358101.0,
+            recTime:1538358103.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538358689.0: {
+            genTime:1538358689.0,
+            recTime:1538358693.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
           },
         },
-        1538314550.0: {
-          genTime:1538314550.0,
-          recTime:1538314555.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
+      },
+      "22:00": {
+        gps: {
+          1538359200.0: { lat:40.434327438090236, lng:-86.90503225775655 },
+          1538359400.0: { lat:40.418733993727095, lng:-86.9220143706651 },
+          1538359600.0: { lat:40.435221695849236, lng:-86.91075892689696 },
+          1538359800.0: { lat:40.42186203556875, lng:-86.91912854014372 },
+          1538360000.0: { lat:40.43102140337143, lng:-86.9137820623017 },
+          1538360200.0: { lat:40.428799473553354, lng:-86.91289817665606 },
+          1538360400.0: { lat:40.43185887908724, lng:-86.90679002337417 },
+          1538360600.0: { lat:40.43205865741603, lng:-86.9098412738019 },
+          1538360800.0: { lat:40.43512249994951, lng:-86.92033408629842 },
+          1538361000.0: { lat:40.43446680359754, lng:-86.91259281426467 },
+          1538361200.0: { lat:40.43294454620636, lng:-86.90725831662405 },
+          1538361400.0: { lat:40.43265179336754, lng:-86.90759360851051 },
+          1538361600.0: { lat:40.437279092199944, lng:-86.90384341010916 },
+          1538361800.0: { lat:40.43753754126332, lng:-86.91906318636235 },
+          1538362000.0: { lat:40.4305891189592, lng:-86.90992338665603 },
+          1538362200.0: { lat:40.437644206076214, lng:-86.92195478725594 },
+          1538362400.0: { lat:40.429204547417385, lng:-86.90602241867593 },
+          1538362600.0: { lat:40.426910326380074, lng:-86.90471026805379 },
         },
-        1538315642.0: {
-          genTime:1538315642.0,
-          recTime:1538315645.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-71, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
+        heartbeats: {
+          1538359200.0: {
+            genTime:1538359200.0,
+            recTime:1538359203.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538316113.0: {
-          genTime:1538316113.0,
-          recTime:1538316116.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
+          1538360223.0: {
+            genTime:1538360223.0,
+            recTime:1538360229.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538316995.0: {
-          genTime:1538316995.0,
-          recTime:1538316996.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
+          1538361115.0: {
+            genTime:1538361115.0,
+            recTime:1538361124.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538317694.0: {
-          genTime:1538317694.0,
-          recTime:1538317696.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-99, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
+          1538361595.0: {
+            genTime:1538361595.0,
+            recTime:1538361600.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538318576.0: {
-          genTime:1538318576.0,
-          recTime:1538318582.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
+          1538362052.0: {
+            genTime:1538362052.0,
+            recTime:1538362054.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538319116.0: {
-          genTime:1538319116.0,
-          recTime:1538319118.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-64, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538319602.0: {
-          genTime:1538319602.0,
-          recTime:1538319604.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538320307.0: {
-          genTime:1538320307.0,
-          recTime:1538320309.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538321044.0: {
-          genTime:1538321044.0,
-          recTime:1538321046.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-69, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538321636.0: {
-          genTime:1538321636.0,
-          recTime:1538321640.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538321910.0: {
-          genTime:1538321910.0,
-          recTime:1538321917.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538322494.0: {
-          genTime:1538322494.0,
-          recTime:1538322495.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-105, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538323157.0: {
-          genTime:1538323157.0,
-          recTime:1538323163.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-105, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538324014.0: {
-          genTime:1538324014.0,
-          recTime:1538324017.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-108, active: false},
-          },
-        },
-        1538324771.0: {
-          genTime:1538324771.0,
-          recTime:1538324775.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538325377.0: {
-          genTime:1538325377.0,
-          recTime:1538325381.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538326099.0: {
-          genTime:1538326099.0,
-          recTime:1538326108.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538326821.0: {
-          genTime:1538326821.0,
-          recTime:1538326826.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538327451.0: {
-          genTime:1538327451.0,
-          recTime:1538327454.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-105, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538328337.0: {
-          genTime:1538328337.0,
-          recTime:1538328340.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538328828.0: {
-          genTime:1538328828.0,
-          recTime:1538328832.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538329331.0: {
-          genTime:1538329331.0,
-          recTime:1538329333.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538329858.0: {
-          genTime:1538329858.0,
-          recTime:1538329860.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-84, active: false},
-          },
-        },
-        1538330319.0: {
-          genTime:1538330319.0,
-          recTime:1538330321.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538331063.0: {
-          genTime:1538331063.0,
-          recTime:1538331065.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-64, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538331608.0: {
-          genTime:1538331608.0,
-          recTime:1538331613.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538332440.0: {
-          genTime:1538332440.0,
-          recTime:1538332443.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-75, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538332946.0: {
-          genTime:1538332946.0,
-          recTime:1538332953.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
-          },
-        },
-        1538333666.0: {
-          genTime:1538333666.0,
-          recTime:1538333668.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538334294.0: {
-          genTime:1538334294.0,
-          recTime:1538334296.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-116, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538335097.0: {
-          genTime:1538335097.0,
-          recTime:1538335106.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538335651.0: {
-          genTime:1538335651.0,
-          recTime:1538335656.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538336338.0: {
-          genTime:1538336338.0,
-          recTime:1538336345.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-107, active: false},
-            "AT&T":{type:"4G", rssi:-108, active: false},
-          },
-        },
-        1538336707.0: {
-          genTime:1538336707.0,
-          recTime:1538336709.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-65, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538337511.0: {
-          genTime:1538337511.0,
-          recTime:1538337513.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-80, active: false},
-          },
-        },
-        1538338046.0: {
-          genTime:1538338046.0,
-          recTime:1538338050.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538338403.0: {
-          genTime:1538338403.0,
-          recTime:1538338406.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538339109.0: {
-          genTime:1538339109.0,
-          recTime:1538339114.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-69, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538339939.0: {
-          genTime:1538339939.0,
-          recTime:1538339942.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-79, active: false},
-          },
-        },
-        1538340260.0: {
-          genTime:1538340260.0,
-          recTime:1538340262.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-103, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
-          },
-        },
-        1538340928.0: {
-          genTime:1538340928.0,
-          recTime:1538340936.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-62, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
+          1538362499.0: {
+            genTime:1538362499.0,
+            recTime:1538362503.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
           },
         },
       },
     },
-    ghi789: {
-      gps: {
-        1538308000.0: [40.42348706459761, -86.90713049081153],
-        1538308600.0: [40.422085359148944, -86.91751194935438],
-        1538309200.0: [40.43307157036074, -86.91902681112876],
-        1538309800.0: [40.43321320847111, -86.90538050455986],
-        1538310400.0: [40.4329448854617, -86.90755607378105],
-        1538311000.0: [40.42157193210327, -86.90415184192697],
-        1538311600.0: [40.43796905239688, -86.92067841989689],
-        1538312200.0: [40.425854174872995, -86.91045815852445],
-        1538312800.0: [40.421452677664796, -86.9230493168813],
-        1538313400.0: [40.428768011582925, -86.90412019677565],
-        1538314000.0: [40.4344208535782, -86.90400388303927],
-        1538314600.0: [40.43640305084167, -86.92182975424922],
-        1538315200.0: [40.437465795126776, -86.91576239249986],
-        1538315800.0: [40.43298081196723, -86.91433681892359],
-        1538316400.0: [40.43061895396902, -86.90986265848507],
-        1538317000.0: [40.43385883032177, -86.90693921675448],
-        1538317600.0: [40.42894242807255, -86.90572710991745],
-        1538318200.0: [40.431979256996854, -86.92165207877686],
-        1538318800.0: [40.43361222800513, -86.91242073017139],
-        1538319400.0: [40.43418307679944, -86.9107662129743],
-        1538320000.0: [40.42758795352292, -86.90588037098867],
-        1538320600.0: [40.4271522942778, -86.91498479899647],
-        1538321200.0: [40.432018968543844, -86.9100121638864],
-        1538321800.0: [40.438518039914825, -86.92237153445632],
-        1538322400.0: [40.423573856347005, -86.91249936670097],
-        1538323000.0: [40.43760308305665, -86.91502274037006],
-        1538323600.0: [40.427232256937465, -86.91287940546833],
-        1538324200.0: [40.43320042117946, -86.91341227407781],
-        1538324800.0: [40.43581006939392, -86.91335458530196],
-        1538325400.0: [40.42588466339681, -86.92217292351097],
-        1538326000.0: [40.43001008788912, -86.90577573538442],
-        1538326600.0: [40.42215072957284, -86.91302277876676],
-        1538327200.0: [40.42600460174911, -86.92014961928034],
-        1538327800.0: [40.43441160628479, -86.91738753411566],
-        1538328400.0: [40.41893617297853, -86.911133712781],
-        1538329000.0: [40.4266735785518, -86.90643797617827],
-        1538329600.0: [40.43242579511145, -86.90778824736803],
-        1538330200.0: [40.429364142292556, -86.91078780624919],
-        1538330800.0: [40.43232366242341, -86.92338852875099],
-        1538331400.0: [40.42116322013189, -86.90542232640603],
-        1538332000.0: [40.42652857040834, -86.9152159015213],
-        1538332600.0: [40.43170152688036, -86.90536298389472],
-        1538333200.0: [40.42955019888591, -86.9213814906199],
-        1538333800.0: [40.433651532422395, -86.91136521143076],
-        1538334400.0: [40.427762271118056, -86.90978904865237],
-        1538335000.0: [40.428493018383286, -86.90783445001045],
-        1538335600.0: [40.42799514380517, -86.91691387446306],
-        1538336200.0: [40.43071930773368, -86.91751922422364],
-        1538336800.0: [40.424361294980955, -86.91046335306703],
-        1538337400.0: [40.42768156154329, -86.91688320089925],
-        1538338000.0: [40.42803170309102, -86.91016987154964],
-        1538338600.0: [40.42851247454343, -86.91064691133774],
-        1538339200.0: [40.428002891688614, -86.90655119684536],
-        1538339800.0: [40.41983789934681, -86.9098033188952],
-        1538340400.0: [40.41914346208728, -86.90826521780146],
-        1538341000.0: [40.43616603484616, -86.90572626123094],
-      },
-      heartbeats: {
-        1538308000.0: {
-          genTime:1538308000.0,
-          recTime:1538308006.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
+    "2018-10-05": {
+      "02:00": {
+        gps: {
+          1538719200.0: { lat:40.42841367298047, lng:-86.9094647088672 },
+          1538719400.0: { lat:40.43455932699801, lng:-86.90958277289674 },
+          1538719600.0: { lat:40.43117778219084, lng:-86.91233786990217 },
+          1538719800.0: { lat:40.42498725112226, lng:-86.90934254894094 },
+          1538720000.0: { lat:40.41882590724872, lng:-86.92014374185023 },
+          1538720200.0: { lat:40.42047060190569, lng:-86.92053632079836 },
+          1538720400.0: { lat:40.43798818408342, lng:-86.90664115888993 },
+          1538720600.0: { lat:40.43412531200273, lng:-86.91941461929886 },
+          1538720800.0: { lat:40.420299830807075, lng:-86.90498326396518 },
+          1538721000.0: { lat:40.42044823531074, lng:-86.90565281302688 },
+          1538721200.0: { lat:40.43208201851526, lng:-86.91817965141185 },
+          1538721400.0: { lat:40.42422542134457, lng:-86.91687116095665 },
+          1538721600.0: { lat:40.4224293545326, lng:-86.92335938501014 },
+          1538721800.0: { lat:40.41918913314306, lng:-86.91727393894459 },
+          1538722000.0: { lat:40.42557612568091, lng:-86.9079892540903 },
+          1538722200.0: { lat:40.43130292151103, lng:-86.9127252159241 },
+          1538722400.0: { lat:40.42466289406279, lng:-86.90383727505483 },
+          1538722600.0: { lat:40.426502587136, lng:-86.92366342732045 },
         },
-        1538308479.0: {
-          genTime:1538308479.0,
-          recTime:1538308483.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-98, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
+        heartbeats: {
+          1538719200.0: {
+            genTime:1538719200.0,
+            recTime:1538719205.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538308628.0: {
-          genTime:1538308628.0,
-          recTime:1538308629.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-102, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
+          1538719775.0: {
+            genTime:1538719775.0,
+            recTime:1538719778.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-106, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538309179.0: {
-          genTime:1538309179.0,
-          recTime:1538309186.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-79, active: false},
+          1538720409.0: {
+            genTime:1538720409.0,
+            recTime:1538720415.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-111, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538309347.0: {
-          genTime:1538309347.0,
-          recTime:1538309350.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-75, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
+          1538721110.0: {
+            genTime:1538721110.0,
+            recTime:1538721112.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538310090.0: {
-          genTime:1538310090.0,
-          recTime:1538310097.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-110, active: false},
+          1538721786.0: {
+            genTime:1538721786.0,
+            recTime:1538721789.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538310776.0: {
-          genTime:1538310776.0,
-          recTime:1538310779.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
+          1538722537.0: {
+            genTime:1538722537.0,
+            recTime:1538722544.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538311286.0: {
-          genTime:1538311286.0,
-          recTime:1538311290.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538311915.0: {
-          genTime:1538311915.0,
-          recTime:1538311921.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538312372.0: {
-          genTime:1538312372.0,
-          recTime:1538312375.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
-          },
-        },
-        1538313359.0: {
-          genTime:1538313359.0,
-          recTime:1538313362.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538313959.0: {
-          genTime:1538313959.0,
-          recTime:1538313960.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538314474.0: {
-          genTime:1538314474.0,
-          recTime:1538314477.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-105, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-84, active: false},
-          },
-        },
-        1538315098.0: {
-          genTime:1538315098.0,
-          recTime:1538315099.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538315970.0: {
-          genTime:1538315970.0,
-          recTime:1538315974.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538316704.0: {
-          genTime:1538316704.0,
-          recTime:1538316706.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-74, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538317348.0: {
-          genTime:1538317348.0,
-          recTime:1538317351.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-68, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538318030.0: {
-          genTime:1538318030.0,
-          recTime:1538318034.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538318443.0: {
-          genTime:1538318443.0,
-          recTime:1538318446.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538318760.0: {
-          genTime:1538318760.0,
-          recTime:1538318763.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-115, active: false},
-          },
-        },
-        1538319366.0: {
-          genTime:1538319366.0,
-          recTime:1538319368.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
-          },
-        },
-        1538319761.0: {
-          genTime:1538319761.0,
-          recTime:1538319763.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538320328.0: {
-          genTime:1538320328.0,
-          recTime:1538320333.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538320914.0: {
-          genTime:1538320914.0,
-          recTime:1538320916.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-105, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538321248.0: {
-          genTime:1538321248.0,
-          recTime:1538321258.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-78, active: false},
-          },
-        },
-        1538321728.0: {
-          genTime:1538321728.0,
-          recTime:1538321737.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538322455.0: {
-          genTime:1538322455.0,
-          recTime:1538322458.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
-          },
-        },
-        1538323374.0: {
-          genTime:1538323374.0,
-          recTime:1538323377.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-75, active: false},
-            "AT&T":{type:"4G", rssi:-112, active: false},
-          },
-        },
-        1538323703.0: {
-          genTime:1538323703.0,
-          recTime:1538323709.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-78, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538324495.0: {
-          genTime:1538324495.0,
-          recTime:1538324501.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538325327.0: {
-          genTime:1538325327.0,
-          recTime:1538325331.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538325717.0: {
-          genTime:1538325717.0,
-          recTime:1538325720.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-81, active: false},
-          },
-        },
-        1538326187.0: {
-          genTime:1538326187.0,
-          recTime:1538326191.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538326992.0: {
-          genTime:1538326992.0,
-          recTime:1538326994.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-82, active: false},
-          },
-        },
-        1538327765.0: {
-          genTime:1538327765.0,
-          recTime:1538327772.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538328409.0: {
-          genTime:1538328409.0,
-          recTime:1538328411.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-64, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538329029.0: {
-          genTime:1538329029.0,
-          recTime:1538329030.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538329308.0: {
-          genTime:1538329308.0,
-          recTime:1538329310.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538330135.0: {
-          genTime:1538330135.0,
-          recTime:1538330138.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-78, active: false},
-          },
-        },
-        1538330507.0: {
-          genTime:1538330507.0,
-          recTime:1538330515.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538331300.0: {
-          genTime:1538331300.0,
-          recTime:1538331304.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538331862.0: {
-          genTime:1538331862.0,
-          recTime:1538331865.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-108, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538332411.0: {
-          genTime:1538332411.0,
-          recTime:1538332412.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-102, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538332710.0: {
-          genTime:1538332710.0,
-          recTime:1538332716.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538333536.0: {
-          genTime:1538333536.0,
-          recTime:1538333538.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-108, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538334025.0: {
-          genTime:1538334025.0,
-          recTime:1538334026.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538334340.0: {
-          genTime:1538334340.0,
-          recTime:1538334346.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-71, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538335052.0: {
-          genTime:1538335052.0,
-          recTime:1538335057.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538335723.0: {
-          genTime:1538335723.0,
-          recTime:1538335730.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-84, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538336235.0: {
-          genTime:1538336235.0,
-          recTime:1538336241.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-63, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538336932.0: {
-          genTime:1538336932.0,
-          recTime:1538336934.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-106, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538337357.0: {
-          genTime:1538337357.0,
-          recTime:1538337358.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-71, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-119, active: false},
-          },
-        },
-        1538338268.0: {
-          genTime:1538338268.0,
-          recTime:1538338272.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-107, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-78, active: false},
-          },
-        },
-        1538338905.0: {
-          genTime:1538338905.0,
-          recTime:1538338911.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-65, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
-          },
-        },
-        1538339595.0: {
-          genTime:1538339595.0,
-          recTime:1538339607.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538340473.0: {
-          genTime:1538340473.0,
-          recTime:1538340478.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538340972.0: {
-          genTime:1538340972.0,
-          recTime:1538340976.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
+          1538722757.0: {
+            genTime:1538722757.0,
+            recTime:1538722763.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-70, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
           },
         },
       },
-    },
-  },
-  "2018-10-01": {
-    abc123: {
-      gps: {
-        1538394400.0: [40.4239572759178, -86.91342530617267],
-        1538395000.0: [40.43797984323298, -86.91570354994674],
-        1538395600.0: [40.43701737059814, -86.90960710661086],
-        1538396200.0: [40.432117445273335, -86.91647574199648],
-        1538396800.0: [40.4209352703258, -86.90952648906664],
-        1538397400.0: [40.42740124647114, -86.91928076447807],
-        1538398000.0: [40.43761261039076, -86.90956730162537],
-        1538398600.0: [40.42046385882586, -86.91368335561008],
-        1538399200.0: [40.42003417835254, -86.91417848956345],
-        1538399800.0: [40.43532048764206, -86.91150728342492],
-        1538400400.0: [40.42197349241035, -86.91862888758885],
-        1538401000.0: [40.420292253511, -86.91351454319957],
-        1538401600.0: [40.43390207507641, -86.90795011455208],
-        1538402200.0: [40.436490805664974, -86.9187394538804],
-        1538402800.0: [40.43113743486545, -86.90748165873762],
-        1538403400.0: [40.436377443399515, -86.90558820948446],
-        1538404000.0: [40.42188155508123, -86.92199025780646],
-        1538404600.0: [40.42904799389789, -86.90909016039629],
-        1538405200.0: [40.42305707315721, -86.90574040469427],
-        1538405800.0: [40.43037901440559, -86.90387957148653],
-        1538406400.0: [40.428647827044465, -86.92308602922047],
-        1538407000.0: [40.433289396804035, -86.9133138804601],
-        1538407600.0: [40.43524272890865, -86.92340548750758],
-        1538408200.0: [40.43739255168202, -86.91357201714077],
-        1538408800.0: [40.426173852783705, -86.90522963509706],
-        1538409400.0: [40.42922797000224, -86.91533750995791],
-        1538410000.0: [40.41889685078349, -86.9117149869692],
-        1538410600.0: [40.431958354080976, -86.91464337657123],
-        1538411200.0: [40.43238508074815, -86.90512611951715],
-        1538411800.0: [40.42249763062542, -86.9066031252422],
-        1538412400.0: [40.43517849516065, -86.91430321354059],
-        1538413000.0: [40.43656242707157, -86.90513951114578],
-        1538413600.0: [40.42896011997709, -86.9074750306628],
-        1538414200.0: [40.425518311900284, -86.9155587348858],
-        1538414800.0: [40.43858984032883, -86.9199487943556],
-        1538415400.0: [40.42744723666938, -86.92337714142457],
-        1538416000.0: [40.4327694399628, -86.91956152818975],
-        1538416600.0: [40.436578408010426, -86.91448705473626],
-        1538417200.0: [40.4218096977263, -86.91467653522534],
-        1538417800.0: [40.425407252344506, -86.91234316413112],
-        1538418400.0: [40.43265889603862, -86.91675949389476],
-        1538419000.0: [40.43359356585279, -86.91192926537971],
-        1538419600.0: [40.42237982889565, -86.92198301585353],
-        1538420200.0: [40.42437332512794, -86.92365413944864],
-        1538420800.0: [40.43826084592629, -86.91875237242799],
-        1538421400.0: [40.4375660387707, -86.91903701493355],
-        1538422000.0: [40.42074779435772, -86.91045294911898],
-        1538422600.0: [40.42056767283841, -86.92128165164144],
-        1538423200.0: [40.43548866563849, -86.91477725101862],
-        1538423800.0: [40.42871173182171, -86.90594648819514],
-        1538424400.0: [40.42112499818161, -86.90386310713616],
-        1538425000.0: [40.42977115389413, -86.91876762159337],
-        1538425600.0: [40.43576670272351, -86.9180219088896],
-        1538426200.0: [40.42978771310428, -86.91910667485115],
-        1538426800.0: [40.42035603902101, -86.90958508258532],
-        1538427400.0: [40.42597867686446, -86.90576756170385],
-      },
-      heartbeats: {
-        1538394400.0: {
-          genTime:1538394400.0,
-          recTime:1538394403.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
+      "04:00": {
+        gps: {
+          1538726400.0: { lat:40.432909641013495, lng:-86.91934607063305 },
+          1538726600.0: { lat:40.42348632716768, lng:-86.91563043235625 },
+          1538726800.0: { lat:40.436609823579516, lng:-86.92054293359783 },
+          1538727000.0: { lat:40.42166072058359, lng:-86.90835837286008 },
+          1538727200.0: { lat:40.437179638978336, lng:-86.91594934218394 },
+          1538727400.0: { lat:40.42651783071209, lng:-86.92231608654734 },
+          1538727600.0: { lat:40.43234304668709, lng:-86.91384993588727 },
+          1538727800.0: { lat:40.437913580467374, lng:-86.9068278262543 },
+          1538728000.0: { lat:40.43783069662322, lng:-86.91098803821981 },
+          1538728200.0: { lat:40.433011153650526, lng:-86.91279311804415 },
+          1538728400.0: { lat:40.42140434840295, lng:-86.91861958349163 },
+          1538728600.0: { lat:40.42474683528107, lng:-86.91269075410194 },
+          1538728800.0: { lat:40.42170163436011, lng:-86.9153149886424 },
+          1538729000.0: { lat:40.432901070504585, lng:-86.92264112248235 },
+          1538729200.0: { lat:40.42403363688407, lng:-86.90465478493833 },
+          1538729400.0: { lat:40.4317089588597, lng:-86.91235209449344 },
+          1538729600.0: { lat:40.435961339342136, lng:-86.91315366264182 },
+          1538729800.0: { lat:40.430407913040334, lng:-86.91653257259975 },
         },
-        1538394860.0: {
-          genTime:1538394860.0,
-          recTime:1538394871.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-121, active: false},
+        heartbeats: {
+          1538726400.0: {
+            genTime:1538726400.0,
+            recTime:1538726404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538395448.0: {
-          genTime:1538395448.0,
-          recTime:1538395455.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-71, active: false},
-            "AT&T":{type:"4G", rssi:-77, active: false},
+          1538726917.0: {
+            genTime:1538726917.0,
+            recTime:1538726920.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538396068.0: {
-          genTime:1538396068.0,
-          recTime:1538396074.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-105, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
+          1538727568.0: {
+            genTime:1538727568.0,
+            recTime:1538727570.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-111, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538396882.0: {
-          genTime:1538396882.0,
-          recTime:1538396885.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+          1538727817.0: {
+            genTime:1538727817.0,
+            recTime:1538727820.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538397443.0: {
-          genTime:1538397443.0,
-          recTime:1538397448.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-109, active: false},
+          1538728406.0: {
+            genTime:1538728406.0,
+            recTime:1538728407.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-71, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538397975.0: {
-          genTime:1538397975.0,
-          recTime:1538397980.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-70, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
+          1538728586.0: {
+            genTime:1538728586.0,
+            recTime:1538728593.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538398560.0: {
-          genTime:1538398560.0,
-          recTime:1538398561.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-101, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-74, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
+          1538729075.0: {
+            genTime:1538729075.0,
+            recTime:1538729078.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538399024.0: {
-          genTime:1538399024.0,
-          recTime:1538399026.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-97, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
-          },
-        },
-        1538399517.0: {
-          genTime:1538399517.0,
-          recTime:1538399522.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538400399.0: {
-          genTime:1538400399.0,
-          recTime:1538400400.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538401025.0: {
-          genTime:1538401025.0,
-          recTime:1538401029.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-99, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538401553.0: {
-          genTime:1538401553.0,
-          recTime:1538401556.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-71, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538402509.0: {
-          genTime:1538402509.0,
-          recTime:1538402511.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538402948.0: {
-          genTime:1538402948.0,
-          recTime:1538402954.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538403868.0: {
-          genTime:1538403868.0,
-          recTime:1538403872.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538404491.0: {
-          genTime:1538404491.0,
-          recTime:1538404495.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538405112.0: {
-          genTime:1538405112.0,
-          recTime:1538405114.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538405810.0: {
-          genTime:1538405810.0,
-          recTime:1538405812.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-76, active: false},
-          },
-        },
-        1538406482.0: {
-          genTime:1538406482.0,
-          recTime:1538406493.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
-          },
-        },
-        1538406982.0: {
-          genTime:1538406982.0,
-          recTime:1538406983.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-103, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538407890.0: {
-          genTime:1538407890.0,
-          recTime:1538407892.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538408361.0: {
-          genTime:1538408361.0,
-          recTime:1538408368.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-83, active: false},
-          },
-        },
-        1538409318.0: {
-          genTime:1538409318.0,
-          recTime:1538409323.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538409904.0: {
-          genTime:1538409904.0,
-          recTime:1538409905.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-68, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538410231.0: {
-          genTime:1538410231.0,
-          recTime:1538410235.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538410768.0: {
-          genTime:1538410768.0,
-          recTime:1538410776.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-97, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538411324.0: {
-          genTime:1538411324.0,
-          recTime:1538411333.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-102, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538411576.0: {
-          genTime:1538411576.0,
-          recTime:1538411581.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-103, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
-          },
-        },
-        1538412406.0: {
-          genTime:1538412406.0,
-          recTime:1538412413.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
-          },
-        },
-        1538412739.0: {
-          genTime:1538412739.0,
-          recTime:1538412742.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538413564.0: {
-          genTime:1538413564.0,
-          recTime:1538413568.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-96, active: false},
-          },
-        },
-        1538414484.0: {
-          genTime:1538414484.0,
-          recTime:1538414492.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-80, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538415177.0: {
-          genTime:1538415177.0,
-          recTime:1538415181.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-78, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-85, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538415960.0: {
-          genTime:1538415960.0,
-          recTime:1538415965.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-72, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-102, active: false},
-            "AT&T":{type:"4G", rssi:-79, active: false},
-          },
-        },
-        1538416255.0: {
-          genTime:1538416255.0,
-          recTime:1538416258.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538417105.0: {
-          genTime:1538417105.0,
-          recTime:1538417112.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-103, active: false},
-            "AT&T":{type:"4G", rssi:-84, active: false},
-          },
-        },
-        1538417515.0: {
-          genTime:1538417515.0,
-          recTime:1538417517.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-63, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538417908.0: {
-          genTime:1538417908.0,
-          recTime:1538417910.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538418344.0: {
-          genTime:1538418344.0,
-          recTime:1538418347.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538418928.0: {
-          genTime:1538418928.0,
-          recTime:1538418934.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-75, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538419478.0: {
-          genTime:1538419478.0,
-          recTime:1538419482.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
-          },
-        },
-        1538419993.0: {
-          genTime:1538419993.0,
-          recTime:1538419997.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-107, active: false},
-          },
-        },
-        1538420466.0: {
-          genTime:1538420466.0,
-          recTime:1538420468.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-95, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538420941.0: {
-          genTime:1538420941.0,
-          recTime:1538420945.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538421608.0: {
-          genTime:1538421608.0,
-          recTime:1538421615.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538422045.0: {
-          genTime:1538422045.0,
-          recTime:1538422050.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-78, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538422930.0: {
-          genTime:1538422930.0,
-          recTime:1538422932.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538423352.0: {
-          genTime:1538423352.0,
-          recTime:1538423353.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-66, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538423786.0: {
-          genTime:1538423786.0,
-          recTime:1538423788.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-94, active: false},
-            "AT&T":{type:"4G", rssi:-80, active: false},
-          },
-        },
-        1538424642.0: {
-          genTime:1538424642.0,
-          recTime:1538424644.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-103, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538425317.0: {
-          genTime:1538425317.0,
-          recTime:1538425323.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-71, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-81, active: false},
-          },
-        },
-        1538425830.0: {
-          genTime:1538425830.0,
-          recTime:1538425832.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-100, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538426287.0: {
-          genTime:1538426287.0,
-          recTime:1538426290.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-63, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-106, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538426699.0: {
-          genTime:1538426699.0,
-          recTime:1538426703.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
-          },
-        },
-        1538427366.0: {
-          genTime:1538427366.0,
-          recTime:1538427372.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-100, active: false},
-            "AT&T":{type:"4G", rssi:-71, active: false},
+          1538729376.0: {
+            genTime:1538729376.0,
+            recTime:1538729380.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
           },
         },
       },
-    },
-    ghi789: {
-      gps: {
-        1538394400.0: [40.43462367292115, -86.91504433427843],
-        1538395000.0: [40.42116506550864, -86.91943904587713],
-        1538395600.0: [40.435709608282714, -86.91549855031626],
-        1538396200.0: [40.42876676815495, -86.91460302928607],
-        1538396800.0: [40.420231039414766, -86.90406310701914],
-        1538397400.0: [40.42201197544466, -86.91648477274317],
-        1538398000.0: [40.4376506076717, -86.91641104423574],
-        1538398600.0: [40.423988091398535, -86.91045749438369],
-        1538399200.0: [40.434070969903125, -86.9177113687708],
-        1538399800.0: [40.42436553662787, -86.90392982197137],
-        1538400400.0: [40.43305050326742, -86.90533894545784],
-        1538401000.0: [40.433353740448204, -86.91097154599355],
-        1538401600.0: [40.42610039230289, -86.91044415799703],
-        1538402200.0: [40.423635050784156, -86.90406569371599],
-        1538402800.0: [40.43238251717512, -86.9051861763391],
-        1538403400.0: [40.42808598814788, -86.91105551422474],
-        1538404000.0: [40.42042567558384, -86.91664827259629],
-        1538404600.0: [40.426850380155855, -86.91760107006797],
-        1538405200.0: [40.43370530865742, -86.91711374908779],
-        1538405800.0: [40.418993370348204, -86.90650526227222],
-        1538406400.0: [40.42811335764383, -86.91165043166633],
-        1538407000.0: [40.42089793519375, -86.90997782952519],
-        1538407600.0: [40.43634429545049, -86.91225392459796],
-        1538408200.0: [40.430941489758204, -86.91659831667009],
-        1538408800.0: [40.438367079476656, -86.9148429354005],
-        1538409400.0: [40.42713253277082, -86.90695202649438],
-        1538410000.0: [40.42801975359059, -86.9162160505731],
-        1538410600.0: [40.429395408706846, -86.92278613787279],
-        1538411200.0: [40.43625775980455, -86.90796086686473],
-        1538411800.0: [40.42011043931438, -86.9078544226412],
-        1538412400.0: [40.43324756784026, -86.91238938860522],
-        1538413000.0: [40.423642222101606, -86.91638079357874],
-        1538413600.0: [40.42454748298049, -86.9132033674872],
-        1538414200.0: [40.424991000978885, -86.90815020617738],
-        1538414800.0: [40.42534871773228, -86.91509014559642],
-        1538415400.0: [40.41872742762903, -86.92273974069337],
-        1538416000.0: [40.421004768498435, -86.92363248774484],
-        1538416600.0: [40.429292518656816, -86.90457375182156],
-        1538417200.0: [40.42018705910631, -86.92094715087354],
-        1538417800.0: [40.426922844114195, -86.92342563640534],
-        1538418400.0: [40.431735998202996, -86.91633691847981],
-        1538419000.0: [40.434351352865896, -86.91746307525594],
-        1538419600.0: [40.42681655128748, -86.92181637407027],
-        1538420200.0: [40.419938441205744, -86.91649646416224],
-        1538420800.0: [40.43518879565303, -86.90883378839875],
-        1538421400.0: [40.41899547644061, -86.91638895574053],
-        1538422000.0: [40.437686202024516, -86.90520995378418],
-        1538422600.0: [40.41969006400264, -86.91439521135487],
-        1538423200.0: [40.42528799363744, -86.91183367435373],
-        1538423800.0: [40.42473533422532, -86.91236894248229],
-        1538424400.0: [40.42998458536994, -86.90499977111708],
-        1538425000.0: [40.432244960327516, -86.91496643812694],
-        1538425600.0: [40.43005849959035, -86.91029963761174],
-        1538426200.0: [40.42546100347905, -86.90570648923153],
-        1538426800.0: [40.43400635054424, -86.90463638729409],
-        1538427400.0: [40.422526970055706, -86.91020589937766],
+      "05:00": {
+        gps: {
+          1538730000.0: { lat:40.42021234781562, lng:-86.91296048754793 },
+          1538730200.0: { lat:40.43024554824327, lng:-86.91498424088653 },
+          1538730400.0: { lat:40.43156636483036, lng:-86.9049440932322 },
+          1538730600.0: { lat:40.419685258302984, lng:-86.91105397005775 },
+          1538730800.0: { lat:40.435414904671305, lng:-86.91921808647983 },
+          1538731000.0: { lat:40.433032124667626, lng:-86.90898068323425 },
+          1538731200.0: { lat:40.42379544922243, lng:-86.92132435327918 },
+          1538731400.0: { lat:40.43135847228105, lng:-86.9201697759365 },
+          1538731600.0: { lat:40.428814448834515, lng:-86.90791026911783 },
+          1538731800.0: { lat:40.43331915148558, lng:-86.91340808365628 },
+          1538732000.0: { lat:40.42379655165593, lng:-86.90862837742738 },
+          1538732200.0: { lat:40.433764032006955, lng:-86.91684222499244 },
+          1538732400.0: { lat:40.435173193487984, lng:-86.9145234950731 },
+          1538732600.0: { lat:40.42425654004764, lng:-86.91721978162023 },
+          1538732800.0: { lat:40.430175938662266, lng:-86.92254194466416 },
+          1538733000.0: { lat:40.427163186996836, lng:-86.91196785035794 },
+          1538733200.0: { lat:40.42288796671455, lng:-86.92151516501556 },
+          1538733400.0: { lat:40.43844852960271, lng:-86.90542934485129 },
+        },
+        heartbeats: {
+          1538730000.0: {
+            genTime:1538730000.0,
+            recTime:1538730008.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538730432.0: {
+            genTime:1538730432.0,
+            recTime:1538730434.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-111, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538730994.0: {
+            genTime:1538730994.0,
+            recTime:1538730996.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538731623.0: {
+            genTime:1538731623.0,
+            recTime:1538731629.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-55, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538732031.0: {
+            genTime:1538732031.0,
+            recTime:1538732035.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538733202.0: {
+            genTime:1538733202.0,
+            recTime:1538733206.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+        },
       },
-      heartbeats: {
-        1538394400.0: {
-          genTime:1538394400.0,
-          recTime:1538394411.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-117, active: false},
+      "06:00": {
+        gps: {
+          1538733600.0: { lat:40.42334741017852, lng:-86.91940279767577 },
+          1538733800.0: { lat:40.42001380006634, lng:-86.90906850870354 },
+          1538734000.0: { lat:40.42305922680995, lng:-86.9044576176928 },
+          1538734200.0: { lat:40.42945027706638, lng:-86.92170454761819 },
+          1538734400.0: { lat:40.42137451453666, lng:-86.91570659725761 },
+          1538734600.0: { lat:40.429200583547846, lng:-86.91480817841258 },
+          1538734800.0: { lat:40.4350244708435, lng:-86.92238448962178 },
+          1538735000.0: { lat:40.43163631325377, lng:-86.90789222792522 },
+          1538735200.0: { lat:40.43372812574108, lng:-86.91387857102298 },
+          1538735400.0: { lat:40.43226896841144, lng:-86.91888562500698 },
+          1538735600.0: { lat:40.420533423356844, lng:-86.91888272421208 },
+          1538735800.0: { lat:40.43475770833203, lng:-86.91234868591813 },
+          1538736000.0: { lat:40.418884361336, lng:-86.91014344465977 },
+          1538736200.0: { lat:40.43323239854645, lng:-86.91325454599692 },
+          1538736400.0: { lat:40.42210787495797, lng:-86.92124191155987 },
+          1538736600.0: { lat:40.42029603813014, lng:-86.90521174296639 },
+          1538736800.0: { lat:40.41893177614026, lng:-86.90906694864881 },
+          1538737000.0: { lat:40.41889269663992, lng:-86.91360453942447 },
+        },
+        heartbeats: {
+          1538733600.0: {
+            genTime:1538733600.0,
+            recTime:1538733606.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538733948.0: {
+            genTime:1538733948.0,
+            recTime:1538733952.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-114, active: false, name:"AT&T"},
+            },
+          },
+          1538734554.0: {
+            genTime:1538734554.0,
+            recTime:1538734555.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538735078.0: {
+            genTime:1538735078.0,
+            recTime:1538735082.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538735612.0: {
+            genTime:1538735612.0,
+            recTime:1538735615.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538736237.0: {
+            genTime:1538736237.0,
+            recTime:1538736239.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-74, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538736642.0: {
+            genTime:1538736642.0,
+            recTime:1538736646.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538736759.0: {
+            genTime:1538736759.0,
+            recTime:1538736762.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
           },
         },
-        1538395147.0: {
-          genTime:1538395147.0,
-          recTime:1538395152.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-79, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
+      },
+      "08:00": {
+        gps: {
+          1538740800.0: { lat:40.42848206275666, lng:-86.90609961631127 },
+          1538741000.0: { lat:40.426085478263985, lng:-86.91288363003007 },
+          1538741200.0: { lat:40.423894800003936, lng:-86.91426128359393 },
+          1538741400.0: { lat:40.4217790677783, lng:-86.90638586537575 },
+          1538741600.0: { lat:40.431707777805144, lng:-86.92327898935932 },
+          1538741800.0: { lat:40.42325558792692, lng:-86.91048079665286 },
+          1538742000.0: { lat:40.420094307961485, lng:-86.91713777138537 },
+          1538742200.0: { lat:40.42764598998498, lng:-86.91318096490585 },
+          1538742400.0: { lat:40.43323651573434, lng:-86.91135851777575 },
+          1538742600.0: { lat:40.41973562965797, lng:-86.91345000438419 },
+          1538742800.0: { lat:40.43728856993625, lng:-86.91321602012826 },
+          1538743000.0: { lat:40.42614530386224, lng:-86.9063201941342 },
+          1538743200.0: { lat:40.42580235643506, lng:-86.90917819397914 },
+          1538743400.0: { lat:40.43302376566318, lng:-86.91342601466081 },
+          1538743600.0: { lat:40.42829705594565, lng:-86.91887378460119 },
+          1538743800.0: { lat:40.43375146020709, lng:-86.91246167638482 },
+          1538744000.0: { lat:40.41956216770776, lng:-86.90733321755518 },
+          1538744200.0: { lat:40.42191563642515, lng:-86.9081863305151 },
+        },
+        heartbeats: {
+          1538740800.0: {
+            genTime:1538740800.0,
+            recTime:1538740804.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538741210.0: {
+            genTime:1538741210.0,
+            recTime:1538741212.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538741958.0: {
+            genTime:1538741958.0,
+            recTime:1538741966.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-112, active: false, name:"AT&T"},
+            },
+          },
+          1538742628.0: {
+            genTime:1538742628.0,
+            recTime:1538742631.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-112, active: false, name:"AT&T"},
+            },
+          },
+          1538743356.0: {
+            genTime:1538743356.0,
+            recTime:1538743358.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538743770.0: {
+            genTime:1538743770.0,
+            recTime:1538743774.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538744083.0: {
+            genTime:1538744083.0,
+            recTime:1538744093.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
           },
         },
-        1538395655.0: {
-          genTime:1538395655.0,
-          recTime:1538395661.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-105, active: false},
+      },
+      "16:00": {
+        gps: {
+          1538769600.0: { lat:40.43285010669501, lng:-86.91836699287012 },
+          1538769800.0: { lat:40.4207634167389, lng:-86.92303164765775 },
+          1538770000.0: { lat:40.42971325961827, lng:-86.91641837370224 },
+          1538770200.0: { lat:40.42637890351684, lng:-86.91546610339383 },
+          1538770400.0: { lat:40.4219329411113, lng:-86.92210429873855 },
+          1538770600.0: { lat:40.43244448824926, lng:-86.91790636667416 },
+          1538770800.0: { lat:40.42192419194358, lng:-86.9108908416893 },
+          1538771000.0: { lat:40.43685240071345, lng:-86.92157070995302 },
+          1538771200.0: { lat:40.4231346445358, lng:-86.92043096130031 },
+          1538771400.0: { lat:40.420519534010275, lng:-86.91678343360988 },
+          1538771600.0: { lat:40.430952121340304, lng:-86.92243965071958 },
+          1538771800.0: { lat:40.42729015077956, lng:-86.92188494663793 },
+          1538772000.0: { lat:40.43612195402817, lng:-86.91554270333465 },
+          1538772200.0: { lat:40.43259582327795, lng:-86.9063986284445 },
+          1538772400.0: { lat:40.42278441890929, lng:-86.90898649351074 },
+          1538772600.0: { lat:40.42110246565085, lng:-86.91099507547386 },
+          1538772800.0: { lat:40.43840747268025, lng:-86.9170853757664 },
+          1538773000.0: { lat:40.4332937641442, lng:-86.91859018355944 },
+        },
+        heartbeats: {
+          1538769600.0: {
+            genTime:1538769600.0,
+            recTime:1538769604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538770025.0: {
+            genTime:1538770025.0,
+            recTime:1538770028.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538770385.0: {
+            genTime:1538770385.0,
+            recTime:1538770395.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538770986.0: {
+            genTime:1538770986.0,
+            recTime:1538770988.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538771558.0: {
+            genTime:1538771558.0,
+            recTime:1538771560.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538772237.0: {
+            genTime:1538772237.0,
+            recTime:1538772242.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538773115.0: {
+            genTime:1538773115.0,
+            recTime:1538773117.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
           },
         },
-        1538396282.0: {
-          genTime:1538396282.0,
-          recTime:1538396295.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-113, active: false},
+      },
+      "17:00": {
+        gps: {
+          1538773200.0: { lat:40.4260710347779, lng:-86.92372552417704 },
+          1538773400.0: { lat:40.425175967963504, lng:-86.91134406078294 },
+          1538773600.0: { lat:40.430235652786756, lng:-86.90822007362806 },
+          1538773800.0: { lat:40.42055872545738, lng:-86.91618050179584 },
+          1538774000.0: { lat:40.42882058314558, lng:-86.92021596856844 },
+          1538774200.0: { lat:40.43030322693252, lng:-86.9204256621853 },
+          1538774400.0: { lat:40.43640291976658, lng:-86.90621870957052 },
+          1538774600.0: { lat:40.43681766682305, lng:-86.91997260349694 },
+          1538774800.0: { lat:40.43386271782958, lng:-86.92253240145965 },
+          1538775000.0: { lat:40.420925346540216, lng:-86.91557403566553 },
+          1538775200.0: { lat:40.41926236926268, lng:-86.90580936972962 },
+          1538775400.0: { lat:40.421077946835254, lng:-86.92357686361261 },
+          1538775600.0: { lat:40.43318160120082, lng:-86.91002777845065 },
+          1538775800.0: { lat:40.43563721945743, lng:-86.90426326480464 },
+          1538776000.0: { lat:40.425454952459965, lng:-86.90727270080863 },
+          1538776200.0: { lat:40.42681729283745, lng:-86.91736839137398 },
+          1538776400.0: { lat:40.42610403476983, lng:-86.9113957002272 },
+          1538776600.0: { lat:40.42001945983654, lng:-86.90710501881517 },
+        },
+        heartbeats: {
+          1538773200.0: {
+            genTime:1538773200.0,
+            recTime:1538773208.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538773647.0: {
+            genTime:1538773647.0,
+            recTime:1538773650.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538774321.0: {
+            genTime:1538774321.0,
+            recTime:1538774324.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-114, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538774653.0: {
+            genTime:1538774653.0,
+            recTime:1538774658.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538774956.0: {
+            genTime:1538774956.0,
+            recTime:1538774958.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-71, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538775657.0: {
+            genTime:1538775657.0,
+            recTime:1538775664.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538776396.0: {
+            genTime:1538776396.0,
+            recTime:1538776397.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
           },
         },
-        1538396547.0: {
-          genTime:1538396547.0,
-          recTime:1538396551.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-76, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-110, active: false},
+      },
+      "18:00": {
+        gps: {
+          1538776800.0: { lat:40.4238071116697, lng:-86.91757550967408 },
+          1538777000.0: { lat:40.43772884697007, lng:-86.91570070498429 },
+          1538777200.0: { lat:40.43281842413746, lng:-86.9096482900912 },
+          1538777400.0: { lat:40.43599997060771, lng:-86.90696782396792 },
+          1538777600.0: { lat:40.423840230405126, lng:-86.91515931478399 },
+          1538777800.0: { lat:40.43030618663341, lng:-86.90389477080082 },
+          1538778000.0: { lat:40.43402181699343, lng:-86.91083839442321 },
+          1538778200.0: { lat:40.42032128191706, lng:-86.91722795273152 },
+          1538778400.0: { lat:40.419202464939, lng:-86.92249663190519 },
+          1538778600.0: { lat:40.43571450929926, lng:-86.9051091289203 },
+          1538778800.0: { lat:40.42079483726667, lng:-86.92252661711841 },
+          1538779000.0: { lat:40.43662256491861, lng:-86.91513741966403 },
+          1538779200.0: { lat:40.43297291499489, lng:-86.91047603712 },
+          1538779400.0: { lat:40.423635209548095, lng:-86.90517217658673 },
+          1538779600.0: { lat:40.422409793934065, lng:-86.91739476208296 },
+          1538779800.0: { lat:40.42388873798462, lng:-86.91054253856096 },
+          1538780000.0: { lat:40.43032912146134, lng:-86.91862453420006 },
+          1538780200.0: { lat:40.42312272732728, lng:-86.92268040426829 },
+        },
+        heartbeats: {
+          1538776800.0: {
+            genTime:1538776800.0,
+            recTime:1538776802.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538777414.0: {
+            genTime:1538777414.0,
+            recTime:1538777421.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538778364.0: {
+            genTime:1538778364.0,
+            recTime:1538778370.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538779396.0: {
+            genTime:1538779396.0,
+            recTime:1538779404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538779827.0: {
+            genTime:1538779827.0,
+            recTime:1538779838.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-61, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
           },
         },
-        1538396853.0: {
-          genTime:1538396853.0,
-          recTime:1538396857.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-81, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-102, active: false},
+      },
+      "19:00": {
+        gps: {
+          1538780400.0: { lat:40.43292568674038, lng:-86.913159820863 },
+          1538780600.0: { lat:40.42268439973689, lng:-86.91896991252574 },
+          1538780800.0: { lat:40.42776156267386, lng:-86.91330408732797 },
+          1538781000.0: { lat:40.43639642419535, lng:-86.92091496094675 },
+          1538781200.0: { lat:40.423293516571285, lng:-86.91459532141765 },
+          1538781400.0: { lat:40.43147389728122, lng:-86.90766521810112 },
+          1538781600.0: { lat:40.42153281475471, lng:-86.91887205914658 },
+          1538781800.0: { lat:40.42373177725381, lng:-86.92093920087925 },
+          1538782000.0: { lat:40.42548735367674, lng:-86.9125854013381 },
+          1538782200.0: { lat:40.436280399303584, lng:-86.91236932112427 },
+          1538782400.0: { lat:40.43662414810814, lng:-86.91282059267901 },
+          1538782600.0: { lat:40.428817021843045, lng:-86.90616087833546 },
+          1538782800.0: { lat:40.433156626596784, lng:-86.91337511509263 },
+          1538783000.0: { lat:40.43615381740783, lng:-86.92282529245878 },
+          1538783200.0: { lat:40.43603464746623, lng:-86.91100678182754 },
+          1538783400.0: { lat:40.42888069846687, lng:-86.91795705214678 },
+          1538783600.0: { lat:40.435701776947994, lng:-86.91044877552584 },
+          1538783800.0: { lat:40.4361847327014, lng:-86.9166382923935 },
+        },
+        heartbeats: {
+          1538780400.0: {
+            genTime:1538780400.0,
+            recTime:1538780402.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-68, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538780858.0: {
+            genTime:1538780858.0,
+            recTime:1538780861.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538781008.0: {
+            genTime:1538781008.0,
+            recTime:1538781016.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538781372.0: {
+            genTime:1538781372.0,
+            recTime:1538781374.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538782068.0: {
+            genTime:1538782068.0,
+            recTime:1538782073.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538782826.0: {
+            genTime:1538782826.0,
+            recTime:1538782831.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-64, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538783491.0: {
+            genTime:1538783491.0,
+            recTime:1538783497.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-59, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
           },
         },
-        1538397279.0: {
-          genTime:1538397279.0,
-          recTime:1538397281.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
+      },
+      "21:00": {
+        gps: {
+          1538787600.0: { lat:40.422799933316156, lng:-86.9077222804863 },
+          1538787800.0: { lat:40.43432068300701, lng:-86.91904067053859 },
+          1538788000.0: { lat:40.420463652348225, lng:-86.90960479961309 },
+          1538788200.0: { lat:40.42355104218581, lng:-86.90888716334278 },
+          1538788400.0: { lat:40.42364887087546, lng:-86.9237429090861 },
+          1538788600.0: { lat:40.42006082274106, lng:-86.92107370106086 },
+          1538788800.0: { lat:40.4267329145416, lng:-86.92222562737521 },
+          1538789000.0: { lat:40.43540583795706, lng:-86.92175097894261 },
+          1538789200.0: { lat:40.43789315449875, lng:-86.91142214845806 },
+          1538789400.0: { lat:40.438633580128794, lng:-86.91486128210454 },
+          1538789600.0: { lat:40.43597048863057, lng:-86.91163426730654 },
+          1538789800.0: { lat:40.42060028079145, lng:-86.91936129978036 },
+          1538790000.0: { lat:40.42468364315397, lng:-86.90620036463642 },
+          1538790200.0: { lat:40.421030210240914, lng:-86.92193003534481 },
+          1538790400.0: { lat:40.43097452781814, lng:-86.90383846109586 },
+          1538790600.0: { lat:40.42358680499724, lng:-86.90850388609849 },
+          1538790800.0: { lat:40.433271290395346, lng:-86.91156099445017 },
+          1538791000.0: { lat:40.43047259893785, lng:-86.90970657232141 },
+        },
+        heartbeats: {
+          1538787600.0: {
+            genTime:1538787600.0,
+            recTime:1538787606.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-71, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538788458.0: {
+            genTime:1538788458.0,
+            recTime:1538788462.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538789249.0: {
+            genTime:1538789249.0,
+            recTime:1538789255.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538789988.0: {
+            genTime:1538789988.0,
+            recTime:1538789994.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-108, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538790713.0: {
+            genTime:1538790713.0,
+            recTime:1538790719.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
           },
         },
-        1538397906.0: {
-          genTime:1538397906.0,
-          recTime:1538397912.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-108, active: false},
-            "AT&T":{type:"4G", rssi:-73, active: false},
-          },
+      },
+      "23:00": {
+        gps: {
+          1538794800.0: { lat:40.423717641586514, lng:-86.92039563382662 },
+          1538795000.0: { lat:40.43577488191638, lng:-86.90381669589186 },
+          1538795200.0: { lat:40.418671556224005, lng:-86.91218406770733 },
+          1538795400.0: { lat:40.43565377765471, lng:-86.90556168543819 },
+          1538795600.0: { lat:40.43808480971422, lng:-86.90743354382349 },
+          1538795800.0: { lat:40.42309826276587, lng:-86.90595072271957 },
+          1538796000.0: { lat:40.42174086257951, lng:-86.90554599285163 },
+          1538796200.0: { lat:40.43023864120691, lng:-86.92259325396033 },
+          1538796400.0: { lat:40.42508574060497, lng:-86.90387483080077 },
+          1538796600.0: { lat:40.43539022228916, lng:-86.90552421271342 },
+          1538796800.0: { lat:40.43202192124363, lng:-86.91098482914758 },
+          1538797000.0: { lat:40.42174061616783, lng:-86.90729851884393 },
+          1538797200.0: { lat:40.4210466315676, lng:-86.90724036778721 },
+          1538797400.0: { lat:40.4313752755735, lng:-86.91581690069165 },
+          1538797600.0: { lat:40.438233286607684, lng:-86.91472766483773 },
+          1538797800.0: { lat:40.41940994827709, lng:-86.90920458141656 },
+          1538798000.0: { lat:40.433192722209114, lng:-86.91883576060408 },
+          1538798200.0: { lat:40.42015334208317, lng:-86.92372526665079 },
         },
-        1538398948.0: {
-          genTime:1538398948.0,
-          recTime:1538398955.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-81, active: false},
-            "AT&T":{type:"4G", rssi:-113, active: false},
+        heartbeats: {
+          1538794800.0: {
+            genTime:1538794800.0,
+            recTime:1538794802.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538399371.0: {
-          genTime:1538399371.0,
-          recTime:1538399374.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
+          1538795466.0: {
+            genTime:1538795466.0,
+            recTime:1538795469.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538400203.0: {
-          genTime:1538400203.0,
-          recTime:1538400206.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-70, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-102, active: false},
-            "AT&T":{type:"4G", rssi:-86, active: false},
+          1538795979.0: {
+            genTime:1538795979.0,
+            recTime:1538795982.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538400743.0: {
-          genTime:1538400743.0,
-          recTime:1538400746.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-93, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-88, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
+          1538796614.0: {
+            genTime:1538796614.0,
+            recTime:1538796621.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538401350.0: {
-          genTime:1538401350.0,
-          recTime:1538401353.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-72, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
+          1538797145.0: {
+            genTime:1538797145.0,
+            recTime:1538797152.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-75, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538402448.0: {
-          genTime:1538402448.0,
-          recTime:1538402452.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-73, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-69, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
+          1538797681.0: {
+            genTime:1538797681.0,
+            recTime:1538797683.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
           },
-        },
-        1538402782.0: {
-          genTime:1538402782.0,
-          recTime:1538402785.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538403591.0: {
-          genTime:1538403591.0,
-          recTime:1538403600.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-97, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-73, active: false},
-            "AT&T":{type:"4G", rssi:-98, active: false},
-          },
-        },
-        1538404170.0: {
-          genTime:1538404170.0,
-          recTime:1538404175.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-96, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
-          },
-        },
-        1538405120.0: {
-          genTime:1538405120.0,
-          recTime:1538405125.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538405531.0: {
-          genTime:1538405531.0,
-          recTime:1538405536.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-78, active: false},
-          },
-        },
-        1538405736.0: {
-          genTime:1538405736.0,
-          recTime:1538405738.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-70, active: false},
-          },
-        },
-        1538406512.0: {
-          genTime:1538406512.0,
-          recTime:1538406517.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538407266.0: {
-          genTime:1538407266.0,
-          recTime:1538407269.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-92, active: false},
-          },
-        },
-        1538407945.0: {
-          genTime:1538407945.0,
-          recTime:1538407950.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-85, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-70, active: false},
-            "AT&T":{type:"4G", rssi:-111, active: false},
-          },
-        },
-        1538408731.0: {
-          genTime:1538408731.0,
-          recTime:1538408735.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-89, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-98, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538409074.0: {
-          genTime:1538409074.0,
-          recTime:1538409076.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-62, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-109, active: false},
-            "AT&T":{type:"4G", rssi:-110, active: false},
-          },
-        },
-        1538409784.0: {
-          genTime:1538409784.0,
-          recTime:1538409790.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
-          },
-        },
-        1538410129.0: {
-          genTime:1538410129.0,
-          recTime:1538410132.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-101, active: false},
-          },
-        },
-        1538410368.0: {
-          genTime:1538410368.0,
-          recTime:1538410370.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-100, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-78, active: false},
-            "AT&T":{type:"4G", rssi:-100, active: false},
-          },
-        },
-        1538410712.0: {
-          genTime:1538410712.0,
-          recTime:1538410718.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-96, active: false},
-            "AT&T":{type:"4G", rssi:-85, active: false},
-          },
-        },
-        1538410950.0: {
-          genTime:1538410950.0,
-          recTime:1538410953.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-74, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-111, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538411646.0: {
-          genTime:1538411646.0,
-          recTime:1538411647.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-95, active: false},
-          },
-        },
-        1538412333.0: {
-          genTime:1538412333.0,
-          recTime:1538412335.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-91, active: false},
-          },
-        },
-        1538413217.0: {
-          genTime:1538413217.0,
-          recTime:1538413223.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-96, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-87, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538413978.0: {
-          genTime:1538413978.0,
-          recTime:1538413983.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-92, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-75, active: false},
-          },
-        },
-        1538414618.0: {
-          genTime:1538414618.0,
-          recTime:1538414619.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-106, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538415322.0: {
-          genTime:1538415322.0,
-          recTime:1538415328.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-91, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-101, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538415741.0: {
-          genTime:1538415741.0,
-          recTime:1538415743.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-106, active: false},
-          },
-        },
-        1538416413.0: {
-          genTime:1538416413.0,
-          recTime:1538416416.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-86, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-91, active: false},
-            "AT&T":{type:"4G", rssi:-110, active: false},
-          },
-        },
-        1538417094.0: {
-          genTime:1538417094.0,
-          recTime:1538417098.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-67, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538417751.0: {
-          genTime:1538417751.0,
-          recTime:1538417756.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-59, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538418246.0: {
-          genTime:1538418246.0,
-          recTime:1538418250.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-78, active: false},
-            "AT&T":{type:"4G", rssi:-97, active: false},
-          },
-        },
-        1538418603.0: {
-          genTime:1538418603.0,
-          recTime:1538418604.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-90, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-99, active: false},
-          },
-        },
-        1538419044.0: {
-          genTime:1538419044.0,
-          recTime:1538419053.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-87, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-86, active: false},
-            "AT&T":{type:"4G", rssi:-67, active: false},
-          },
-        },
-        1538419443.0: {
-          genTime:1538419443.0,
-          recTime:1538419445.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-95, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-121, active: false},
-          },
-        },
-        1538419744.0: {
-          genTime:1538419744.0,
-          recTime:1538419747.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-82, active: false},
-            "AT&T":{type:"4G", rssi:-87, active: false},
-          },
-        },
-        1538420723.0: {
-          genTime:1538420723.0,
-          recTime:1538420725.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-80, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-104, active: false},
-            "AT&T":{type:"4G", rssi:-103, active: false},
-          },
-        },
-        1538421333.0: {
-          genTime:1538421333.0,
-          recTime:1538421335.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
-          },
-        },
-        1538421983.0: {
-          genTime:1538421983.0,
-          recTime:1538421985.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-77, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-77, active: false},
-            "AT&T":{type:"4G", rssi:-120, active: false},
-          },
-        },
-        1538422793.0: {
-          genTime:1538422793.0,
-          recTime:1538422802.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-83, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-92, active: false},
-            "AT&T":{type:"4G", rssi:-89, active: false},
-          },
-        },
-        1538423415.0: {
-          genTime:1538423415.0,
-          recTime:1538423417.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-79, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-99, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538423992.0: {
-          genTime:1538423992.0,
-          recTime:1538424003.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-84, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-89, active: false},
-            "AT&T":{type:"4G", rssi:-90, active: false},
-          },
-        },
-        1538424587.0: {
-          genTime:1538424587.0,
-          recTime:1538424597.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-75, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-93, active: false},
-            "AT&T":{type:"4G", rssi:-88, active: false},
-          },
-        },
-        1538424965.0: {
-          genTime:1538424965.0,
-          recTime:1538424969.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-88, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-90, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538425503.0: {
-          genTime:1538425503.0,
-          recTime:1538425508.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-94, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-97, active: false},
-            "AT&T":{type:"4G", rssi:-93, active: false},
-          },
-        },
-        1538426180.0: {
-          genTime:1538426180.0,
-          recTime:1538426189.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-70, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-76, active: false},
-            "AT&T":{type:"4G", rssi:-94, active: false},
-          },
-        },
-        1538426528.0: {
-          genTime:1538426528.0,
-          recTime:1538426531.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-97, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-74, active: false},
-            "AT&T":{type:"4G", rssi:-104, active: false},
-          },
-        },
-        1538427079.0: {
-          genTime:1538427079.0,
-          recTime:1538427086.0,
-          interfaces:{
-            "Verizon":{type:"3G", rssi:-82, active: true},
-            "Mobile HotSpot":{type:"Wifi", rssi:-83, active: false},
-            "AT&T":{type:"4G", rssi:-69, active: false},
+          1538798030.0: {
+            genTime:1538798030.0,
+            recTime:1538798033.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
           },
         },
       },
     },
   },
-}
+  "def456": {
+    "2018-09-30": {
+      "00:00": {
+        gps: {
+          1538280000.0: { lat:40.419066069421646, lng:-86.90420774301366 },
+          1538280200.0: { lat:40.419998053648364, lng:-86.9072619857604 },
+          1538280400.0: { lat:40.42142352025566, lng:-86.92004406614039 },
+          1538280600.0: { lat:40.422315485098, lng:-86.91948266386176 },
+          1538280800.0: { lat:40.42794716901041, lng:-86.91780861950346 },
+          1538281000.0: { lat:40.42440253632247, lng:-86.914130119908 },
+          1538281200.0: { lat:40.43731888517249, lng:-86.91706200209653 },
+          1538281400.0: { lat:40.438331069886985, lng:-86.90421056956593 },
+          1538281600.0: { lat:40.43752659428854, lng:-86.91491538427067 },
+          1538281800.0: { lat:40.436210666760005, lng:-86.90754445102539 },
+          1538282000.0: { lat:40.41901308151667, lng:-86.91277070489636 },
+          1538282200.0: { lat:40.42893176278157, lng:-86.9066982915594 },
+          1538282400.0: { lat:40.41939082053242, lng:-86.90815242778592 },
+          1538282600.0: { lat:40.420114045374724, lng:-86.91721617890093 },
+          1538282800.0: { lat:40.41895692509298, lng:-86.91414156159583 },
+          1538283000.0: { lat:40.42020996104315, lng:-86.91139468640846 },
+          1538283200.0: { lat:40.4333583825882, lng:-86.90680153014476 },
+          1538283400.0: { lat:40.432035374276566, lng:-86.92160485101991 },
+        },
+        heartbeats: {
+          1538280000.0: {
+            genTime:1538280000.0,
+            recTime:1538280003.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538280898.0: {
+            genTime:1538280898.0,
+            recTime:1538280905.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538281804.0: {
+            genTime:1538281804.0,
+            recTime:1538281814.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538282689.0: {
+            genTime:1538282689.0,
+            recTime:1538282694.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-75, active: false, name:"AT&T"},
+            },
+          },
+          1538283020.0: {
+            genTime:1538283020.0,
+            recTime:1538283024.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-73, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "05:00": {
+        gps: {
+          1538298000.0: { lat:40.42656395550929, lng:-86.91287309251157 },
+          1538298200.0: { lat:40.43415701873589, lng:-86.92165026605686 },
+          1538298400.0: { lat:40.42582834642606, lng:-86.90598715444756 },
+          1538298600.0: { lat:40.42033218851201, lng:-86.91714103837225 },
+          1538298800.0: { lat:40.4243617265034, lng:-86.91227528878204 },
+          1538299000.0: { lat:40.43534858453001, lng:-86.90641498932631 },
+          1538299200.0: { lat:40.43627515462053, lng:-86.92161857291173 },
+          1538299400.0: { lat:40.43815824798303, lng:-86.9101821901071 },
+          1538299600.0: { lat:40.438162125602304, lng:-86.9188547622448 },
+          1538299800.0: { lat:40.42067309281706, lng:-86.91878008394644 },
+          1538300000.0: { lat:40.41867408716234, lng:-86.92171365388921 },
+          1538300200.0: { lat:40.42271841261667, lng:-86.91713744320242 },
+          1538300400.0: { lat:40.41940707651586, lng:-86.9233806912765 },
+          1538300600.0: { lat:40.43628377418445, lng:-86.91476148430235 },
+          1538300800.0: { lat:40.43805840376085, lng:-86.91075714613481 },
+          1538301000.0: { lat:40.42859510895536, lng:-86.91562125663378 },
+          1538301200.0: { lat:40.42501134582019, lng:-86.92199591035748 },
+          1538301400.0: { lat:40.42139399608135, lng:-86.91175977399038 },
+        },
+        heartbeats: {
+          1538298000.0: {
+            genTime:1538298000.0,
+            recTime:1538298002.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538298640.0: {
+            genTime:1538298640.0,
+            recTime:1538298642.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-74, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538299533.0: {
+            genTime:1538299533.0,
+            recTime:1538299536.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538299922.0: {
+            genTime:1538299922.0,
+            recTime:1538299927.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538300677.0: {
+            genTime:1538300677.0,
+            recTime:1538300680.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-71, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538301344.0: {
+            genTime:1538301344.0,
+            recTime:1538301349.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-104, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "06:00": {
+        gps: {
+          1538301600.0: { lat:40.42561604509592, lng:-86.91601363020335 },
+          1538301800.0: { lat:40.43273218857307, lng:-86.90569481541502 },
+          1538302000.0: { lat:40.42478662690562, lng:-86.9171018230629 },
+          1538302200.0: { lat:40.42585798343466, lng:-86.90424161121209 },
+          1538302400.0: { lat:40.43154193158865, lng:-86.91030157098119 },
+          1538302600.0: { lat:40.435983282091485, lng:-86.90587922287894 },
+          1538302800.0: { lat:40.430443000281095, lng:-86.92361813223441 },
+          1538303000.0: { lat:40.43511203064615, lng:-86.91959913581266 },
+          1538303200.0: { lat:40.43136283605405, lng:-86.90611645084827 },
+          1538303400.0: { lat:40.431133087286675, lng:-86.90717911117298 },
+          1538303600.0: { lat:40.423526224869754, lng:-86.91127423495934 },
+          1538303800.0: { lat:40.43495521296669, lng:-86.91405384705173 },
+          1538304000.0: { lat:40.42563948153691, lng:-86.91295758149074 },
+          1538304200.0: { lat:40.43369322460949, lng:-86.91855551731601 },
+          1538304400.0: { lat:40.418974287680214, lng:-86.90861508387562 },
+          1538304600.0: { lat:40.43187674129973, lng:-86.90843567492279 },
+          1538304800.0: { lat:40.42158679809287, lng:-86.91886648493949 },
+          1538305000.0: { lat:40.43357544028836, lng:-86.9169554757207 },
+        },
+        heartbeats: {
+          1538301600.0: {
+            genTime:1538301600.0,
+            recTime:1538301604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538302154.0: {
+            genTime:1538302154.0,
+            recTime:1538302159.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538302701.0: {
+            genTime:1538302701.0,
+            recTime:1538302708.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538303222.0: {
+            genTime:1538303222.0,
+            recTime:1538303228.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538304089.0: {
+            genTime:1538304089.0,
+            recTime:1538304094.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538305101.0: {
+            genTime:1538305101.0,
+            recTime:1538305107.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "08:00": {
+        gps: {
+          1538308800.0: { lat:40.43145659132642, lng:-86.91825910965568 },
+          1538309000.0: { lat:40.42733793722607, lng:-86.91821721681859 },
+          1538309200.0: { lat:40.436087757174896, lng:-86.91882640966145 },
+          1538309400.0: { lat:40.425952840135544, lng:-86.91388586860816 },
+          1538309600.0: { lat:40.433711805186455, lng:-86.91481254578594 },
+          1538309800.0: { lat:40.43565286970401, lng:-86.90541786190187 },
+          1538310000.0: { lat:40.424732182411155, lng:-86.90832656105556 },
+          1538310200.0: { lat:40.431180559308366, lng:-86.90619195239555 },
+          1538310400.0: { lat:40.42151617479167, lng:-86.90713591015458 },
+          1538310600.0: { lat:40.424808231543004, lng:-86.90817348197548 },
+          1538310800.0: { lat:40.4234640180626, lng:-86.9182729335483 },
+          1538311000.0: { lat:40.43295407228467, lng:-86.9076585274236 },
+          1538311200.0: { lat:40.42022139324398, lng:-86.91398399144636 },
+          1538311400.0: { lat:40.42300297153637, lng:-86.91058344970999 },
+          1538311600.0: { lat:40.423491271614026, lng:-86.91597623465066 },
+          1538311800.0: { lat:40.43679485445271, lng:-86.91654232578917 },
+          1538312000.0: { lat:40.432253718083146, lng:-86.90491467857422 },
+          1538312200.0: { lat:40.42798813211005, lng:-86.91245185287102 },
+        },
+        heartbeats: {
+          1538308800.0: {
+            genTime:1538308800.0,
+            recTime:1538308811.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538309335.0: {
+            genTime:1538309335.0,
+            recTime:1538309336.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538309985.0: {
+            genTime:1538309985.0,
+            recTime:1538309988.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-114, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538310597.0: {
+            genTime:1538310597.0,
+            recTime:1538310600.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538310906.0: {
+            genTime:1538310906.0,
+            recTime:1538310908.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538311377.0: {
+            genTime:1538311377.0,
+            recTime:1538311382.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538312380.0: {
+            genTime:1538312380.0,
+            recTime:1538312383.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "09:00": {
+        gps: {
+          1538312400.0: { lat:40.420859446009295, lng:-86.91237909460796 },
+          1538312600.0: { lat:40.43830282475932, lng:-86.90855195189967 },
+          1538312800.0: { lat:40.422085430662925, lng:-86.92127470998282 },
+          1538313000.0: { lat:40.43487754339023, lng:-86.9186977178834 },
+          1538313200.0: { lat:40.434872572044036, lng:-86.91972900380067 },
+          1538313400.0: { lat:40.42881075892589, lng:-86.91432667193556 },
+          1538313600.0: { lat:40.42052572227829, lng:-86.91777303954055 },
+          1538313800.0: { lat:40.42759072614601, lng:-86.91724317559925 },
+          1538314000.0: { lat:40.4208340056037, lng:-86.90557144550509 },
+          1538314200.0: { lat:40.42238504751735, lng:-86.91794480801882 },
+          1538314400.0: { lat:40.42147330946668, lng:-86.90714925885047 },
+          1538314600.0: { lat:40.42662949372251, lng:-86.90732840279605 },
+          1538314800.0: { lat:40.42967264573957, lng:-86.92156645447035 },
+          1538315000.0: { lat:40.42179002511618, lng:-86.91741680767487 },
+          1538315200.0: { lat:40.4348485143925, lng:-86.90861154253072 },
+          1538315400.0: { lat:40.43811182205862, lng:-86.91962487142307 },
+          1538315600.0: { lat:40.43050652669799, lng:-86.90386189431888 },
+          1538315800.0: { lat:40.43659022455961, lng:-86.90923051968333 },
+        },
+        heartbeats: {
+          1538312400.0: {
+            genTime:1538312400.0,
+            recTime:1538312403.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538312958.0: {
+            genTime:1538312958.0,
+            recTime:1538312960.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538313790.0: {
+            genTime:1538313790.0,
+            recTime:1538313792.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-114, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-74, active: false, name:"AT&T"},
+            },
+          },
+          1538314274.0: {
+            genTime:1538314274.0,
+            recTime:1538314282.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538314351.0: {
+            genTime:1538314351.0,
+            recTime:1538314352.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538314812.0: {
+            genTime:1538314812.0,
+            recTime:1538314824.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538315607.0: {
+            genTime:1538315607.0,
+            recTime:1538315613.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538315987.0: {
+            genTime:1538315987.0,
+            recTime:1538315994.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "10:00": {
+        gps: {
+          1538316000.0: { lat:40.42831536646474, lng:-86.92123923305722 },
+          1538316200.0: { lat:40.42186787522242, lng:-86.91190957097155 },
+          1538316400.0: { lat:40.436098594411625, lng:-86.92213283915008 },
+          1538316600.0: { lat:40.42257854358429, lng:-86.91902177641786 },
+          1538316800.0: { lat:40.42386060840537, lng:-86.91753566016367 },
+          1538317000.0: { lat:40.42125115831539, lng:-86.91447179893359 },
+          1538317200.0: { lat:40.43592299257418, lng:-86.90665976282673 },
+          1538317400.0: { lat:40.42654412886259, lng:-86.91072836643806 },
+          1538317600.0: { lat:40.42931276560244, lng:-86.90609662420474 },
+          1538317800.0: { lat:40.42353319418407, lng:-86.9170796694497 },
+          1538318000.0: { lat:40.43118455942979, lng:-86.91555675515139 },
+          1538318200.0: { lat:40.43332921202191, lng:-86.92049587615644 },
+          1538318400.0: { lat:40.42189034737131, lng:-86.9232433471265 },
+          1538318600.0: { lat:40.42831405506584, lng:-86.91240572494539 },
+          1538318800.0: { lat:40.425416039657556, lng:-86.91371005086363 },
+          1538319000.0: { lat:40.42947306372688, lng:-86.92368795250079 },
+          1538319200.0: { lat:40.42745942975081, lng:-86.91904051080354 },
+          1538319400.0: { lat:40.42905968260962, lng:-86.90456352183624 },
+        },
+        heartbeats: {
+          1538316000.0: {
+            genTime:1538316000.0,
+            recTime:1538316004.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538316342.0: {
+            genTime:1538316342.0,
+            recTime:1538316348.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538317046.0: {
+            genTime:1538317046.0,
+            recTime:1538317047.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538317582.0: {
+            genTime:1538317582.0,
+            recTime:1538317595.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538318250.0: {
+            genTime:1538318250.0,
+            recTime:1538318255.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538318788.0: {
+            genTime:1538318788.0,
+            recTime:1538318795.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538319395.0: {
+            genTime:1538319395.0,
+            recTime:1538319400.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "11:00": {
+        gps: {
+          1538319600.0: { lat:40.42279215993545, lng:-86.90578382574927 },
+          1538319800.0: { lat:40.43739572207704, lng:-86.91394216830216 },
+          1538320000.0: { lat:40.43787422015786, lng:-86.91321756720104 },
+          1538320200.0: { lat:40.42244988792217, lng:-86.91457261905876 },
+          1538320400.0: { lat:40.4260311121164, lng:-86.92296968202886 },
+          1538320600.0: { lat:40.42192801126788, lng:-86.91321391372094 },
+          1538320800.0: { lat:40.42138280864985, lng:-86.91630970752041 },
+          1538321000.0: { lat:40.43839793376453, lng:-86.91958400276593 },
+          1538321200.0: { lat:40.420293347630874, lng:-86.91756440296041 },
+          1538321400.0: { lat:40.42525306114708, lng:-86.92033142125184 },
+          1538321600.0: { lat:40.43387045500393, lng:-86.90678763761349 },
+          1538321800.0: { lat:40.4191005740749, lng:-86.90964339910207 },
+          1538322000.0: { lat:40.42923991419045, lng:-86.90885142210797 },
+          1538322200.0: { lat:40.431453239058584, lng:-86.91525234508367 },
+          1538322400.0: { lat:40.42173634369608, lng:-86.9065717307292 },
+          1538322600.0: { lat:40.422807719539385, lng:-86.90993325636931 },
+          1538322800.0: { lat:40.419860973271874, lng:-86.92292554995852 },
+          1538323000.0: { lat:40.42573095813456, lng:-86.91934318843839 },
+        },
+        heartbeats: {
+          1538319600.0: {
+            genTime:1538319600.0,
+            recTime:1538319611.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538319900.0: {
+            genTime:1538319900.0,
+            recTime:1538319909.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538320708.0: {
+            genTime:1538320708.0,
+            recTime:1538320714.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-105, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538321448.0: {
+            genTime:1538321448.0,
+            recTime:1538321450.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538322079.0: {
+            genTime:1538322079.0,
+            recTime:1538322082.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-98, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538322385.0: {
+            genTime:1538322385.0,
+            recTime:1538322392.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538322917.0: {
+            genTime:1538322917.0,
+            recTime:1538322919.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "12:00": {
+        gps: {
+          1538323200.0: { lat:40.422116079239174, lng:-86.91605585566904 },
+          1538323400.0: { lat:40.43850709049604, lng:-86.90808487503004 },
+          1538323600.0: { lat:40.436872521308764, lng:-86.91447934303802 },
+          1538323800.0: { lat:40.43631828370392, lng:-86.91421001849713 },
+          1538324000.0: { lat:40.426082774918214, lng:-86.90446982492368 },
+          1538324200.0: { lat:40.4194120799193, lng:-86.91313173058676 },
+          1538324400.0: { lat:40.419321632229526, lng:-86.91678037988548 },
+          1538324600.0: { lat:40.43230387423095, lng:-86.91075924557694 },
+          1538324800.0: { lat:40.42778282420253, lng:-86.90692004310486 },
+          1538325000.0: { lat:40.42624820004069, lng:-86.92232893937047 },
+          1538325200.0: { lat:40.43668472986864, lng:-86.92081119021248 },
+          1538325400.0: { lat:40.424009294330766, lng:-86.90467183266874 },
+          1538325600.0: { lat:40.42280951853378, lng:-86.92057703703098 },
+          1538325800.0: { lat:40.43067404288128, lng:-86.92273969058296 },
+          1538326000.0: { lat:40.43072934973605, lng:-86.92344241596683 },
+          1538326200.0: { lat:40.428135428010876, lng:-86.92260209287912 },
+          1538326400.0: { lat:40.421091737511006, lng:-86.91664100517703 },
+          1538326600.0: { lat:40.42699428202122, lng:-86.91984085295651 },
+        },
+        heartbeats: {
+          1538323200.0: {
+            genTime:1538323200.0,
+            recTime:1538323201.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-76, active: false, name:"AT&T"},
+            },
+          },
+          1538324044.0: {
+            genTime:1538324044.0,
+            recTime:1538324046.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538324440.0: {
+            genTime:1538324440.0,
+            recTime:1538324446.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-80, active: false, name:"AT&T"},
+            },
+          },
+          1538325147.0: {
+            genTime:1538325147.0,
+            recTime:1538325154.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+          1538325706.0: {
+            genTime:1538325706.0,
+            recTime:1538325708.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538326406.0: {
+            genTime:1538326406.0,
+            recTime:1538326410.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "14:00": {
+        gps: {
+          1538330400.0: { lat:40.42995418734735, lng:-86.9220906088725 },
+          1538330600.0: { lat:40.43533597905979, lng:-86.90445688840707 },
+          1538330800.0: { lat:40.42678527827, lng:-86.90550291745647 },
+          1538331000.0: { lat:40.42906104837521, lng:-86.90958694127944 },
+          1538331200.0: { lat:40.42268380708169, lng:-86.9150287492824 },
+          1538331400.0: { lat:40.42866613004565, lng:-86.90588366895871 },
+          1538331600.0: { lat:40.425676936318666, lng:-86.9093249852821 },
+          1538331800.0: { lat:40.422656887758635, lng:-86.91443797265431 },
+          1538332000.0: { lat:40.42623208588979, lng:-86.92164597705533 },
+          1538332200.0: { lat:40.42974145830746, lng:-86.90679119756133 },
+          1538332400.0: { lat:40.42194111087724, lng:-86.92116631377509 },
+          1538332600.0: { lat:40.42345082509955, lng:-86.90608927516575 },
+          1538332800.0: { lat:40.434189039129485, lng:-86.91101420680417 },
+          1538333000.0: { lat:40.431268959075055, lng:-86.92320538637776 },
+          1538333200.0: { lat:40.43847383042242, lng:-86.90669652567414 },
+          1538333400.0: { lat:40.42140812396417, lng:-86.90784254152646 },
+          1538333600.0: { lat:40.43327736050847, lng:-86.90931615927828 },
+          1538333800.0: { lat:40.423453506633315, lng:-86.92101217558155 },
+        },
+        heartbeats: {
+          1538330400.0: {
+            genTime:1538330400.0,
+            recTime:1538330407.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538331144.0: {
+            genTime:1538331144.0,
+            recTime:1538331146.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538331326.0: {
+            genTime:1538331326.0,
+            recTime:1538331329.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-63, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538332071.0: {
+            genTime:1538332071.0,
+            recTime:1538332075.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538332618.0: {
+            genTime:1538332618.0,
+            recTime:1538332628.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538333231.0: {
+            genTime:1538333231.0,
+            recTime:1538333236.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538333882.0: {
+            genTime:1538333882.0,
+            recTime:1538333885.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "16:00": {
+        gps: {
+          1538337600.0: { lat:40.41887261465255, lng:-86.91519591214384 },
+          1538337800.0: { lat:40.43476235491966, lng:-86.910430149148 },
+          1538338000.0: { lat:40.42650955179334, lng:-86.91226463318611 },
+          1538338200.0: { lat:40.43748636264126, lng:-86.92061408933944 },
+          1538338400.0: { lat:40.43046285020814, lng:-86.91779979899115 },
+          1538338600.0: { lat:40.42966676727119, lng:-86.91679154129402 },
+          1538338800.0: { lat:40.425540804187165, lng:-86.9235959353854 },
+          1538339000.0: { lat:40.42702440858398, lng:-86.91643320608998 },
+          1538339200.0: { lat:40.4371304352414, lng:-86.91811442893636 },
+          1538339400.0: { lat:40.42144994913259, lng:-86.9191336478732 },
+          1538339600.0: { lat:40.43797014198104, lng:-86.9055748015197 },
+          1538339800.0: { lat:40.42198787348947, lng:-86.91141497669048 },
+          1538340000.0: { lat:40.42190087871711, lng:-86.91246194490029 },
+          1538340200.0: { lat:40.42911657112856, lng:-86.92077934343824 },
+          1538340400.0: { lat:40.42500314557872, lng:-86.91043350446904 },
+          1538340600.0: { lat:40.427793459254424, lng:-86.92293590087016 },
+          1538340800.0: { lat:40.43521423430799, lng:-86.91612895121025 },
+          1538341000.0: { lat:40.42227829787395, lng:-86.9144283481411 },
+        },
+        heartbeats: {
+          1538337600.0: {
+            genTime:1538337600.0,
+            recTime:1538337601.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538338224.0: {
+            genTime:1538338224.0,
+            recTime:1538338225.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538338891.0: {
+            genTime:1538338891.0,
+            recTime:1538338894.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538339434.0: {
+            genTime:1538339434.0,
+            recTime:1538339437.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538340114.0: {
+            genTime:1538340114.0,
+            recTime:1538340120.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538340761.0: {
+            genTime:1538340761.0,
+            recTime:1538340770.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-125, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "19:00": {
+        gps: {
+          1538348400.0: { lat:40.420364017396714, lng:-86.90546867953394 },
+          1538348600.0: { lat:40.423943863668825, lng:-86.91908578091734 },
+          1538348800.0: { lat:40.424681668496476, lng:-86.90475604783471 },
+          1538349000.0: { lat:40.42033156357148, lng:-86.91619368181172 },
+          1538349200.0: { lat:40.43387923663821, lng:-86.90468541663414 },
+          1538349400.0: { lat:40.42602109200651, lng:-86.91571642585329 },
+          1538349600.0: { lat:40.43621082394084, lng:-86.91044546557879 },
+          1538349800.0: { lat:40.43059607823614, lng:-86.90529375148577 },
+          1538350000.0: { lat:40.43686719722186, lng:-86.90443281408119 },
+          1538350200.0: { lat:40.430322142670654, lng:-86.92131183835346 },
+          1538350400.0: { lat:40.41997918175746, lng:-86.9067058360934 },
+          1538350600.0: { lat:40.4335911689345, lng:-86.913247343717 },
+          1538350800.0: { lat:40.43180747433251, lng:-86.90700290073381 },
+          1538351000.0: { lat:40.436915517300456, lng:-86.92092246238701 },
+          1538351200.0: { lat:40.418659710785874, lng:-86.91646193454089 },
+          1538351400.0: { lat:40.42784680654661, lng:-86.91861899325811 },
+          1538351600.0: { lat:40.43721996637931, lng:-86.92061814326752 },
+          1538351800.0: { lat:40.42676076930808, lng:-86.91948695156631 },
+        },
+        heartbeats: {
+          1538348400.0: {
+            genTime:1538348400.0,
+            recTime:1538348401.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538349117.0: {
+            genTime:1538349117.0,
+            recTime:1538349124.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-60, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538349302.0: {
+            genTime:1538349302.0,
+            recTime:1538349311.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538350115.0: {
+            genTime:1538350115.0,
+            recTime:1538350121.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-71, active: false, name:"AT&T"},
+            },
+          },
+          1538350825.0: {
+            genTime:1538350825.0,
+            recTime:1538350832.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538351444.0: {
+            genTime:1538351444.0,
+            recTime:1538351448.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "20:00": {
+        gps: {
+          1538352000.0: { lat:40.430693899018614, lng:-86.91585897786459 },
+          1538352200.0: { lat:40.43431855046585, lng:-86.90563522585231 },
+          1538352400.0: { lat:40.42046685422112, lng:-86.9042099251079 },
+          1538352600.0: { lat:40.42481774579961, lng:-86.91980680237444 },
+          1538352800.0: { lat:40.42090030900012, lng:-86.91702175429155 },
+          1538353000.0: { lat:40.43760458534692, lng:-86.90812879087373 },
+          1538353200.0: { lat:40.43756297803997, lng:-86.90859799258483 },
+          1538353400.0: { lat:40.42523838516378, lng:-86.90508105999082 },
+          1538353600.0: { lat:40.43515590965545, lng:-86.90494693558367 },
+          1538353800.0: { lat:40.43340363908544, lng:-86.91741967852587 },
+          1538354000.0: { lat:40.41879697502899, lng:-86.91469193287334 },
+          1538354200.0: { lat:40.43450899327755, lng:-86.91659178552423 },
+          1538354400.0: { lat:40.42654644765173, lng:-86.9142659716115 },
+          1538354600.0: { lat:40.43833510621115, lng:-86.91200772657778 },
+          1538354800.0: { lat:40.429468354536105, lng:-86.9069230059838 },
+          1538355000.0: { lat:40.429690925335336, lng:-86.91528240889483 },
+          1538355200.0: { lat:40.42162798945954, lng:-86.91926048449093 },
+          1538355400.0: { lat:40.4325444168956, lng:-86.90687259374688 },
+        },
+        heartbeats: {
+          1538352000.0: {
+            genTime:1538352000.0,
+            recTime:1538352002.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538352483.0: {
+            genTime:1538352483.0,
+            recTime:1538352487.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538353290.0: {
+            genTime:1538353290.0,
+            recTime:1538353291.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538353933.0: {
+            genTime:1538353933.0,
+            recTime:1538353937.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538354343.0: {
+            genTime:1538354343.0,
+            recTime:1538354345.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-72, active: false, name:"AT&T"},
+            },
+          },
+          1538355245.0: {
+            genTime:1538355245.0,
+            recTime:1538355248.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "22:00": {
+        gps: {
+          1538359200.0: { lat:40.42804933986592, lng:-86.91249268623922 },
+          1538359400.0: { lat:40.42324709684522, lng:-86.91493341395034 },
+          1538359600.0: { lat:40.42763140576954, lng:-86.91181676882854 },
+          1538359800.0: { lat:40.428183753720134, lng:-86.90665361876148 },
+          1538360000.0: { lat:40.4359877174065, lng:-86.92137663473189 },
+          1538360200.0: { lat:40.43052608934287, lng:-86.92062226960032 },
+          1538360400.0: { lat:40.42598063894453, lng:-86.9143891069008 },
+          1538360600.0: { lat:40.4281698497067, lng:-86.90704823216191 },
+          1538360800.0: { lat:40.433546510692494, lng:-86.9139214869763 },
+          1538361000.0: { lat:40.41875978346053, lng:-86.92089747559406 },
+          1538361200.0: { lat:40.43630789488812, lng:-86.91268126603725 },
+          1538361400.0: { lat:40.42168081954166, lng:-86.90555676902754 },
+          1538361600.0: { lat:40.43722687522162, lng:-86.91382884415059 },
+          1538361800.0: { lat:40.432567491012435, lng:-86.91760419251729 },
+          1538362000.0: { lat:40.42420882227118, lng:-86.91428695577045 },
+          1538362200.0: { lat:40.432637216281584, lng:-86.92298938481778 },
+          1538362400.0: { lat:40.43783855717374, lng:-86.92362321724607 },
+          1538362600.0: { lat:40.438565165812435, lng:-86.91103178182826 },
+        },
+        heartbeats: {
+          1538359200.0: {
+            genTime:1538359200.0,
+            recTime:1538359209.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538360124.0: {
+            genTime:1538360124.0,
+            recTime:1538360125.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538360756.0: {
+            genTime:1538360756.0,
+            recTime:1538360760.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-71, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-69, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538361124.0: {
+            genTime:1538361124.0,
+            recTime:1538361129.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538361681.0: {
+            genTime:1538361681.0,
+            recTime:1538361688.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-71, active: false, name:"AT&T"},
+            },
+          },
+          1538361989.0: {
+            genTime:1538361989.0,
+            recTime:1538361990.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-112, active: false, name:"AT&T"},
+            },
+          },
+          1538362629.0: {
+            genTime:1538362629.0,
+            recTime:1538362630.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-108, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "23:00": {
+        gps: {
+          1538362800.0: { lat:40.43069620195403, lng:-86.9137263957983 },
+          1538363000.0: { lat:40.42761508024464, lng:-86.91419618754861 },
+          1538363200.0: { lat:40.43018205222305, lng:-86.91575184733941 },
+          1538363400.0: { lat:40.42581367492801, lng:-86.90972169198157 },
+          1538363600.0: { lat:40.42983196862054, lng:-86.90422913406039 },
+          1538363800.0: { lat:40.41882012236423, lng:-86.92107286113017 },
+          1538364000.0: { lat:40.42493846391481, lng:-86.91297655271602 },
+          1538364200.0: { lat:40.42787853800062, lng:-86.90824675804582 },
+          1538364400.0: { lat:40.432319114798936, lng:-86.91826125588032 },
+          1538364600.0: { lat:40.43617419618191, lng:-86.92094422497405 },
+          1538364800.0: { lat:40.42496193958173, lng:-86.90638415048694 },
+          1538365000.0: { lat:40.42746082427886, lng:-86.91640607227134 },
+          1538365200.0: { lat:40.43755673778878, lng:-86.91789758422736 },
+          1538365400.0: { lat:40.41914419460392, lng:-86.92036540725753 },
+          1538365600.0: { lat:40.42268462376935, lng:-86.91467689563449 },
+          1538365800.0: { lat:40.433826326571456, lng:-86.9187532141125 },
+          1538366000.0: { lat:40.419786099269174, lng:-86.90720016051426 },
+          1538366200.0: { lat:40.43808654160381, lng:-86.91497117545548 },
+        },
+        heartbeats: {
+          1538362800.0: {
+            genTime:1538362800.0,
+            recTime:1538362803.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538363310.0: {
+            genTime:1538363310.0,
+            recTime:1538363321.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-76, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538363747.0: {
+            genTime:1538363747.0,
+            recTime:1538363749.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-72, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538364275.0: {
+            genTime:1538364275.0,
+            recTime:1538364277.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-79, active: false, name:"AT&T"},
+            },
+          },
+          1538364523.0: {
+            genTime:1538364523.0,
+            recTime:1538364526.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538365068.0: {
+            genTime:1538365068.0,
+            recTime:1538365073.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538365646.0: {
+            genTime:1538365646.0,
+            recTime:1538365650.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+    "2018-10-01": {
+      "02:00": {
+        gps: {
+          1538373600.0: { lat:40.42937500605315, lng:-86.91228457037938 },
+          1538373800.0: { lat:40.434112771826264, lng:-86.91664569297899 },
+          1538374000.0: { lat:40.426166266291695, lng:-86.90990162101821 },
+          1538374200.0: { lat:40.438490835748254, lng:-86.909064060112 },
+          1538374400.0: { lat:40.43646705276426, lng:-86.91156149512726 },
+          1538374600.0: { lat:40.43593755236991, lng:-86.92137882674403 },
+          1538374800.0: { lat:40.433051441735266, lng:-86.92216901722892 },
+          1538375000.0: { lat:40.43622606954667, lng:-86.90821874866508 },
+          1538375200.0: { lat:40.43393047141398, lng:-86.91949945001598 },
+          1538375400.0: { lat:40.42404751474682, lng:-86.91276079345782 },
+          1538375600.0: { lat:40.436751533469845, lng:-86.92332761820866 },
+          1538375800.0: { lat:40.43102706098988, lng:-86.90861489008931 },
+          1538376000.0: { lat:40.42734189735832, lng:-86.90677469215274 },
+          1538376200.0: { lat:40.43860625937519, lng:-86.90407853671938 },
+          1538376400.0: { lat:40.43285023851446, lng:-86.92092814012834 },
+          1538376600.0: { lat:40.41902868263654, lng:-86.9061731370703 },
+          1538376800.0: { lat:40.430552133486174, lng:-86.91911143998563 },
+          1538377000.0: { lat:40.420390420552074, lng:-86.92162688274719 },
+        },
+        heartbeats: {
+          1538373600.0: {
+            genTime:1538373600.0,
+            recTime:1538373605.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538374055.0: {
+            genTime:1538374055.0,
+            recTime:1538374056.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538374537.0: {
+            genTime:1538374537.0,
+            recTime:1538374541.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538374991.0: {
+            genTime:1538374991.0,
+            recTime:1538374992.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538375371.0: {
+            genTime:1538375371.0,
+            recTime:1538375376.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+          1538375976.0: {
+            genTime:1538375976.0,
+            recTime:1538375977.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538376345.0: {
+            genTime:1538376345.0,
+            recTime:1538376349.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
+          },
+          1538376716.0: {
+            genTime:1538376716.0,
+            recTime:1538376724.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538377123.0: {
+            genTime:1538377123.0,
+            recTime:1538377129.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "03:00": {
+        gps: {
+          1538377200.0: { lat:40.4234839885028, lng:-86.9126780917081 },
+          1538377400.0: { lat:40.43774789239533, lng:-86.90533850003024 },
+          1538377600.0: { lat:40.43631659227339, lng:-86.92263510397882 },
+          1538377800.0: { lat:40.42401249454321, lng:-86.91401117169168 },
+          1538378000.0: { lat:40.42238320592143, lng:-86.91434035256796 },
+          1538378200.0: { lat:40.43759051562337, lng:-86.90893334431507 },
+          1538378400.0: { lat:40.428405290344976, lng:-86.90534441453221 },
+          1538378600.0: { lat:40.42867412193282, lng:-86.92144956244651 },
+          1538378800.0: { lat:40.42628135919008, lng:-86.91881001759404 },
+          1538379000.0: { lat:40.43281879369763, lng:-86.91588503416614 },
+          1538379200.0: { lat:40.42938043909069, lng:-86.91495627315152 },
+          1538379400.0: { lat:40.43340387736951, lng:-86.91110558183283 },
+          1538379600.0: { lat:40.43666550904023, lng:-86.91762188109345 },
+          1538379800.0: { lat:40.433595644429026, lng:-86.91228257687611 },
+          1538380000.0: { lat:40.436682206768204, lng:-86.90763503616114 },
+          1538380200.0: { lat:40.42522232634128, lng:-86.90802529405643 },
+          1538380400.0: { lat:40.4271869259549, lng:-86.91418094372705 },
+          1538380600.0: { lat:40.433112309529626, lng:-86.92034970685745 },
+        },
+        heartbeats: {
+          1538377200.0: {
+            genTime:1538377200.0,
+            recTime:1538377208.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538377730.0: {
+            genTime:1538377730.0,
+            recTime:1538377731.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538378412.0: {
+            genTime:1538378412.0,
+            recTime:1538378415.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538378998.0: {
+            genTime:1538378998.0,
+            recTime:1538379000.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538379478.0: {
+            genTime:1538379478.0,
+            recTime:1538379480.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538379929.0: {
+            genTime:1538379929.0,
+            recTime:1538379932.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538380623.0: {
+            genTime:1538380623.0,
+            recTime:1538380628.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "04:00": {
+        gps: {
+          1538380800.0: { lat:40.43288082596385, lng:-86.91054458674996 },
+          1538381000.0: { lat:40.43742655644698, lng:-86.91742170868294 },
+          1538381200.0: { lat:40.434931302846465, lng:-86.90558574895971 },
+          1538381400.0: { lat:40.4365413163381, lng:-86.91899752908093 },
+          1538381600.0: { lat:40.43538733694306, lng:-86.9084475502445 },
+          1538381800.0: { lat:40.42689583177751, lng:-86.92040177084007 },
+          1538382000.0: { lat:40.42447751981569, lng:-86.91847593905088 },
+          1538382200.0: { lat:40.43065841200252, lng:-86.90714576598218 },
+          1538382400.0: { lat:40.42050648260988, lng:-86.91878439503415 },
+          1538382600.0: { lat:40.43042844352678, lng:-86.91893961019794 },
+          1538382800.0: { lat:40.43395692516912, lng:-86.91461283476121 },
+          1538383000.0: { lat:40.42964409372698, lng:-86.910097275745 },
+          1538383200.0: { lat:40.42327211530399, lng:-86.91156631852465 },
+          1538383400.0: { lat:40.43087404110948, lng:-86.92307011311605 },
+          1538383600.0: { lat:40.43348977568264, lng:-86.90532409519024 },
+          1538383800.0: { lat:40.42825404005749, lng:-86.92133716172677 },
+          1538384000.0: { lat:40.42263952785896, lng:-86.91911202795319 },
+          1538384200.0: { lat:40.42236332733962, lng:-86.90671754156989 },
+        },
+        heartbeats: {
+          1538380800.0: {
+            genTime:1538380800.0,
+            recTime:1538380806.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
+          },
+          1538381390.0: {
+            genTime:1538381390.0,
+            recTime:1538381391.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538381733.0: {
+            genTime:1538381733.0,
+            recTime:1538381736.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-70, active: false, name:"AT&T"},
+            },
+          },
+          1538382704.0: {
+            genTime:1538382704.0,
+            recTime:1538382712.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538383381.0: {
+            genTime:1538383381.0,
+            recTime:1538383386.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-110, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538384104.0: {
+            genTime:1538384104.0,
+            recTime:1538384109.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "06:00": {
+        gps: {
+          1538388000.0: { lat:40.42305308348058, lng:-86.91590280418137 },
+          1538388200.0: { lat:40.43646103957108, lng:-86.9087233654132 },
+          1538388400.0: { lat:40.424602615312864, lng:-86.91639235912766 },
+          1538388600.0: { lat:40.432121950456164, lng:-86.90882490435808 },
+          1538388800.0: { lat:40.432665672855876, lng:-86.91706930337746 },
+          1538389000.0: { lat:40.43076333527554, lng:-86.9226849554674 },
+          1538389200.0: { lat:40.437304617374004, lng:-86.90650442565126 },
+          1538389400.0: { lat:40.42024231246903, lng:-86.90749210107495 },
+          1538389600.0: { lat:40.43362170030301, lng:-86.91934976513626 },
+          1538389800.0: { lat:40.434158481944024, lng:-86.90573232242348 },
+          1538390000.0: { lat:40.41888093776474, lng:-86.91099717174015 },
+          1538390200.0: { lat:40.43018536252861, lng:-86.91930781294327 },
+          1538390400.0: { lat:40.422117264988614, lng:-86.92300170398596 },
+          1538390600.0: { lat:40.43518755551334, lng:-86.91152302260127 },
+          1538390800.0: { lat:40.42487148227405, lng:-86.90737334927415 },
+          1538391000.0: { lat:40.42319179746042, lng:-86.91012995058463 },
+          1538391200.0: { lat:40.43288711900784, lng:-86.9158848930266 },
+          1538391400.0: { lat:40.420251870506625, lng:-86.91081012726468 },
+        },
+        heartbeats: {
+          1538388000.0: {
+            genTime:1538388000.0,
+            recTime:1538388003.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-58, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-108, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538388420.0: {
+            genTime:1538388420.0,
+            recTime:1538388427.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538388786.0: {
+            genTime:1538388786.0,
+            recTime:1538388789.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538389050.0: {
+            genTime:1538389050.0,
+            recTime:1538389053.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-114, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538389483.0: {
+            genTime:1538389483.0,
+            recTime:1538389486.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538389818.0: {
+            genTime:1538389818.0,
+            recTime:1538389835.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-73, active: false, name:"AT&T"},
+            },
+          },
+          1538390669.0: {
+            genTime:1538390669.0,
+            recTime:1538390675.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538391397.0: {
+            genTime:1538391397.0,
+            recTime:1538391399.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "10:00": {
+        gps: {
+          1538402400.0: { lat:40.43426770994298, lng:-86.91795718107745 },
+          1538402600.0: { lat:40.43552363389746, lng:-86.91202247361217 },
+          1538402800.0: { lat:40.4334148382425, lng:-86.91714449728835 },
+          1538403000.0: { lat:40.42029795156897, lng:-86.91187675132417 },
+          1538403200.0: { lat:40.41952579565576, lng:-86.91121760114028 },
+          1538403400.0: { lat:40.4317260645737, lng:-86.91328212054685 },
+          1538403600.0: { lat:40.435489625477814, lng:-86.91508478697028 },
+          1538403800.0: { lat:40.4320044805852, lng:-86.9071437984029 },
+          1538404000.0: { lat:40.4322489422055, lng:-86.90755102712362 },
+          1538404200.0: { lat:40.421711981190285, lng:-86.905728894677 },
+          1538404400.0: { lat:40.421067524902924, lng:-86.90766907953454 },
+          1538404600.0: { lat:40.4312829569982, lng:-86.9160035087189 },
+          1538404800.0: { lat:40.43853698912115, lng:-86.92170726660272 },
+          1538405000.0: { lat:40.42838298417224, lng:-86.90850816830489 },
+          1538405200.0: { lat:40.42543516728161, lng:-86.91688539199833 },
+          1538405400.0: { lat:40.432099115561876, lng:-86.92208973642836 },
+          1538405600.0: { lat:40.42286797112126, lng:-86.9054311936158 },
+          1538405800.0: { lat:40.418837559512085, lng:-86.91810154516702 },
+        },
+        heartbeats: {
+          1538402400.0: {
+            genTime:1538402400.0,
+            recTime:1538402404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-77, active: false, name:"AT&T"},
+            },
+          },
+          1538402946.0: {
+            genTime:1538402946.0,
+            recTime:1538402952.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538403577.0: {
+            genTime:1538403577.0,
+            recTime:1538403579.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-106, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538404065.0: {
+            genTime:1538404065.0,
+            recTime:1538404071.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538404774.0: {
+            genTime:1538404774.0,
+            recTime:1538404784.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-66, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538405170.0: {
+            genTime:1538405170.0,
+            recTime:1538405177.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538405656.0: {
+            genTime:1538405656.0,
+            recTime:1538405661.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "15:00": {
+        gps: {
+          1538420400.0: { lat:40.42316272065781, lng:-86.91954426394807 },
+          1538420600.0: { lat:40.430712123974416, lng:-86.90651545092983 },
+          1538420800.0: { lat:40.42174232694307, lng:-86.91710132448601 },
+          1538421000.0: { lat:40.42370750632466, lng:-86.91838397927997 },
+          1538421200.0: { lat:40.43295079901881, lng:-86.9199967214131 },
+          1538421400.0: { lat:40.42183669853972, lng:-86.91920125101707 },
+          1538421600.0: { lat:40.42023673346262, lng:-86.90711739895097 },
+          1538421800.0: { lat:40.420448193184804, lng:-86.9136337472892 },
+          1538422000.0: { lat:40.433919923198886, lng:-86.92244590951815 },
+          1538422200.0: { lat:40.43165128040691, lng:-86.911681508454 },
+          1538422400.0: { lat:40.42168588022383, lng:-86.91506135629601 },
+          1538422600.0: { lat:40.4229491175736, lng:-86.9050341380474 },
+          1538422800.0: { lat:40.43147268192767, lng:-86.91725074448976 },
+          1538423000.0: { lat:40.427949007599, lng:-86.90818974243261 },
+          1538423200.0: { lat:40.418731051094724, lng:-86.91328629508283 },
+          1538423400.0: { lat:40.43448701968981, lng:-86.90763787238325 },
+          1538423600.0: { lat:40.42543502715785, lng:-86.91550929284116 },
+          1538423800.0: { lat:40.4212192473797, lng:-86.9099207223961 },
+        },
+        heartbeats: {
+          1538420400.0: {
+            genTime:1538420400.0,
+            recTime:1538420402.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538420960.0: {
+            genTime:1538420960.0,
+            recTime:1538420969.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538421640.0: {
+            genTime:1538421640.0,
+            recTime:1538421643.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
+          },
+          1538422149.0: {
+            genTime:1538422149.0,
+            recTime:1538422153.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-113, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538422300.0: {
+            genTime:1538422300.0,
+            recTime:1538422302.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538422836.0: {
+            genTime:1538422836.0,
+            recTime:1538422842.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538423406.0: {
+            genTime:1538423406.0,
+            recTime:1538423409.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-73, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "19:00": {
+        gps: {
+          1538434800.0: { lat:40.42857091317766, lng:-86.90936181992844 },
+          1538435000.0: { lat:40.432776462423604, lng:-86.90544572319115 },
+          1538435200.0: { lat:40.42964588210073, lng:-86.91554516093838 },
+          1538435400.0: { lat:40.42513361184866, lng:-86.91631377876145 },
+          1538435600.0: { lat:40.42374606674526, lng:-86.91446954748989 },
+          1538435800.0: { lat:40.42722961936455, lng:-86.90923763725215 },
+          1538436000.0: { lat:40.43494772647235, lng:-86.91998266703166 },
+          1538436200.0: { lat:40.438538891477606, lng:-86.91669593683483 },
+          1538436400.0: { lat:40.42529743915161, lng:-86.91154239088497 },
+          1538436600.0: { lat:40.422707831800835, lng:-86.91026418314648 },
+          1538436800.0: { lat:40.42801023131727, lng:-86.91942016234553 },
+          1538437000.0: { lat:40.42990703394001, lng:-86.91947023871066 },
+          1538437200.0: { lat:40.422021298115155, lng:-86.91910499711328 },
+          1538437400.0: { lat:40.43291958911816, lng:-86.91899755235754 },
+          1538437600.0: { lat:40.42291714668517, lng:-86.91507286485411 },
+          1538437800.0: { lat:40.43785126235483, lng:-86.90390123227372 },
+          1538438000.0: { lat:40.42095667020054, lng:-86.91174076459677 },
+          1538438200.0: { lat:40.43579170757748, lng:-86.9095481504901 },
+        },
+        heartbeats: {
+          1538434800.0: {
+            genTime:1538434800.0,
+            recTime:1538434803.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-69, active: false, name:"AT&T"},
+            },
+          },
+          1538435228.0: {
+            genTime:1538435228.0,
+            recTime:1538435238.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-75, active: false, name:"AT&T"},
+            },
+          },
+          1538436032.0: {
+            genTime:1538436032.0,
+            recTime:1538436034.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538436799.0: {
+            genTime:1538436799.0,
+            recTime:1538436800.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538437602.0: {
+            genTime:1538437602.0,
+            recTime:1538437606.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538438170.0: {
+            genTime:1538438170.0,
+            recTime:1538438178.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "20:00": {
+        gps: {
+          1538438400.0: { lat:40.437317338256584, lng:-86.90473347797106 },
+          1538438600.0: { lat:40.43571106982566, lng:-86.91101881794533 },
+          1538438800.0: { lat:40.4308213346802, lng:-86.91225252900666 },
+          1538439000.0: { lat:40.43804551164302, lng:-86.91167379921174 },
+          1538439200.0: { lat:40.435239642931855, lng:-86.91978280091736 },
+          1538439400.0: { lat:40.43029899751163, lng:-86.90431556101443 },
+          1538439600.0: { lat:40.4206611550999, lng:-86.90782010333079 },
+          1538439800.0: { lat:40.4256516871377, lng:-86.90886956959072 },
+          1538440000.0: { lat:40.43692861153711, lng:-86.91733618947492 },
+          1538440200.0: { lat:40.42694160119855, lng:-86.91494270850004 },
+          1538440400.0: { lat:40.43815620200263, lng:-86.91757169756963 },
+          1538440600.0: { lat:40.43078441969421, lng:-86.92214210637947 },
+          1538440800.0: { lat:40.4188739839571, lng:-86.9133370454816 },
+          1538441000.0: { lat:40.43302078234556, lng:-86.92374291968873 },
+          1538441200.0: { lat:40.424608157841355, lng:-86.91101247460709 },
+          1538441400.0: { lat:40.43429643273935, lng:-86.90800897772861 },
+          1538441600.0: { lat:40.427265006691556, lng:-86.91919059254015 },
+          1538441800.0: { lat:40.41885308143172, lng:-86.92154002732872 },
+        },
+        heartbeats: {
+          1538438400.0: {
+            genTime:1538438400.0,
+            recTime:1538438401.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538439111.0: {
+            genTime:1538439111.0,
+            recTime:1538439113.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538439891.0: {
+            genTime:1538439891.0,
+            recTime:1538439895.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538440372.0: {
+            genTime:1538440372.0,
+            recTime:1538440375.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538440788.0: {
+            genTime:1538440788.0,
+            recTime:1538440789.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538441473.0: {
+            genTime:1538441473.0,
+            recTime:1538441478.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-110, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "21:00": {
+        gps: {
+          1538442000.0: { lat:40.4244778569732, lng:-86.91450180483474 },
+          1538442200.0: { lat:40.427658324583135, lng:-86.92110071265122 },
+          1538442400.0: { lat:40.4267295124986, lng:-86.91646426278359 },
+          1538442600.0: { lat:40.42911887862342, lng:-86.92368280559036 },
+          1538442800.0: { lat:40.4216176542605, lng:-86.91050241443615 },
+          1538443000.0: { lat:40.43598996469919, lng:-86.91605629422799 },
+          1538443200.0: { lat:40.425513249416326, lng:-86.91158623940136 },
+          1538443400.0: { lat:40.43573087213236, lng:-86.91601661502669 },
+          1538443600.0: { lat:40.43183423974854, lng:-86.9160284240255 },
+          1538443800.0: { lat:40.42114177336679, lng:-86.90994483389417 },
+          1538444000.0: { lat:40.4280040550599, lng:-86.92217553668155 },
+          1538444200.0: { lat:40.42706423657398, lng:-86.91791111262417 },
+          1538444400.0: { lat:40.43179042281041, lng:-86.91504536455453 },
+          1538444600.0: { lat:40.4243493685537, lng:-86.90879634468688 },
+          1538444800.0: { lat:40.42345908922516, lng:-86.9072489035415 },
+          1538445000.0: { lat:40.43653446952668, lng:-86.92117968393768 },
+          1538445200.0: { lat:40.42136593200733, lng:-86.91219026915925 },
+          1538445400.0: { lat:40.429879109537104, lng:-86.90854659491312 },
+        },
+        heartbeats: {
+          1538442000.0: {
+            genTime:1538442000.0,
+            recTime:1538442006.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538442604.0: {
+            genTime:1538442604.0,
+            recTime:1538442607.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538443266.0: {
+            genTime:1538443266.0,
+            recTime:1538443267.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+          1538443792.0: {
+            genTime:1538443792.0,
+            recTime:1538443800.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538444101.0: {
+            genTime:1538444101.0,
+            recTime:1538444108.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-71, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538444524.0: {
+            genTime:1538444524.0,
+            recTime:1538444528.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538445007.0: {
+            genTime:1538445007.0,
+            recTime:1538445011.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-104, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538445598.0: {
+            genTime:1538445598.0,
+            recTime:1538445602.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "23:00": {
+        gps: {
+          1538449200.0: { lat:40.436458779599015, lng:-86.91981603054714 },
+          1538449400.0: { lat:40.42868124354145, lng:-86.919733302205 },
+          1538449600.0: { lat:40.431286464549416, lng:-86.9154185976834 },
+          1538449800.0: { lat:40.42549029336013, lng:-86.91423340935762 },
+          1538450000.0: { lat:40.42132513251983, lng:-86.91284254511869 },
+          1538450200.0: { lat:40.42220940613848, lng:-86.90838618998471 },
+          1538450400.0: { lat:40.42780478594447, lng:-86.90873149403082 },
+          1538450600.0: { lat:40.42983911260533, lng:-86.90483673752847 },
+          1538450800.0: { lat:40.43325634839791, lng:-86.91320061015975 },
+          1538451000.0: { lat:40.42761264395016, lng:-86.91192806467774 },
+          1538451200.0: { lat:40.43760270248878, lng:-86.91777733088198 },
+          1538451400.0: { lat:40.427916191256685, lng:-86.9235111729146 },
+          1538451600.0: { lat:40.436541187638824, lng:-86.91434165583469 },
+          1538451800.0: { lat:40.4376942729001, lng:-86.91300924732036 },
+          1538452000.0: { lat:40.42077214997266, lng:-86.91085121020805 },
+          1538452200.0: { lat:40.43450420326943, lng:-86.90563675885768 },
+          1538452400.0: { lat:40.43224412852794, lng:-86.90544105935281 },
+          1538452600.0: { lat:40.43366891156891, lng:-86.92372330057901 },
+        },
+        heartbeats: {
+          1538449200.0: {
+            genTime:1538449200.0,
+            recTime:1538449203.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538449827.0: {
+            genTime:1538449827.0,
+            recTime:1538449830.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538450557.0: {
+            genTime:1538450557.0,
+            recTime:1538450558.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538451072.0: {
+            genTime:1538451072.0,
+            recTime:1538451074.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538451630.0: {
+            genTime:1538451630.0,
+            recTime:1538451637.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-66, active: false, name:"AT&T"},
+            },
+          },
+          1538452320.0: {
+            genTime:1538452320.0,
+            recTime:1538452323.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+    "2018-10-05": {
+      "00:00": {
+        gps: {
+          1538712000.0: { lat:40.42804481657884, lng:-86.91414127024237 },
+          1538712200.0: { lat:40.43477659404543, lng:-86.90880067207523 },
+          1538712400.0: { lat:40.431876914679215, lng:-86.92008333710977 },
+          1538712600.0: { lat:40.42562881155762, lng:-86.91832801311871 },
+          1538712800.0: { lat:40.421424313077345, lng:-86.9135516973309 },
+          1538713000.0: { lat:40.42454611024765, lng:-86.90706119327213 },
+          1538713200.0: { lat:40.43478721713851, lng:-86.92005280145428 },
+          1538713400.0: { lat:40.429885116503854, lng:-86.90715841344382 },
+          1538713600.0: { lat:40.42359638981906, lng:-86.91260171554912 },
+          1538713800.0: { lat:40.43835244360502, lng:-86.90380716516992 },
+          1538714000.0: { lat:40.42027241319529, lng:-86.9224074048424 },
+          1538714200.0: { lat:40.42995020614543, lng:-86.9130854980303 },
+          1538714400.0: { lat:40.43255550648726, lng:-86.91769083471672 },
+          1538714600.0: { lat:40.428041754989614, lng:-86.90583887068318 },
+          1538714800.0: { lat:40.42888497133845, lng:-86.91846783748217 },
+          1538715000.0: { lat:40.43681582521619, lng:-86.90927427031895 },
+          1538715200.0: { lat:40.438239883114356, lng:-86.90578767869621 },
+          1538715400.0: { lat:40.421473973297914, lng:-86.92150569222946 },
+        },
+        heartbeats: {
+          1538712000.0: {
+            genTime:1538712000.0,
+            recTime:1538712004.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-80, active: false, name:"AT&T"},
+            },
+          },
+          1538712608.0: {
+            genTime:1538712608.0,
+            recTime:1538712617.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538713546.0: {
+            genTime:1538713546.0,
+            recTime:1538713549.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538714335.0: {
+            genTime:1538714335.0,
+            recTime:1538714341.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-67, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538714941.0: {
+            genTime:1538714941.0,
+            recTime:1538714946.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "01:00": {
+        gps: {
+          1538715600.0: { lat:40.43653267521836, lng:-86.92285346384274 },
+          1538715800.0: { lat:40.42840929367283, lng:-86.92361341260276 },
+          1538716000.0: { lat:40.43015224399745, lng:-86.91862974047359 },
+          1538716200.0: { lat:40.4226046770802, lng:-86.91357500706474 },
+          1538716400.0: { lat:40.432537782137175, lng:-86.91374278877802 },
+          1538716600.0: { lat:40.42189157826798, lng:-86.91827463297531 },
+          1538716800.0: { lat:40.42533105684345, lng:-86.91135172953332 },
+          1538717000.0: { lat:40.43580000004258, lng:-86.90412843604278 },
+          1538717200.0: { lat:40.435949332647745, lng:-86.90977108245085 },
+          1538717400.0: { lat:40.42093472904644, lng:-86.90724253615237 },
+          1538717600.0: { lat:40.438304463739556, lng:-86.91116789638679 },
+          1538717800.0: { lat:40.419438238879394, lng:-86.9057848072687 },
+          1538718000.0: { lat:40.42546589437643, lng:-86.91645858061726 },
+          1538718200.0: { lat:40.42014058260799, lng:-86.90428850900156 },
+          1538718400.0: { lat:40.42524766679297, lng:-86.92047963006634 },
+          1538718600.0: { lat:40.435562876684195, lng:-86.91546579760417 },
+          1538718800.0: { lat:40.435214550160595, lng:-86.90488824132493 },
+          1538719000.0: { lat:40.436397955199645, lng:-86.92239200338021 },
+        },
+        heartbeats: {
+          1538715600.0: {
+            genTime:1538715600.0,
+            recTime:1538715604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-113, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538716272.0: {
+            genTime:1538716272.0,
+            recTime:1538716274.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538716995.0: {
+            genTime:1538716995.0,
+            recTime:1538717003.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538717621.0: {
+            genTime:1538717621.0,
+            recTime:1538717625.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538718209.0: {
+            genTime:1538718209.0,
+            recTime:1538718212.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-74, active: false, name:"AT&T"},
+            },
+          },
+          1538718651.0: {
+            genTime:1538718651.0,
+            recTime:1538718652.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538719136.0: {
+            genTime:1538719136.0,
+            recTime:1538719138.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-63, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "03:00": {
+        gps: {
+          1538722800.0: { lat:40.43106843871204, lng:-86.91884931144094 },
+          1538723000.0: { lat:40.435952380918415, lng:-86.92079702213958 },
+          1538723200.0: { lat:40.42682471143861, lng:-86.912675362868 },
+          1538723400.0: { lat:40.42665534377559, lng:-86.91861907185425 },
+          1538723600.0: { lat:40.419297501319896, lng:-86.9226859207203 },
+          1538723800.0: { lat:40.437249234015866, lng:-86.90946678616152 },
+          1538724000.0: { lat:40.422133294905194, lng:-86.90651583467022 },
+          1538724200.0: { lat:40.43716759191047, lng:-86.91500420241951 },
+          1538724400.0: { lat:40.427171784124134, lng:-86.91571857219976 },
+          1538724600.0: { lat:40.429992700607045, lng:-86.9086695044412 },
+          1538724800.0: { lat:40.42989074960037, lng:-86.91883328954708 },
+          1538725000.0: { lat:40.430959487752844, lng:-86.91188026874545 },
+          1538725200.0: { lat:40.43000289663143, lng:-86.90497095370999 },
+          1538725400.0: { lat:40.427710210248215, lng:-86.91022220842581 },
+          1538725600.0: { lat:40.41917937598591, lng:-86.92338504074128 },
+          1538725800.0: { lat:40.438571691854186, lng:-86.92369743312521 },
+          1538726000.0: { lat:40.42778901663133, lng:-86.9138533580437 },
+          1538726200.0: { lat:40.42680089421477, lng:-86.91646046164915 },
+        },
+        heartbeats: {
+          1538722800.0: {
+            genTime:1538722800.0,
+            recTime:1538722805.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-108, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538723401.0: {
+            genTime:1538723401.0,
+            recTime:1538723405.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-115, active: false, name:"AT&T"},
+            },
+          },
+          1538724107.0: {
+            genTime:1538724107.0,
+            recTime:1538724110.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-78, active: false, name:"AT&T"},
+            },
+          },
+          1538724875.0: {
+            genTime:1538724875.0,
+            recTime:1538724881.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-73, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538725394.0: {
+            genTime:1538725394.0,
+            recTime:1538725399.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538725963.0: {
+            genTime:1538725963.0,
+            recTime:1538725968.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538726265.0: {
+            genTime:1538726265.0,
+            recTime:1538726269.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "04:00": {
+        gps: {
+          1538726400.0: { lat:40.43566393234291, lng:-86.90703599087725 },
+          1538726600.0: { lat:40.43455232754905, lng:-86.91628839647056 },
+          1538726800.0: { lat:40.430283637534984, lng:-86.91303804124577 },
+          1538727000.0: { lat:40.42965429660828, lng:-86.91151585519768 },
+          1538727200.0: { lat:40.42617702394728, lng:-86.91970082845023 },
+          1538727400.0: { lat:40.423603744786355, lng:-86.90604083711376 },
+          1538727600.0: { lat:40.437492141427064, lng:-86.92331990955027 },
+          1538727800.0: { lat:40.42036256860963, lng:-86.90405115438057 },
+          1538728000.0: { lat:40.434770646461814, lng:-86.91095663855349 },
+          1538728200.0: { lat:40.4268516391854, lng:-86.91174860398256 },
+          1538728400.0: { lat:40.429356737306705, lng:-86.91393410035232 },
+          1538728600.0: { lat:40.43579158132843, lng:-86.9138796515239 },
+          1538728800.0: { lat:40.41973972541667, lng:-86.91436073916765 },
+          1538729000.0: { lat:40.43832346835696, lng:-86.91936359195456 },
+          1538729200.0: { lat:40.425611556824265, lng:-86.91798358086987 },
+          1538729400.0: { lat:40.43382747647249, lng:-86.9225552746492 },
+          1538729600.0: { lat:40.420288243075206, lng:-86.91096264271262 },
+          1538729800.0: { lat:40.43423973507734, lng:-86.91482240324954 },
+        },
+        heartbeats: {
+          1538726400.0: {
+            genTime:1538726400.0,
+            recTime:1538726407.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-70, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538727263.0: {
+            genTime:1538727263.0,
+            recTime:1538727264.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538727629.0: {
+            genTime:1538727629.0,
+            recTime:1538727630.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538728527.0: {
+            genTime:1538728527.0,
+            recTime:1538728533.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538729198.0: {
+            genTime:1538729198.0,
+            recTime:1538729206.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538729605.0: {
+            genTime:1538729605.0,
+            recTime:1538729614.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "06:00": {
+        gps: {
+          1538733600.0: { lat:40.43846133683338, lng:-86.91098463935737 },
+          1538733800.0: { lat:40.431480620922095, lng:-86.90610994517111 },
+          1538734000.0: { lat:40.42513613681165, lng:-86.91097105520973 },
+          1538734200.0: { lat:40.42461248310638, lng:-86.91227586000842 },
+          1538734400.0: { lat:40.43816505157737, lng:-86.90659246151215 },
+          1538734600.0: { lat:40.43842805892059, lng:-86.92043298871505 },
+          1538734800.0: { lat:40.41887502345725, lng:-86.9220742413089 },
+          1538735000.0: { lat:40.43379677858708, lng:-86.91455633710311 },
+          1538735200.0: { lat:40.4278886633522, lng:-86.92357959589343 },
+          1538735400.0: { lat:40.421996940844544, lng:-86.91505121284307 },
+          1538735600.0: { lat:40.42133887783584, lng:-86.9211114901733 },
+          1538735800.0: { lat:40.433145562701235, lng:-86.91310979524776 },
+          1538736000.0: { lat:40.435105667301634, lng:-86.90599395285179 },
+          1538736200.0: { lat:40.42030768028912, lng:-86.91717736987106 },
+          1538736400.0: { lat:40.433118986536385, lng:-86.9078017456296 },
+          1538736600.0: { lat:40.42684084699337, lng:-86.92256941628787 },
+          1538736800.0: { lat:40.42764243380786, lng:-86.91456818594028 },
+          1538737000.0: { lat:40.43542871245481, lng:-86.91742172678144 },
+        },
+        heartbeats: {
+          1538733600.0: {
+            genTime:1538733600.0,
+            recTime:1538733606.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538734253.0: {
+            genTime:1538734253.0,
+            recTime:1538734256.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538734992.0: {
+            genTime:1538734992.0,
+            recTime:1538734997.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-81, active: false, name:"AT&T"},
+            },
+          },
+          1538735753.0: {
+            genTime:1538735753.0,
+            recTime:1538735757.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538736127.0: {
+            genTime:1538736127.0,
+            recTime:1538736131.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538737069.0: {
+            genTime:1538737069.0,
+            recTime:1538737073.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "07:00": {
+        gps: {
+          1538737200.0: { lat:40.437978182963064, lng:-86.92341470487645 },
+          1538737400.0: { lat:40.42733083621786, lng:-86.91149913018364 },
+          1538737600.0: { lat:40.428443923545835, lng:-86.91361451935344 },
+          1538737800.0: { lat:40.426369308307656, lng:-86.91862259801579 },
+          1538738000.0: { lat:40.426322092558685, lng:-86.91114652329743 },
+          1538738200.0: { lat:40.43438368478409, lng:-86.91138076123659 },
+          1538738400.0: { lat:40.43041446931818, lng:-86.90551087526866 },
+          1538738600.0: { lat:40.42045409081307, lng:-86.92152807162026 },
+          1538738800.0: { lat:40.42474057019316, lng:-86.92192219655468 },
+          1538739000.0: { lat:40.432763876809574, lng:-86.9208740050203 },
+          1538739200.0: { lat:40.42037488959145, lng:-86.91344731174598 },
+          1538739400.0: { lat:40.4354358994689, lng:-86.92137202042827 },
+          1538739600.0: { lat:40.43579393685753, lng:-86.9171207625271 },
+          1538739800.0: { lat:40.435130763070106, lng:-86.9130155097613 },
+          1538740000.0: { lat:40.4372752460407, lng:-86.92295079148111 },
+          1538740200.0: { lat:40.43049602277243, lng:-86.9117739201848 },
+          1538740400.0: { lat:40.42123006693984, lng:-86.91039649596884 },
+          1538740600.0: { lat:40.43735547320994, lng:-86.91825158301685 },
+        },
+        heartbeats: {
+          1538737200.0: {
+            genTime:1538737200.0,
+            recTime:1538737201.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538737802.0: {
+            genTime:1538737802.0,
+            recTime:1538737805.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538738457.0: {
+            genTime:1538738457.0,
+            recTime:1538738459.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538739170.0: {
+            genTime:1538739170.0,
+            recTime:1538739172.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538739701.0: {
+            genTime:1538739701.0,
+            recTime:1538739702.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538740321.0: {
+            genTime:1538740321.0,
+            recTime:1538740328.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538740707.0: {
+            genTime:1538740707.0,
+            recTime:1538740713.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-111, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "10:00": {
+        gps: {
+          1538748000.0: { lat:40.42313209201488, lng:-86.91687567788357 },
+          1538748200.0: { lat:40.43075991901698, lng:-86.90415129844465 },
+          1538748400.0: { lat:40.42196835964011, lng:-86.91924548346806 },
+          1538748600.0: { lat:40.42927039433811, lng:-86.91820128407508 },
+          1538748800.0: { lat:40.435028410421616, lng:-86.91116703176995 },
+          1538749000.0: { lat:40.43515055168551, lng:-86.9043819236724 },
+          1538749200.0: { lat:40.426821903888246, lng:-86.91885120205038 },
+          1538749400.0: { lat:40.43344302463847, lng:-86.92277534783945 },
+          1538749600.0: { lat:40.42963268209087, lng:-86.90904795959176 },
+          1538749800.0: { lat:40.42392202123827, lng:-86.90770609092345 },
+          1538750000.0: { lat:40.428087466484314, lng:-86.9234420919465 },
+          1538750200.0: { lat:40.435006517398655, lng:-86.91520868473744 },
+          1538750400.0: { lat:40.428992003306774, lng:-86.9193173933688 },
+          1538750600.0: { lat:40.42582816217563, lng:-86.91292854345012 },
+          1538750800.0: { lat:40.43035534144875, lng:-86.90737454491843 },
+          1538751000.0: { lat:40.431889841702024, lng:-86.92258158051285 },
+          1538751200.0: { lat:40.42191297496085, lng:-86.90985803744276 },
+          1538751400.0: { lat:40.43579934227237, lng:-86.91939134601996 },
+        },
+        heartbeats: {
+          1538748000.0: {
+            genTime:1538748000.0,
+            recTime:1538748004.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538748121.0: {
+            genTime:1538748121.0,
+            recTime:1538748127.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538748591.0: {
+            genTime:1538748591.0,
+            recTime:1538748596.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-77, active: false, name:"AT&T"},
+            },
+          },
+          1538749139.0: {
+            genTime:1538749139.0,
+            recTime:1538749142.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538749347.0: {
+            genTime:1538749347.0,
+            recTime:1538749349.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-117, active: false, name:"AT&T"},
+            },
+          },
+          1538749704.0: {
+            genTime:1538749704.0,
+            recTime:1538749705.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-71, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538750067.0: {
+            genTime:1538750067.0,
+            recTime:1538750068.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538750970.0: {
+            genTime:1538750970.0,
+            recTime:1538750977.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "14:00": {
+        gps: {
+          1538762400.0: { lat:40.42011232947638, lng:-86.90439211065201 },
+          1538762600.0: { lat:40.42848316336167, lng:-86.91287798987989 },
+          1538762800.0: { lat:40.421263384232745, lng:-86.91354341585642 },
+          1538763000.0: { lat:40.424737664347724, lng:-86.923353168638 },
+          1538763200.0: { lat:40.427272240601376, lng:-86.90939619148136 },
+          1538763400.0: { lat:40.434072751839246, lng:-86.92196883212038 },
+          1538763600.0: { lat:40.42511924037481, lng:-86.90501212991579 },
+          1538763800.0: { lat:40.42383408032274, lng:-86.91618968210275 },
+          1538764000.0: { lat:40.427146990854226, lng:-86.90547574267971 },
+          1538764200.0: { lat:40.41950861580237, lng:-86.92185959127384 },
+          1538764400.0: { lat:40.42178479982764, lng:-86.92165189770814 },
+          1538764600.0: { lat:40.433045142166556, lng:-86.91380332331181 },
+          1538764800.0: { lat:40.43527328982598, lng:-86.91556219302439 },
+          1538765000.0: { lat:40.431468348672425, lng:-86.90428148667837 },
+          1538765200.0: { lat:40.435478832531444, lng:-86.91223946569434 },
+          1538765400.0: { lat:40.42691351381553, lng:-86.91249494114824 },
+          1538765600.0: { lat:40.419955657515494, lng:-86.90430861459822 },
+          1538765800.0: { lat:40.41946749695539, lng:-86.9111574012671 },
+        },
+        heartbeats: {
+          1538762400.0: {
+            genTime:1538762400.0,
+            recTime:1538762402.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-69, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538763056.0: {
+            genTime:1538763056.0,
+            recTime:1538763060.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538763933.0: {
+            genTime:1538763933.0,
+            recTime:1538763935.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538764707.0: {
+            genTime:1538764707.0,
+            recTime:1538764708.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538764974.0: {
+            genTime:1538764974.0,
+            recTime:1538764976.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-73, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538765106.0: {
+            genTime:1538765106.0,
+            recTime:1538765109.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538765805.0: {
+            genTime:1538765805.0,
+            recTime:1538765809.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+  },
+  "ghi789": {
+    "2018-09-29": {
+      "00:00": {
+        gps: {
+          1538193600.0: { lat:40.43557211942567, lng:-86.91116631580236 },
+          1538193800.0: { lat:40.43695914723127, lng:-86.91525112214461 },
+          1538194000.0: { lat:40.425066811151, lng:-86.91306765762363 },
+          1538194200.0: { lat:40.43730189445848, lng:-86.9050355181451 },
+          1538194400.0: { lat:40.43794013324797, lng:-86.90718616505696 },
+          1538194600.0: { lat:40.434833221745066, lng:-86.90715778908776 },
+          1538194800.0: { lat:40.430141369781786, lng:-86.91757647429385 },
+          1538195000.0: { lat:40.43357048609364, lng:-86.90678431731295 },
+          1538195200.0: { lat:40.42252272595408, lng:-86.91718332803549 },
+          1538195400.0: { lat:40.42562590503978, lng:-86.90903399321549 },
+          1538195600.0: { lat:40.42328550706354, lng:-86.91275742431083 },
+          1538195800.0: { lat:40.42769033713179, lng:-86.92200707266963 },
+          1538196000.0: { lat:40.419435423328466, lng:-86.92313299309855 },
+          1538196200.0: { lat:40.420706708098, lng:-86.91860391929798 },
+          1538196400.0: { lat:40.433456108823485, lng:-86.92254912880496 },
+          1538196600.0: { lat:40.4258835717182, lng:-86.90903343213157 },
+          1538196800.0: { lat:40.42130225352682, lng:-86.92208128849059 },
+          1538197000.0: { lat:40.43161273600643, lng:-86.9095732625524 },
+        },
+        heartbeats: {
+          1538193600.0: {
+            genTime:1538193600.0,
+            recTime:1538193601.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538194306.0: {
+            genTime:1538194306.0,
+            recTime:1538194307.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538194558.0: {
+            genTime:1538194558.0,
+            recTime:1538194559.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-71, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538195089.0: {
+            genTime:1538195089.0,
+            recTime:1538195090.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538195719.0: {
+            genTime:1538195719.0,
+            recTime:1538195720.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538196107.0: {
+            genTime:1538196107.0,
+            recTime:1538196110.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-75, active: false, name:"AT&T"},
+            },
+          },
+          1538196906.0: {
+            genTime:1538196906.0,
+            recTime:1538196908.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "02:00": {
+        gps: {
+          1538200800.0: { lat:40.43076859198973, lng:-86.91448188384628 },
+          1538201000.0: { lat:40.425336750309896, lng:-86.90566302240686 },
+          1538201200.0: { lat:40.43126889767491, lng:-86.92212301423362 },
+          1538201400.0: { lat:40.42672275596386, lng:-86.90447580706105 },
+          1538201600.0: { lat:40.42486723889694, lng:-86.92137418367828 },
+          1538201800.0: { lat:40.42127694792906, lng:-86.9212467639373 },
+          1538202000.0: { lat:40.43808164325487, lng:-86.91679262057524 },
+          1538202200.0: { lat:40.42777237230816, lng:-86.90525494985435 },
+          1538202400.0: { lat:40.42632177843137, lng:-86.92028251889924 },
+          1538202600.0: { lat:40.42757086478473, lng:-86.9165738004616 },
+          1538202800.0: { lat:40.4327544888798, lng:-86.92245111635542 },
+          1538203000.0: { lat:40.42456552244454, lng:-86.91381019824885 },
+          1538203200.0: { lat:40.41950394358344, lng:-86.92206264999581 },
+          1538203400.0: { lat:40.42517233174878, lng:-86.91944135186849 },
+          1538203600.0: { lat:40.42466668081081, lng:-86.91980546096735 },
+          1538203800.0: { lat:40.41980100178345, lng:-86.90834910015028 },
+          1538204000.0: { lat:40.429853795102915, lng:-86.9230509226655 },
+          1538204200.0: { lat:40.437307649262586, lng:-86.90775594798231 },
+        },
+        heartbeats: {
+          1538200800.0: {
+            genTime:1538200800.0,
+            recTime:1538200803.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538201622.0: {
+            genTime:1538201622.0,
+            recTime:1538201625.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538202426.0: {
+            genTime:1538202426.0,
+            recTime:1538202433.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538202728.0: {
+            genTime:1538202728.0,
+            recTime:1538202734.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538203326.0: {
+            genTime:1538203326.0,
+            recTime:1538203330.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-76, active: false, name:"AT&T"},
+            },
+          },
+          1538203799.0: {
+            genTime:1538203799.0,
+            recTime:1538203800.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538204346.0: {
+            genTime:1538204346.0,
+            recTime:1538204349.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "04:00": {
+        gps: {
+          1538208000.0: { lat:40.431755796302134, lng:-86.90548650115203 },
+          1538208200.0: { lat:40.423175097572056, lng:-86.92024858377005 },
+          1538208400.0: { lat:40.434913925035474, lng:-86.90907189171462 },
+          1538208600.0: { lat:40.4268515655917, lng:-86.91128667227512 },
+          1538208800.0: { lat:40.431966927483124, lng:-86.9134293237545 },
+          1538209000.0: { lat:40.426870896010676, lng:-86.90491016818983 },
+          1538209200.0: { lat:40.43555398219422, lng:-86.92343030625585 },
+          1538209400.0: { lat:40.42452772721332, lng:-86.92231675407774 },
+          1538209600.0: { lat:40.43236689140976, lng:-86.91307027295576 },
+          1538209800.0: { lat:40.43569116229158, lng:-86.91732184481518 },
+          1538210000.0: { lat:40.42707769211219, lng:-86.91092462465701 },
+          1538210200.0: { lat:40.425720132872655, lng:-86.9128736761979 },
+          1538210400.0: { lat:40.42998216974818, lng:-86.9101154532262 },
+          1538210600.0: { lat:40.43054409973295, lng:-86.91636204035493 },
+          1538210800.0: { lat:40.4337056930313, lng:-86.92247058801016 },
+          1538211000.0: { lat:40.42492812145459, lng:-86.92313993005945 },
+          1538211200.0: { lat:40.42808103389774, lng:-86.91295651278011 },
+          1538211400.0: { lat:40.436400691270144, lng:-86.91016002943407 },
+        },
+        heartbeats: {
+          1538208000.0: {
+            genTime:1538208000.0,
+            recTime:1538208001.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538209011.0: {
+            genTime:1538209011.0,
+            recTime:1538209014.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-118, active: false, name:"AT&T"},
+            },
+          },
+          1538209641.0: {
+            genTime:1538209641.0,
+            recTime:1538209643.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538210339.0: {
+            genTime:1538210339.0,
+            recTime:1538210341.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538211111.0: {
+            genTime:1538211111.0,
+            recTime:1538211113.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-67, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538211472.0: {
+            genTime:1538211472.0,
+            recTime:1538211482.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-82, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "07:00": {
+        gps: {
+          1538218800.0: { lat:40.432245080628796, lng:-86.9156854075757 },
+          1538219000.0: { lat:40.43244159890033, lng:-86.92374614434098 },
+          1538219200.0: { lat:40.4240403952413, lng:-86.90468364819455 },
+          1538219400.0: { lat:40.42276953302565, lng:-86.91921388198078 },
+          1538219600.0: { lat:40.43414725994855, lng:-86.91127017665 },
+          1538219800.0: { lat:40.43002878765192, lng:-86.91316770372414 },
+          1538220000.0: { lat:40.43398718921715, lng:-86.90740877581689 },
+          1538220200.0: { lat:40.42401816308641, lng:-86.91402388015425 },
+          1538220400.0: { lat:40.42742584526897, lng:-86.92273020924412 },
+          1538220600.0: { lat:40.42917953913726, lng:-86.92320655354034 },
+          1538220800.0: { lat:40.423150098627445, lng:-86.92370736398877 },
+          1538221000.0: { lat:40.42039190975554, lng:-86.91154300700673 },
+          1538221200.0: { lat:40.43452504903174, lng:-86.91215903611253 },
+          1538221400.0: { lat:40.428438296004785, lng:-86.90797885467155 },
+          1538221600.0: { lat:40.438282390700834, lng:-86.92015730693399 },
+          1538221800.0: { lat:40.42049508384495, lng:-86.9153970805643 },
+          1538222000.0: { lat:40.43856951872961, lng:-86.9163058774123 },
+          1538222200.0: { lat:40.437646386652816, lng:-86.9184582908488 },
+        },
+        heartbeats: {
+          1538218800.0: {
+            genTime:1538218800.0,
+            recTime:1538218805.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538219440.0: {
+            genTime:1538219440.0,
+            recTime:1538219441.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538220053.0: {
+            genTime:1538220053.0,
+            recTime:1538220064.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-66, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-114, active: false, name:"AT&T"},
+            },
+          },
+          1538220758.0: {
+            genTime:1538220758.0,
+            recTime:1538220764.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538221097.0: {
+            genTime:1538221097.0,
+            recTime:1538221105.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538221633.0: {
+            genTime:1538221633.0,
+            recTime:1538221639.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "15:00": {
+        gps: {
+          1538247600.0: { lat:40.420494666767354, lng:-86.91857190073948 },
+          1538247800.0: { lat:40.434871736436165, lng:-86.9105342192963 },
+          1538248000.0: { lat:40.419086096673354, lng:-86.92030894698252 },
+          1538248200.0: { lat:40.42734704454645, lng:-86.9084479840272 },
+          1538248400.0: { lat:40.4277565587943, lng:-86.90480931156007 },
+          1538248600.0: { lat:40.43242035376884, lng:-86.91936415626348 },
+          1538248800.0: { lat:40.42752903826233, lng:-86.9189653212615 },
+          1538249000.0: { lat:40.43189417023839, lng:-86.9205290472143 },
+          1538249200.0: { lat:40.42629283690153, lng:-86.91379650329448 },
+          1538249400.0: { lat:40.419059285024986, lng:-86.90417183947929 },
+          1538249600.0: { lat:40.4266461903188, lng:-86.90382656880476 },
+          1538249800.0: { lat:40.42353583326397, lng:-86.91575153328701 },
+          1538250000.0: { lat:40.438140445932426, lng:-86.9092130024888 },
+          1538250200.0: { lat:40.42014947241237, lng:-86.90648283468148 },
+          1538250400.0: { lat:40.421509134228636, lng:-86.92135002297799 },
+          1538250600.0: { lat:40.43454592225173, lng:-86.91770356433899 },
+          1538250800.0: { lat:40.428349570029035, lng:-86.91417252429362 },
+          1538251000.0: { lat:40.427949289967465, lng:-86.91351883628391 },
+        },
+        heartbeats: {
+          1538247600.0: {
+            genTime:1538247600.0,
+            recTime:1538247602.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-75, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538248148.0: {
+            genTime:1538248148.0,
+            recTime:1538248150.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538248505.0: {
+            genTime:1538248505.0,
+            recTime:1538248510.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538249269.0: {
+            genTime:1538249269.0,
+            recTime:1538249272.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538249950.0: {
+            genTime:1538249950.0,
+            recTime:1538249952.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-79, active: false, name:"AT&T"},
+            },
+          },
+          1538250392.0: {
+            genTime:1538250392.0,
+            recTime:1538250398.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538250970.0: {
+            genTime:1538250970.0,
+            recTime:1538250972.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-76, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "16:00": {
+        gps: {
+          1538251200.0: { lat:40.42753542054156, lng:-86.90549371352576 },
+          1538251400.0: { lat:40.42769211726298, lng:-86.91746542043595 },
+          1538251600.0: { lat:40.42756027521048, lng:-86.91452767589982 },
+          1538251800.0: { lat:40.432281662989936, lng:-86.90851548132817 },
+          1538252000.0: { lat:40.437699183379635, lng:-86.91347952411 },
+          1538252200.0: { lat:40.43575770681501, lng:-86.91295739338707 },
+          1538252400.0: { lat:40.43723191454709, lng:-86.92353743939117 },
+          1538252600.0: { lat:40.42585171697728, lng:-86.91462586576351 },
+          1538252800.0: { lat:40.43501146358752, lng:-86.91489682698777 },
+          1538253000.0: { lat:40.43423507451509, lng:-86.90406368570945 },
+          1538253200.0: { lat:40.43469858787434, lng:-86.91919911444474 },
+          1538253400.0: { lat:40.4372458071606, lng:-86.90390825651811 },
+          1538253600.0: { lat:40.43821098419677, lng:-86.91123819867516 },
+          1538253800.0: { lat:40.42755689247667, lng:-86.91716439022956 },
+          1538254000.0: { lat:40.437445199754755, lng:-86.91039041841653 },
+          1538254200.0: { lat:40.43508935546796, lng:-86.91583452415027 },
+          1538254400.0: { lat:40.43816603149788, lng:-86.9088456825262 },
+          1538254600.0: { lat:40.42109645942602, lng:-86.90804329917287 },
+        },
+        heartbeats: {
+          1538251200.0: {
+            genTime:1538251200.0,
+            recTime:1538251204.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538251740.0: {
+            genTime:1538251740.0,
+            recTime:1538251743.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538252444.0: {
+            genTime:1538252444.0,
+            recTime:1538252448.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538252946.0: {
+            genTime:1538252946.0,
+            recTime:1538252947.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-106, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538253517.0: {
+            genTime:1538253517.0,
+            recTime:1538253520.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538254187.0: {
+            genTime:1538254187.0,
+            recTime:1538254190.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538254565.0: {
+            genTime:1538254565.0,
+            recTime:1538254568.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "22:00": {
+        gps: {
+          1538272800.0: { lat:40.43849526423388, lng:-86.9121503117485 },
+          1538273000.0: { lat:40.421126142890884, lng:-86.91198169989043 },
+          1538273200.0: { lat:40.43576119109012, lng:-86.91748618394242 },
+          1538273400.0: { lat:40.420256381907016, lng:-86.91682203901344 },
+          1538273600.0: { lat:40.423861839263786, lng:-86.90818224162642 },
+          1538273800.0: { lat:40.422057450677144, lng:-86.90800907892154 },
+          1538274000.0: { lat:40.438285768207784, lng:-86.9087328781835 },
+          1538274200.0: { lat:40.435631578660676, lng:-86.92163785951833 },
+          1538274400.0: { lat:40.421868830991215, lng:-86.91473367973188 },
+          1538274600.0: { lat:40.42548186700014, lng:-86.91051641280478 },
+          1538274800.0: { lat:40.41886865190181, lng:-86.92226158956812 },
+          1538275000.0: { lat:40.42433916040053, lng:-86.91441023348663 },
+          1538275200.0: { lat:40.42510724857706, lng:-86.9074190056424 },
+          1538275400.0: { lat:40.42971383850574, lng:-86.91423769691716 },
+          1538275600.0: { lat:40.43243349462308, lng:-86.91661242653933 },
+          1538275800.0: { lat:40.43382816974979, lng:-86.90598557510856 },
+          1538276000.0: { lat:40.425496502466174, lng:-86.90942671798891 },
+          1538276200.0: { lat:40.4371453463549, lng:-86.90712985004514 },
+        },
+        heartbeats: {
+          1538272800.0: {
+            genTime:1538272800.0,
+            recTime:1538272801.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538273136.0: {
+            genTime:1538273136.0,
+            recTime:1538273137.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538273854.0: {
+            genTime:1538273854.0,
+            recTime:1538273856.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538274550.0: {
+            genTime:1538274550.0,
+            recTime:1538274554.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-104, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-80, active: false, name:"AT&T"},
+            },
+          },
+          1538275039.0: {
+            genTime:1538275039.0,
+            recTime:1538275041.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538275512.0: {
+            genTime:1538275512.0,
+            recTime:1538275516.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538276038.0: {
+            genTime:1538276038.0,
+            recTime:1538276040.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "23:00": {
+        gps: {
+          1538276400.0: { lat:40.420043388828724, lng:-86.91665359986435 },
+          1538276600.0: { lat:40.41928424768225, lng:-86.9174576073763 },
+          1538276800.0: { lat:40.43501721456795, lng:-86.911429430532 },
+          1538277000.0: { lat:40.43394524118376, lng:-86.90620625408341 },
+          1538277200.0: { lat:40.43500430832623, lng:-86.92309199383556 },
+          1538277400.0: { lat:40.43703759912917, lng:-86.91556944071503 },
+          1538277600.0: { lat:40.42954506417963, lng:-86.90695194508952 },
+          1538277800.0: { lat:40.42691706468083, lng:-86.91837995372865 },
+          1538278000.0: { lat:40.436293003671615, lng:-86.91718607409378 },
+          1538278200.0: { lat:40.423503805263366, lng:-86.91180309185927 },
+          1538278400.0: { lat:40.42556593897847, lng:-86.90736731709563 },
+          1538278600.0: { lat:40.431643303141826, lng:-86.92214749359202 },
+          1538278800.0: { lat:40.42489387782598, lng:-86.91267953191509 },
+          1538279000.0: { lat:40.427108686909385, lng:-86.9175383196845 },
+          1538279200.0: { lat:40.43006881161703, lng:-86.91770267371241 },
+          1538279400.0: { lat:40.43582281187308, lng:-86.90836186637355 },
+          1538279600.0: { lat:40.41997056497226, lng:-86.9141289813297 },
+          1538279800.0: { lat:40.42588122375386, lng:-86.92335471749642 },
+        },
+        heartbeats: {
+          1538276400.0: {
+            genTime:1538276400.0,
+            recTime:1538276403.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-72, active: false, name:"AT&T"},
+            },
+          },
+          1538276836.0: {
+            genTime:1538276836.0,
+            recTime:1538276841.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-110, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538277578.0: {
+            genTime:1538277578.0,
+            recTime:1538277583.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-105, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538278288.0: {
+            genTime:1538278288.0,
+            recTime:1538278289.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538279032.0: {
+            genTime:1538279032.0,
+            recTime:1538279037.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538279575.0: {
+            genTime:1538279575.0,
+            recTime:1538279576.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+    "2018-09-30": {
+      "03:00": {
+        gps: {
+          1538290800.0: { lat:40.42024396857768, lng:-86.92038707972463 },
+          1538291000.0: { lat:40.438538436732756, lng:-86.91251704818343 },
+          1538291200.0: { lat:40.427318868368566, lng:-86.91435864651822 },
+          1538291400.0: { lat:40.42635516279591, lng:-86.90883319818967 },
+          1538291600.0: { lat:40.427466331522915, lng:-86.91477262629606 },
+          1538291800.0: { lat:40.43862004646574, lng:-86.9186678238639 },
+          1538292000.0: { lat:40.43295392910583, lng:-86.90803206663041 },
+          1538292200.0: { lat:40.424568293317776, lng:-86.91164136546446 },
+          1538292400.0: { lat:40.42492374301717, lng:-86.91966417907666 },
+          1538292600.0: { lat:40.41931240064394, lng:-86.91841040908855 },
+          1538292800.0: { lat:40.42177008773662, lng:-86.90856751135239 },
+          1538293000.0: { lat:40.420706986698875, lng:-86.91790555536842 },
+          1538293200.0: { lat:40.421906826987275, lng:-86.91760295453902 },
+          1538293400.0: { lat:40.42860311277278, lng:-86.91791149791895 },
+          1538293600.0: { lat:40.43504745243632, lng:-86.92046225556594 },
+          1538293800.0: { lat:40.42348840018275, lng:-86.91651283768648 },
+          1538294000.0: { lat:40.43247524731187, lng:-86.92234568290885 },
+          1538294200.0: { lat:40.4187508896093, lng:-86.91276877356324 },
+        },
+        heartbeats: {
+          1538290800.0: {
+            genTime:1538290800.0,
+            recTime:1538290802.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538291471.0: {
+            genTime:1538291471.0,
+            recTime:1538291474.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-98, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538292288.0: {
+            genTime:1538292288.0,
+            recTime:1538292290.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538292823.0: {
+            genTime:1538292823.0,
+            recTime:1538292827.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538293441.0: {
+            genTime:1538293441.0,
+            recTime:1538293444.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-72, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-108, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-72, active: false, name:"AT&T"},
+            },
+          },
+          1538293860.0: {
+            genTime:1538293860.0,
+            recTime:1538293866.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538294004.0: {
+            genTime:1538294004.0,
+            recTime:1538294009.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "04:00": {
+        gps: {
+          1538294400.0: { lat:40.425458745376595, lng:-86.91918925037031 },
+          1538294600.0: { lat:40.43159975471372, lng:-86.90478096107967 },
+          1538294800.0: { lat:40.41982261623472, lng:-86.91328804636058 },
+          1538295000.0: { lat:40.42401164761601, lng:-86.92087150318235 },
+          1538295200.0: { lat:40.420121412897544, lng:-86.90395073775674 },
+          1538295400.0: { lat:40.428942711770446, lng:-86.90561372629517 },
+          1538295600.0: { lat:40.427930202042354, lng:-86.90922679769184 },
+          1538295800.0: { lat:40.41979787799345, lng:-86.91485432238848 },
+          1538296000.0: { lat:40.43796418757288, lng:-86.9184241440442 },
+          1538296200.0: { lat:40.41865010400855, lng:-86.90494943858809 },
+          1538296400.0: { lat:40.432659564199405, lng:-86.91136988607339 },
+          1538296600.0: { lat:40.43804335407592, lng:-86.9159445812955 },
+          1538296800.0: { lat:40.42934482867308, lng:-86.90663118225926 },
+          1538297000.0: { lat:40.42419742164019, lng:-86.91421975278685 },
+          1538297200.0: { lat:40.423016945313215, lng:-86.91806095153134 },
+          1538297400.0: { lat:40.42407315831821, lng:-86.9133528234251 },
+          1538297600.0: { lat:40.43103313840711, lng:-86.9121024317099 },
+          1538297800.0: { lat:40.435640712175804, lng:-86.91270950629345 },
+        },
+        heartbeats: {
+          1538294400.0: {
+            genTime:1538294400.0,
+            recTime:1538294408.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538294909.0: {
+            genTime:1538294909.0,
+            recTime:1538294914.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538295438.0: {
+            genTime:1538295438.0,
+            recTime:1538295439.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538295837.0: {
+            genTime:1538295837.0,
+            recTime:1538295839.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538296191.0: {
+            genTime:1538296191.0,
+            recTime:1538296192.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538296702.0: {
+            genTime:1538296702.0,
+            recTime:1538296704.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-106, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538297521.0: {
+            genTime:1538297521.0,
+            recTime:1538297528.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-100, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "05:00": {
+        gps: {
+          1538298000.0: { lat:40.435859856037396, lng:-86.91928867509542 },
+          1538298200.0: { lat:40.43711443887532, lng:-86.9188224366659 },
+          1538298400.0: { lat:40.43534443870333, lng:-86.91619042099533 },
+          1538298600.0: { lat:40.43021483047637, lng:-86.90882610718303 },
+          1538298800.0: { lat:40.424118075941465, lng:-86.9208076412626 },
+          1538299000.0: { lat:40.43372511228138, lng:-86.90982835686528 },
+          1538299200.0: { lat:40.42141085967554, lng:-86.92306091539757 },
+          1538299400.0: { lat:40.42917953389611, lng:-86.91382573296151 },
+          1538299600.0: { lat:40.42379845846019, lng:-86.91091904555901 },
+          1538299800.0: { lat:40.42151111322864, lng:-86.91593203648418 },
+          1538300000.0: { lat:40.43505336458099, lng:-86.91683842824648 },
+          1538300200.0: { lat:40.41963515567782, lng:-86.9147562676839 },
+          1538300400.0: { lat:40.43658875316591, lng:-86.90884816212322 },
+          1538300600.0: { lat:40.43359818233198, lng:-86.92349812463024 },
+          1538300800.0: { lat:40.41961394499333, lng:-86.90398610835929 },
+          1538301000.0: { lat:40.42315063005994, lng:-86.91644974566815 },
+          1538301200.0: { lat:40.43445710241385, lng:-86.91790435253412 },
+          1538301400.0: { lat:40.42175508718408, lng:-86.9039554161582 },
+        },
+        heartbeats: {
+          1538298000.0: {
+            genTime:1538298000.0,
+            recTime:1538298005.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538298466.0: {
+            genTime:1538298466.0,
+            recTime:1538298469.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538298839.0: {
+            genTime:1538298839.0,
+            recTime:1538298842.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538299777.0: {
+            genTime:1538299777.0,
+            recTime:1538299779.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-98, active: false, name:"AT&T"},
+            },
+          },
+          1538300257.0: {
+            genTime:1538300257.0,
+            recTime:1538300259.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538300958.0: {
+            genTime:1538300958.0,
+            recTime:1538300963.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-80, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "08:00": {
+        gps: {
+          1538308800.0: { lat:40.427993506967, lng:-86.91030314714943 },
+          1538309000.0: { lat:40.420628343560466, lng:-86.91057843291398 },
+          1538309200.0: { lat:40.423222274555314, lng:-86.91500152885918 },
+          1538309400.0: { lat:40.4306353262044, lng:-86.9114774538746 },
+          1538309600.0: { lat:40.4254767229822, lng:-86.91940324265833 },
+          1538309800.0: { lat:40.42975245492198, lng:-86.91810456261123 },
+          1538310000.0: { lat:40.42214295123639, lng:-86.90513369859387 },
+          1538310200.0: { lat:40.43089995079638, lng:-86.92111696320349 },
+          1538310400.0: { lat:40.43055522600033, lng:-86.9225560239575 },
+          1538310600.0: { lat:40.420138210578614, lng:-86.90776597764471 },
+          1538310800.0: { lat:40.4306995689109, lng:-86.91554246104783 },
+          1538311000.0: { lat:40.431053779397615, lng:-86.91955409620618 },
+          1538311200.0: { lat:40.43335918670173, lng:-86.91410953948436 },
+          1538311400.0: { lat:40.42521259986082, lng:-86.90754628500446 },
+          1538311600.0: { lat:40.43060508598149, lng:-86.9209065719677 },
+          1538311800.0: { lat:40.42335311364062, lng:-86.92279692820733 },
+          1538312000.0: { lat:40.419527085529836, lng:-86.91759471734255 },
+          1538312200.0: { lat:40.429560397160664, lng:-86.9093714683275 },
+        },
+        heartbeats: {
+          1538308800.0: {
+            genTime:1538308800.0,
+            recTime:1538308803.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-74, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538309442.0: {
+            genTime:1538309442.0,
+            recTime:1538309446.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538310381.0: {
+            genTime:1538310381.0,
+            recTime:1538310383.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-104, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538311394.0: {
+            genTime:1538311394.0,
+            recTime:1538311399.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-114, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538311966.0: {
+            genTime:1538311966.0,
+            recTime:1538311968.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "09:00": {
+        gps: {
+          1538312400.0: { lat:40.425186045439574, lng:-86.91461569516144 },
+          1538312600.0: { lat:40.42692805225318, lng:-86.91753466206752 },
+          1538312800.0: { lat:40.43688312681607, lng:-86.92221043939522 },
+          1538313000.0: { lat:40.421475969468915, lng:-86.9074623102139 },
+          1538313200.0: { lat:40.41987552535317, lng:-86.91501973882458 },
+          1538313400.0: { lat:40.42031836048734, lng:-86.91285428648766 },
+          1538313600.0: { lat:40.436458951373055, lng:-86.91635154000564 },
+          1538313800.0: { lat:40.41981034629309, lng:-86.90752807196446 },
+          1538314000.0: { lat:40.43670252529082, lng:-86.9159424982637 },
+          1538314200.0: { lat:40.42291920391807, lng:-86.91702335074815 },
+          1538314400.0: { lat:40.43091904362893, lng:-86.92267441792919 },
+          1538314600.0: { lat:40.43458420952177, lng:-86.91642646817687 },
+          1538314800.0: { lat:40.428232870133925, lng:-86.90856836381305 },
+          1538315000.0: { lat:40.43060186317417, lng:-86.91202558502053 },
+          1538315200.0: { lat:40.422057409397304, lng:-86.91728635915786 },
+          1538315400.0: { lat:40.42860101753412, lng:-86.91215964747556 },
+          1538315600.0: { lat:40.423547138533195, lng:-86.91613942493964 },
+          1538315800.0: { lat:40.4215875284752, lng:-86.9192177081387 },
+        },
+        heartbeats: {
+          1538312400.0: {
+            genTime:1538312400.0,
+            recTime:1538312403.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538313409.0: {
+            genTime:1538313409.0,
+            recTime:1538313412.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538313769.0: {
+            genTime:1538313769.0,
+            recTime:1538313773.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-68, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538314190.0: {
+            genTime:1538314190.0,
+            recTime:1538314200.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538314283.0: {
+            genTime:1538314283.0,
+            recTime:1538314286.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-60, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538314514.0: {
+            genTime:1538314514.0,
+            recTime:1538314515.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538315232.0: {
+            genTime:1538315232.0,
+            recTime:1538315236.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-124, active: false, name:"AT&T"},
+            },
+          },
+          1538315852.0: {
+            genTime:1538315852.0,
+            recTime:1538315858.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-71, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "10:00": {
+        gps: {
+          1538316000.0: { lat:40.41909661590088, lng:-86.9203733427848 },
+          1538316200.0: { lat:40.42639338899166, lng:-86.91901306607458 },
+          1538316400.0: { lat:40.421254807683866, lng:-86.91605804440242 },
+          1538316600.0: { lat:40.42936392115115, lng:-86.92025463888982 },
+          1538316800.0: { lat:40.4285332182825, lng:-86.90490948636155 },
+          1538317000.0: { lat:40.42885898449679, lng:-86.91643308811791 },
+          1538317200.0: { lat:40.42189078471643, lng:-86.90902347085984 },
+          1538317400.0: { lat:40.43321874720949, lng:-86.9060955672545 },
+          1538317600.0: { lat:40.427060087022944, lng:-86.91688717046068 },
+          1538317800.0: { lat:40.42195894536792, lng:-86.92090099701191 },
+          1538318000.0: { lat:40.43621833655016, lng:-86.90724537051751 },
+          1538318200.0: { lat:40.42447617903385, lng:-86.90570229001464 },
+          1538318400.0: { lat:40.42584518856936, lng:-86.91468631505495 },
+          1538318600.0: { lat:40.419217779108415, lng:-86.90401955084154 },
+          1538318800.0: { lat:40.42550709708966, lng:-86.92105136031716 },
+          1538319000.0: { lat:40.42445705555964, lng:-86.92167802907403 },
+          1538319200.0: { lat:40.4241112006931, lng:-86.9197467229461 },
+          1538319400.0: { lat:40.42489970361419, lng:-86.9165246075832 },
+        },
+        heartbeats: {
+          1538316000.0: {
+            genTime:1538316000.0,
+            recTime:1538316003.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-104, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-72, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538316720.0: {
+            genTime:1538316720.0,
+            recTime:1538316723.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538317240.0: {
+            genTime:1538317240.0,
+            recTime:1538317247.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-79, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538317947.0: {
+            genTime:1538317947.0,
+            recTime:1538317948.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-101, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538318702.0: {
+            genTime:1538318702.0,
+            recTime:1538318707.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538319532.0: {
+            genTime:1538319532.0,
+            recTime:1538319537.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "11:00": {
+        gps: {
+          1538319600.0: { lat:40.42331134057671, lng:-86.92244883482228 },
+          1538319800.0: { lat:40.42392481001101, lng:-86.90738048905523 },
+          1538320000.0: { lat:40.42080625368647, lng:-86.91568479679432 },
+          1538320200.0: { lat:40.4270957990026, lng:-86.90758371611228 },
+          1538320400.0: { lat:40.4340368120807, lng:-86.90382128076192 },
+          1538320600.0: { lat:40.42188247129469, lng:-86.91312715355443 },
+          1538320800.0: { lat:40.437145083587865, lng:-86.91785088583589 },
+          1538321000.0: { lat:40.435598571844466, lng:-86.90688057224472 },
+          1538321200.0: { lat:40.427764159063486, lng:-86.91490007010056 },
+          1538321400.0: { lat:40.42494439276632, lng:-86.9118652274423 },
+          1538321600.0: { lat:40.43304087658453, lng:-86.9075021902117 },
+          1538321800.0: { lat:40.41957451085398, lng:-86.92294715206201 },
+          1538322000.0: { lat:40.43614226229312, lng:-86.91636823328685 },
+          1538322200.0: { lat:40.41979531355251, lng:-86.90862535869763 },
+          1538322400.0: { lat:40.43292567439887, lng:-86.92075665593204 },
+          1538322600.0: { lat:40.43150421723303, lng:-86.92059707169426 },
+          1538322800.0: { lat:40.43673764178919, lng:-86.92360330102686 },
+          1538323000.0: { lat:40.419779241010765, lng:-86.91489412837613 },
+        },
+        heartbeats: {
+          1538319600.0: {
+            genTime:1538319600.0,
+            recTime:1538319603.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-107, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538320075.0: {
+            genTime:1538320075.0,
+            recTime:1538320076.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-105, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-72, active: false, name:"AT&T"},
+            },
+          },
+          1538320842.0: {
+            genTime:1538320842.0,
+            recTime:1538320847.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-111, active: false, name:"AT&T"},
+            },
+          },
+          1538321696.0: {
+            genTime:1538321696.0,
+            recTime:1538321701.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538322548.0: {
+            genTime:1538322548.0,
+            recTime:1538322559.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538322787.0: {
+            genTime:1538322787.0,
+            recTime:1538322792.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "12:00": {
+        gps: {
+          1538323200.0: { lat:40.4227986997771, lng:-86.90520148719452 },
+          1538323400.0: { lat:40.42190893906226, lng:-86.91484522244129 },
+          1538323600.0: { lat:40.4272077245204, lng:-86.91718655164713 },
+          1538323800.0: { lat:40.42658299232702, lng:-86.9205401153519 },
+          1538324000.0: { lat:40.42759250591258, lng:-86.90933542766304 },
+          1538324200.0: { lat:40.43433721325765, lng:-86.91760099522646 },
+          1538324400.0: { lat:40.41983348989145, lng:-86.91920344064432 },
+          1538324600.0: { lat:40.43382731938245, lng:-86.9232301362383 },
+          1538324800.0: { lat:40.43788147700271, lng:-86.91661916874038 },
+          1538325000.0: { lat:40.434413694511505, lng:-86.90564046848478 },
+          1538325200.0: { lat:40.43182266333824, lng:-86.91320383160097 },
+          1538325400.0: { lat:40.43825665949058, lng:-86.9102797240473 },
+          1538325600.0: { lat:40.42463362700445, lng:-86.91309156840124 },
+          1538325800.0: { lat:40.42817036869995, lng:-86.90398727298454 },
+          1538326000.0: { lat:40.43048457856548, lng:-86.92267046750324 },
+          1538326200.0: { lat:40.4243675947095, lng:-86.92229593410725 },
+          1538326400.0: { lat:40.43443220949779, lng:-86.90913143911826 },
+          1538326600.0: { lat:40.438121136628496, lng:-86.90657846059784 },
+        },
+        heartbeats: {
+          1538323200.0: {
+            genTime:1538323200.0,
+            recTime:1538323202.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538323681.0: {
+            genTime:1538323681.0,
+            recTime:1538323685.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538324350.0: {
+            genTime:1538324350.0,
+            recTime:1538324355.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-77, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538325035.0: {
+            genTime:1538325035.0,
+            recTime:1538325038.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538325787.0: {
+            genTime:1538325787.0,
+            recTime:1538325796.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538326591.0: {
+            genTime:1538326591.0,
+            recTime:1538326593.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-60, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "14:00": {
+        gps: {
+          1538330400.0: { lat:40.423917359220596, lng:-86.91839970829768 },
+          1538330600.0: { lat:40.424030621675726, lng:-86.92319309613916 },
+          1538330800.0: { lat:40.426414410036415, lng:-86.92129837283453 },
+          1538331000.0: { lat:40.433828703282735, lng:-86.92224081524182 },
+          1538331200.0: { lat:40.43162513888826, lng:-86.90560480333038 },
+          1538331400.0: { lat:40.43807877376139, lng:-86.91817729739195 },
+          1538331600.0: { lat:40.4228954691046, lng:-86.9190734083639 },
+          1538331800.0: { lat:40.42458592260146, lng:-86.9045033146243 },
+          1538332000.0: { lat:40.42976376556594, lng:-86.9188260587066 },
+          1538332200.0: { lat:40.42570198388479, lng:-86.91010165081398 },
+          1538332400.0: { lat:40.42077698244816, lng:-86.92002674959602 },
+          1538332600.0: { lat:40.43468672227104, lng:-86.9093927436585 },
+          1538332800.0: { lat:40.42102123513256, lng:-86.92145035616616 },
+          1538333000.0: { lat:40.4243538263961, lng:-86.91216949472783 },
+          1538333200.0: { lat:40.43579764504204, lng:-86.92225987619383 },
+          1538333400.0: { lat:40.432107464255246, lng:-86.92183063832353 },
+          1538333600.0: { lat:40.424154498818794, lng:-86.91733406197382 },
+          1538333800.0: { lat:40.42533745284653, lng:-86.91759474628425 },
+        },
+        heartbeats: {
+          1538330400.0: {
+            genTime:1538330400.0,
+            recTime:1538330406.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538331630.0: {
+            genTime:1538331630.0,
+            recTime:1538331636.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538332517.0: {
+            genTime:1538332517.0,
+            recTime:1538332521.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-67, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538333206.0: {
+            genTime:1538333206.0,
+            recTime:1538333211.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-73, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "15:00": {
+        gps: {
+          1538334000.0: { lat:40.433967443819434, lng:-86.90859544226161 },
+          1538334200.0: { lat:40.4283352466903, lng:-86.91461664465199 },
+          1538334400.0: { lat:40.42332674298394, lng:-86.90603216288096 },
+          1538334600.0: { lat:40.43083617340641, lng:-86.9105316372815 },
+          1538334800.0: { lat:40.43004943763265, lng:-86.90445947620913 },
+          1538335000.0: { lat:40.42968137254496, lng:-86.90775577016693 },
+          1538335200.0: { lat:40.435108921258816, lng:-86.91068399455851 },
+          1538335400.0: { lat:40.42257039079348, lng:-86.90572488648297 },
+          1538335600.0: { lat:40.43049695583916, lng:-86.91388167318696 },
+          1538335800.0: { lat:40.421501089536626, lng:-86.91817658319695 },
+          1538336000.0: { lat:40.42830951977333, lng:-86.92172169706593 },
+          1538336200.0: { lat:40.42703306280354, lng:-86.90905745453045 },
+          1538336400.0: { lat:40.431434866427196, lng:-86.9204701595983 },
+          1538336600.0: { lat:40.4255198220279, lng:-86.91095929438829 },
+          1538336800.0: { lat:40.42734909134136, lng:-86.90861205514544 },
+          1538337000.0: { lat:40.42668404496393, lng:-86.91994073361228 },
+          1538337200.0: { lat:40.42344307368107, lng:-86.91717513880641 },
+          1538337400.0: { lat:40.4252697238031, lng:-86.9228735614291 },
+        },
+        heartbeats: {
+          1538334000.0: {
+            genTime:1538334000.0,
+            recTime:1538334001.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-100, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538334604.0: {
+            genTime:1538334604.0,
+            recTime:1538334607.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+          1538335101.0: {
+            genTime:1538335101.0,
+            recTime:1538335102.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538335962.0: {
+            genTime:1538335962.0,
+            recTime:1538335966.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538336761.0: {
+            genTime:1538336761.0,
+            recTime:1538336762.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538337261.0: {
+            genTime:1538337261.0,
+            recTime:1538337263.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "18:00": {
+        gps: {
+          1538344800.0: { lat:40.425544704318575, lng:-86.91367043453646 },
+          1538345000.0: { lat:40.434008500140436, lng:-86.91963987727449 },
+          1538345200.0: { lat:40.42341742090373, lng:-86.91563526505867 },
+          1538345400.0: { lat:40.430987227577425, lng:-86.91932787699521 },
+          1538345600.0: { lat:40.42886327498268, lng:-86.90722824192859 },
+          1538345800.0: { lat:40.4351071592506, lng:-86.92017644035016 },
+          1538346000.0: { lat:40.431005730331584, lng:-86.90739822824378 },
+          1538346200.0: { lat:40.429551377793935, lng:-86.91445144616368 },
+          1538346400.0: { lat:40.41955552815943, lng:-86.92356403527026 },
+          1538346600.0: { lat:40.42680384010782, lng:-86.9056549183876 },
+          1538346800.0: { lat:40.420839363709725, lng:-86.92299113251791 },
+          1538347000.0: { lat:40.42898627546372, lng:-86.92130362718451 },
+          1538347200.0: { lat:40.437825637306744, lng:-86.91396865344804 },
+          1538347400.0: { lat:40.4334825411499, lng:-86.91125361467769 },
+          1538347600.0: { lat:40.42951038301617, lng:-86.9055481161108 },
+          1538347800.0: { lat:40.4237516902668, lng:-86.906214351462 },
+          1538348000.0: { lat:40.43739875632772, lng:-86.9093723760093 },
+          1538348200.0: { lat:40.42644495107477, lng:-86.91753092216496 },
+        },
+        heartbeats: {
+          1538344800.0: {
+            genTime:1538344800.0,
+            recTime:1538344801.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538345252.0: {
+            genTime:1538345252.0,
+            recTime:1538345258.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-110, active: false, name:"AT&T"},
+            },
+          },
+          1538345784.0: {
+            genTime:1538345784.0,
+            recTime:1538345788.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538346520.0: {
+            genTime:1538346520.0,
+            recTime:1538346525.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-94, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538347215.0: {
+            genTime:1538347215.0,
+            recTime:1538347222.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538347898.0: {
+            genTime:1538347898.0,
+            recTime:1538347901.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "20:00": {
+        gps: {
+          1538352000.0: { lat:40.42025998763038, lng:-86.91445543988132 },
+          1538352200.0: { lat:40.43633066037584, lng:-86.92095447556282 },
+          1538352400.0: { lat:40.4351390083023, lng:-86.91537263757327 },
+          1538352600.0: { lat:40.431737780827724, lng:-86.90802329927209 },
+          1538352800.0: { lat:40.43262017085967, lng:-86.92052560879544 },
+          1538353000.0: { lat:40.42737769042789, lng:-86.92155315091067 },
+          1538353200.0: { lat:40.419471760771195, lng:-86.91675068817109 },
+          1538353400.0: { lat:40.425980736009485, lng:-86.91796862440941 },
+          1538353600.0: { lat:40.42814803852672, lng:-86.90923998438016 },
+          1538353800.0: { lat:40.43797134510078, lng:-86.9052493979205 },
+          1538354000.0: { lat:40.41954103959737, lng:-86.91563167664687 },
+          1538354200.0: { lat:40.43659654862756, lng:-86.91850276803042 },
+          1538354400.0: { lat:40.41894687890429, lng:-86.91739359402781 },
+          1538354600.0: { lat:40.43637425587496, lng:-86.90449365768953 },
+          1538354800.0: { lat:40.43375015443054, lng:-86.91203268655379 },
+          1538355000.0: { lat:40.424895922013526, lng:-86.91560172461514 },
+          1538355200.0: { lat:40.4191623439057, lng:-86.91191759683271 },
+          1538355400.0: { lat:40.42576451273119, lng:-86.92264772310483 },
+        },
+        heartbeats: {
+          1538352000.0: {
+            genTime:1538352000.0,
+            recTime:1538352002.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-97, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538352656.0: {
+            genTime:1538352656.0,
+            recTime:1538352660.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538353285.0: {
+            genTime:1538353285.0,
+            recTime:1538353291.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-69, active: false, name:"AT&T"},
+            },
+          },
+          1538353968.0: {
+            genTime:1538353968.0,
+            recTime:1538353975.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538354503.0: {
+            genTime:1538354503.0,
+            recTime:1538354506.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-115, active: false, name:"AT&T"},
+            },
+          },
+          1538355157.0: {
+            genTime:1538355157.0,
+            recTime:1538355159.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "22:00": {
+        gps: {
+          1538359200.0: { lat:40.42549417317914, lng:-86.91642570275951 },
+          1538359400.0: { lat:40.42127879917187, lng:-86.9088637071352 },
+          1538359600.0: { lat:40.42586996681039, lng:-86.90390692726169 },
+          1538359800.0: { lat:40.433252007262006, lng:-86.9180108102194 },
+          1538360000.0: { lat:40.42356071874106, lng:-86.92017738063895 },
+          1538360200.0: { lat:40.423119297942804, lng:-86.92036283472072 },
+          1538360400.0: { lat:40.425585853877415, lng:-86.90552028374302 },
+          1538360600.0: { lat:40.42526595656298, lng:-86.90948767905098 },
+          1538360800.0: { lat:40.42920977556552, lng:-86.90603536181823 },
+          1538361000.0: { lat:40.41884693391922, lng:-86.91356290317853 },
+          1538361200.0: { lat:40.41959416021329, lng:-86.91439405633132 },
+          1538361400.0: { lat:40.434929371693094, lng:-86.90539883826024 },
+          1538361600.0: { lat:40.431057303892, lng:-86.90442516274719 },
+          1538361800.0: { lat:40.42876931092478, lng:-86.90851410400367 },
+          1538362000.0: { lat:40.43590168094466, lng:-86.91827384351544 },
+          1538362200.0: { lat:40.43206091454595, lng:-86.90395957589853 },
+          1538362400.0: { lat:40.42553860999612, lng:-86.91364674369485 },
+          1538362600.0: { lat:40.43855996356415, lng:-86.92016600213823 },
+        },
+        heartbeats: {
+          1538359200.0: {
+            genTime:1538359200.0,
+            recTime:1538359201.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-86, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538359806.0: {
+            genTime:1538359806.0,
+            recTime:1538359808.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538360800.0: {
+            genTime:1538360800.0,
+            recTime:1538360804.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-67, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-76, active: false, name:"AT&T"},
+            },
+          },
+          1538361300.0: {
+            genTime:1538361300.0,
+            recTime:1538361303.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538361765.0: {
+            genTime:1538361765.0,
+            recTime:1538361769.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-85, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538362126.0: {
+            genTime:1538362126.0,
+            recTime:1538362130.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+    "2018-10-01": {
+      "01:00": {
+        gps: {
+          1538370000.0: { lat:40.42958619237568, lng:-86.92013510604431 },
+          1538370200.0: { lat:40.43454375724081, lng:-86.90660754724907 },
+          1538370400.0: { lat:40.43692056429674, lng:-86.91908757253525 },
+          1538370600.0: { lat:40.43521540938373, lng:-86.90402131516814 },
+          1538370800.0: { lat:40.42066874988097, lng:-86.90574267382243 },
+          1538371000.0: { lat:40.4214498268153, lng:-86.9186276828407 },
+          1538371200.0: { lat:40.41956357006701, lng:-86.90846011661479 },
+          1538371400.0: { lat:40.431922776925475, lng:-86.91348722421478 },
+          1538371600.0: { lat:40.42237308492705, lng:-86.9110947552006 },
+          1538371800.0: { lat:40.421375972888356, lng:-86.9131726007763 },
+          1538372000.0: { lat:40.42695719736494, lng:-86.9091033568474 },
+          1538372200.0: { lat:40.438530663181375, lng:-86.9210297238708 },
+          1538372400.0: { lat:40.41930487692369, lng:-86.9057738708988 },
+          1538372600.0: { lat:40.43625631935753, lng:-86.90436494696594 },
+          1538372800.0: { lat:40.43822080992216, lng:-86.90775171413611 },
+          1538373000.0: { lat:40.43416193130733, lng:-86.91600702203722 },
+          1538373200.0: { lat:40.41973368673563, lng:-86.91359952264835 },
+          1538373400.0: { lat:40.438282988947115, lng:-86.90501430826687 },
+        },
+        heartbeats: {
+          1538370000.0: {
+            genTime:1538370000.0,
+            recTime:1538370003.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+          1538371087.0: {
+            genTime:1538371087.0,
+            recTime:1538371089.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-84, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538371785.0: {
+            genTime:1538371785.0,
+            recTime:1538371788.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+          1538372160.0: {
+            genTime:1538372160.0,
+            recTime:1538372162.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-78, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-73, active: false, name:"AT&T"},
+            },
+          },
+          1538372818.0: {
+            genTime:1538372818.0,
+            recTime:1538372823.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-83, active: false, name:"AT&T"},
+            },
+          },
+          1538373502.0: {
+            genTime:1538373502.0,
+            recTime:1538373506.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "02:00": {
+        gps: {
+          1538373600.0: { lat:40.43643897954442, lng:-86.91737569431952 },
+          1538373800.0: { lat:40.421254652867574, lng:-86.90524648917734 },
+          1538374000.0: { lat:40.42472322786198, lng:-86.90850166205166 },
+          1538374200.0: { lat:40.42175207848638, lng:-86.90528141897808 },
+          1538374400.0: { lat:40.422842769994155, lng:-86.91127333306201 },
+          1538374600.0: { lat:40.433719625272055, lng:-86.90745910407844 },
+          1538374800.0: { lat:40.41877278612042, lng:-86.91557393005775 },
+          1538375000.0: { lat:40.43349496189204, lng:-86.91857656398037 },
+          1538375200.0: { lat:40.43679507191978, lng:-86.923716884965 },
+          1538375400.0: { lat:40.42290588203909, lng:-86.90439942851788 },
+          1538375600.0: { lat:40.420352853238654, lng:-86.91041118051689 },
+          1538375800.0: { lat:40.42712024579902, lng:-86.90648482449517 },
+          1538376000.0: { lat:40.42961532708647, lng:-86.92087298728674 },
+          1538376200.0: { lat:40.425908522280814, lng:-86.9195323245267 },
+          1538376400.0: { lat:40.42722281477063, lng:-86.90685313238289 },
+          1538376600.0: { lat:40.423832957966134, lng:-86.91387755027951 },
+          1538376800.0: { lat:40.42193730739441, lng:-86.91481400358386 },
+          1538377000.0: { lat:40.43187781572124, lng:-86.91641388580875 },
+        },
+        heartbeats: {
+          1538373600.0: {
+            genTime:1538373600.0,
+            recTime:1538373604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538374429.0: {
+            genTime:1538374429.0,
+            recTime:1538374433.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538374744.0: {
+            genTime:1538374744.0,
+            recTime:1538374751.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-82, active: false, name:"AT&T"},
+            },
+          },
+          1538375287.0: {
+            genTime:1538375287.0,
+            recTime:1538375293.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538376035.0: {
+            genTime:1538376035.0,
+            recTime:1538376039.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-88, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-106, active: false, name:"AT&T"},
+            },
+          },
+          1538376499.0: {
+            genTime:1538376499.0,
+            recTime:1538376503.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538377165.0: {
+            genTime:1538377165.0,
+            recTime:1538377169.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-98, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-107, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "03:00": {
+        gps: {
+          1538377200.0: { lat:40.41995813381208, lng:-86.91373600796447 },
+          1538377400.0: { lat:40.42667600635521, lng:-86.91803440708888 },
+          1538377600.0: { lat:40.435649642054464, lng:-86.90597999957369 },
+          1538377800.0: { lat:40.423232021654236, lng:-86.90838730364788 },
+          1538378000.0: { lat:40.427213284493206, lng:-86.90449711118981 },
+          1538378200.0: { lat:40.43699450979335, lng:-86.91864423227587 },
+          1538378400.0: { lat:40.43549620261613, lng:-86.91190653680025 },
+          1538378600.0: { lat:40.42642763506592, lng:-86.91020661820218 },
+          1538378800.0: { lat:40.435847134709405, lng:-86.91880577137744 },
+          1538379000.0: { lat:40.43330522774935, lng:-86.91023182470661 },
+          1538379200.0: { lat:40.436445982733154, lng:-86.92273096048794 },
+          1538379400.0: { lat:40.42137615800282, lng:-86.91564170756588 },
+          1538379600.0: { lat:40.42830323282162, lng:-86.90767978392363 },
+          1538379800.0: { lat:40.43194464256754, lng:-86.91347617235625 },
+          1538380000.0: { lat:40.42823855073709, lng:-86.91297283859988 },
+          1538380200.0: { lat:40.424722611814616, lng:-86.90402698573867 },
+          1538380400.0: { lat:40.422593703670906, lng:-86.91284019306592 },
+          1538380600.0: { lat:40.43391021684622, lng:-86.9179313819351 },
+        },
+        heartbeats: {
+          1538377200.0: {
+            genTime:1538377200.0,
+            recTime:1538377206.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538378288.0: {
+            genTime:1538378288.0,
+            recTime:1538378293.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-89, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-100, active: false, name:"AT&T"},
+            },
+          },
+          1538379154.0: {
+            genTime:1538379154.0,
+            recTime:1538379159.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-74, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+          1538379938.0: {
+            genTime:1538379938.0,
+            recTime:1538379944.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-96, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538380782.0: {
+            genTime:1538380782.0,
+            recTime:1538380785.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-64, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "04:00": {
+        gps: {
+          1538380800.0: { lat:40.42965320664336, lng:-86.92146383867619 },
+          1538381000.0: { lat:40.41936378568762, lng:-86.90452950276752 },
+          1538381200.0: { lat:40.42080415807394, lng:-86.92114003818944 },
+          1538381400.0: { lat:40.42235910959895, lng:-86.92289343474692 },
+          1538381600.0: { lat:40.41977542168151, lng:-86.9196245323404 },
+          1538381800.0: { lat:40.42644218446501, lng:-86.90617050928016 },
+          1538382000.0: { lat:40.428690782300016, lng:-86.91683601517794 },
+          1538382200.0: { lat:40.431002342220204, lng:-86.91328182905283 },
+          1538382400.0: { lat:40.43417247285941, lng:-86.9063555253057 },
+          1538382600.0: { lat:40.419270497973926, lng:-86.91335276939239 },
+          1538382800.0: { lat:40.43207786197768, lng:-86.90514026966632 },
+          1538383000.0: { lat:40.433105518998154, lng:-86.9201223283461 },
+          1538383200.0: { lat:40.423360027557685, lng:-86.92154347472732 },
+          1538383400.0: { lat:40.434519016572814, lng:-86.9180519497647 },
+          1538383600.0: { lat:40.426546112224194, lng:-86.91827137485352 },
+          1538383800.0: { lat:40.43405216364245, lng:-86.90922238737424 },
+          1538384000.0: { lat:40.428720154567834, lng:-86.91331987059324 },
+          1538384200.0: { lat:40.431498224681874, lng:-86.92255489621525 },
+        },
+        heartbeats: {
+          1538380800.0: {
+            genTime:1538380800.0,
+            recTime:1538380801.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-70, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538381101.0: {
+            genTime:1538381101.0,
+            recTime:1538381103.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-123, active: false, name:"AT&T"},
+            },
+          },
+          1538381865.0: {
+            genTime:1538381865.0,
+            recTime:1538381866.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-95, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-89, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538382585.0: {
+            genTime:1538382585.0,
+            recTime:1538382592.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-77, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538383112.0: {
+            genTime:1538383112.0,
+            recTime:1538383118.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538383771.0: {
+            genTime:1538383771.0,
+            recTime:1538383783.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-76, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-81, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-124, active: false, name:"AT&T"},
+            },
+          },
+          1538384397.0: {
+            genTime:1538384397.0,
+            recTime:1538384404.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-65, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "08:00": {
+        gps: {
+          1538395200.0: { lat:40.43797924655471, lng:-86.9087471360911 },
+          1538395400.0: { lat:40.42444539641598, lng:-86.91368805373529 },
+          1538395600.0: { lat:40.43439743345402, lng:-86.92143791478472 },
+          1538395800.0: { lat:40.43658960833653, lng:-86.90456278598602 },
+          1538396000.0: { lat:40.42747273671612, lng:-86.92288049537702 },
+          1538396200.0: { lat:40.43692865584848, lng:-86.9158674778076 },
+          1538396400.0: { lat:40.422615515912504, lng:-86.91007477583408 },
+          1538396600.0: { lat:40.437351880028594, lng:-86.9139196534342 },
+          1538396800.0: { lat:40.43743208124186, lng:-86.90895503043811 },
+          1538397000.0: { lat:40.434467074360086, lng:-86.91753158067839 },
+          1538397200.0: { lat:40.42705308454998, lng:-86.91211266428436 },
+          1538397400.0: { lat:40.433215601034995, lng:-86.92000926861506 },
+          1538397600.0: { lat:40.434957696367924, lng:-86.91207910120563 },
+          1538397800.0: { lat:40.41883410484688, lng:-86.91647477142489 },
+          1538398000.0: { lat:40.43148918625323, lng:-86.90562521572063 },
+          1538398200.0: { lat:40.42758257202572, lng:-86.90417204309394 },
+          1538398400.0: { lat:40.432285889213276, lng:-86.90724734314261 },
+          1538398600.0: { lat:40.43006722748865, lng:-86.91663929603524 },
+        },
+        heartbeats: {
+          1538395200.0: {
+            genTime:1538395200.0,
+            recTime:1538395205.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538395825.0: {
+            genTime:1538395825.0,
+            recTime:1538395829.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-63, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-104, active: false, name:"AT&T"},
+            },
+          },
+          1538396305.0: {
+            genTime:1538396305.0,
+            recTime:1538396308.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-101, active: false, name:"AT&T"},
+            },
+          },
+          1538397058.0: {
+            genTime:1538397058.0,
+            recTime:1538397061.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-102, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-118, active: false, name:"AT&T"},
+            },
+          },
+          1538397668.0: {
+            genTime:1538397668.0,
+            recTime:1538397672.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538398208.0: {
+            genTime:1538398208.0,
+            recTime:1538398211.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-109, active: false, name:"AT&T"},
+            },
+          },
+          1538398526.0: {
+            genTime:1538398526.0,
+            recTime:1538398528.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-96, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-115, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "11:00": {
+        gps: {
+          1538406000.0: { lat:40.42411298121925, lng:-86.9055666236336 },
+          1538406200.0: { lat:40.43554824913229, lng:-86.92162146786175 },
+          1538406400.0: { lat:40.43339505771281, lng:-86.90770571045081 },
+          1538406600.0: { lat:40.42100729560318, lng:-86.9113460087797 },
+          1538406800.0: { lat:40.433181380109886, lng:-86.90420979273371 },
+          1538407000.0: { lat:40.43210177721743, lng:-86.9143381253147 },
+          1538407200.0: { lat:40.42028309113766, lng:-86.92091945160136 },
+          1538407400.0: { lat:40.43831542820123, lng:-86.92000467119841 },
+          1538407600.0: { lat:40.436797206390224, lng:-86.91219480056276 },
+          1538407800.0: { lat:40.43270954274103, lng:-86.90693368343834 },
+          1538408000.0: { lat:40.43390596729324, lng:-86.91409082847966 },
+          1538408200.0: { lat:40.43488960629274, lng:-86.91840839767248 },
+          1538408400.0: { lat:40.42314842862598, lng:-86.90460159241775 },
+          1538408600.0: { lat:40.429282758064865, lng:-86.90640142954929 },
+          1538408800.0: { lat:40.423550371921124, lng:-86.91692028464249 },
+          1538409000.0: { lat:40.43121301690551, lng:-86.9191076350922 },
+          1538409200.0: { lat:40.41972639322092, lng:-86.90521898889084 },
+          1538409400.0: { lat:40.427168743216924, lng:-86.91418223589173 },
+        },
+        heartbeats: {
+          1538406000.0: {
+            genTime:1538406000.0,
+            recTime:1538406002.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-75, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-88, active: false, name:"AT&T"},
+            },
+          },
+          1538406696.0: {
+            genTime:1538406696.0,
+            recTime:1538406702.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-78, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538407130.0: {
+            genTime:1538407130.0,
+            recTime:1538407133.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-99, active: false, name:"AT&T"},
+            },
+          },
+          1538407537.0: {
+            genTime:1538407537.0,
+            recTime:1538407540.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-74, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-108, active: false, name:"AT&T"},
+            },
+          },
+          1538408180.0: {
+            genTime:1538408180.0,
+            recTime:1538408190.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-119, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538409061.0: {
+            genTime:1538409061.0,
+            recTime:1538409067.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-93, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "12:00": {
+        gps: {
+          1538409600.0: { lat:40.43656892606821, lng:-86.92252128664134 },
+          1538409800.0: { lat:40.436377814593165, lng:-86.92140959647206 },
+          1538410000.0: { lat:40.42478581182284, lng:-86.90441434749019 },
+          1538410200.0: { lat:40.43157870966154, lng:-86.9063954503789 },
+          1538410400.0: { lat:40.422155992072724, lng:-86.9174665961443 },
+          1538410600.0: { lat:40.42123449296378, lng:-86.90617386866955 },
+          1538410800.0: { lat:40.423598493933966, lng:-86.92310905979674 },
+          1538411000.0: { lat:40.4194205563296, lng:-86.90800963137295 },
+          1538411200.0: { lat:40.43182203521882, lng:-86.92078008912917 },
+          1538411400.0: { lat:40.41986741925246, lng:-86.91737715176504 },
+          1538411600.0: { lat:40.421298191615755, lng:-86.91239803887895 },
+          1538411800.0: { lat:40.4302434488577, lng:-86.90591763781798 },
+          1538412000.0: { lat:40.42474416567243, lng:-86.92193701516746 },
+          1538412200.0: { lat:40.425574187046884, lng:-86.9156249640635 },
+          1538412400.0: { lat:40.436928958900985, lng:-86.92058805732347 },
+          1538412600.0: { lat:40.43484879101045, lng:-86.90528695425925 },
+          1538412800.0: { lat:40.43378974473822, lng:-86.92358826294081 },
+          1538413000.0: { lat:40.42726584222606, lng:-86.91847731533585 },
+        },
+        heartbeats: {
+          1538409600.0: {
+            genTime:1538409600.0,
+            recTime:1538409604.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-102, active: false, name:"AT&T"},
+            },
+          },
+          1538410642.0: {
+            genTime:1538410642.0,
+            recTime:1538410646.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-96, active: false, name:"AT&T"},
+            },
+          },
+          1538411376.0: {
+            genTime:1538411376.0,
+            recTime:1538411378.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538411740.0: {
+            genTime:1538411740.0,
+            recTime:1538411746.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538412733.0: {
+            genTime:1538412733.0,
+            recTime:1538412738.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-87, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-87, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-85, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "14:00": {
+        gps: {
+          1538416800.0: { lat:40.43088913063672, lng:-86.91617321006599 },
+          1538417000.0: { lat:40.42866964856428, lng:-86.91382903323861 },
+          1538417200.0: { lat:40.4212880257261, lng:-86.92156774717223 },
+          1538417400.0: { lat:40.42787487294978, lng:-86.91106244219394 },
+          1538417600.0: { lat:40.42380017975181, lng:-86.91723965929414 },
+          1538417800.0: { lat:40.42642594462414, lng:-86.91760446199712 },
+          1538418000.0: { lat:40.43308019711076, lng:-86.91237970508418 },
+          1538418200.0: { lat:40.42356323715905, lng:-86.90471449528425 },
+          1538418400.0: { lat:40.427587064331185, lng:-86.91054895351611 },
+          1538418600.0: { lat:40.43358663071551, lng:-86.91756582102697 },
+          1538418800.0: { lat:40.43152742172475, lng:-86.91032321060136 },
+          1538419000.0: { lat:40.43156230767081, lng:-86.92241859595022 },
+          1538419200.0: { lat:40.42743587741546, lng:-86.91360006857843 },
+          1538419400.0: { lat:40.43840603083017, lng:-86.90749684205183 },
+          1538419600.0: { lat:40.42928263475219, lng:-86.90977548353833 },
+          1538419800.0: { lat:40.41864383166885, lng:-86.91932518918213 },
+          1538420000.0: { lat:40.43316318458536, lng:-86.90629430519027 },
+          1538420200.0: { lat:40.42399470534858, lng:-86.90615788602899 },
+        },
+        heartbeats: {
+          1538416800.0: {
+            genTime:1538416800.0,
+            recTime:1538416805.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-91, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538417243.0: {
+            genTime:1538417243.0,
+            recTime:1538417247.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-85, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-101, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-90, active: false, name:"AT&T"},
+            },
+          },
+          1538417798.0: {
+            genTime:1538417798.0,
+            recTime:1538417800.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-91, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-86, active: false, name:"AT&T"},
+            },
+          },
+          1538418145.0: {
+            genTime:1538418145.0,
+            recTime:1538418150.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-98, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-84, active: false, name:"AT&T"},
+            },
+          },
+          1538418592.0: {
+            genTime:1538418592.0,
+            recTime:1538418595.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-79, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-97, active: false, name:"AT&T"},
+            },
+          },
+          1538419262.0: {
+            genTime:1538419262.0,
+            recTime:1538419267.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-92, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-93, active: false, name:"AT&T"},
+            },
+          },
+          1538420062.0: {
+            genTime:1538420062.0,
+            recTime:1538420065.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-95, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "15:00": {
+        gps: {
+          1538420400.0: { lat:40.4271045190247, lng:-86.90606591405925 },
+          1538420600.0: { lat:40.43261123056082, lng:-86.9112046674117 },
+          1538420800.0: { lat:40.43031575032031, lng:-86.903927953525 },
+          1538421000.0: { lat:40.43291524716434, lng:-86.91645580413949 },
+          1538421200.0: { lat:40.428878335383466, lng:-86.90762139356363 },
+          1538421400.0: { lat:40.43113822086716, lng:-86.91093451630051 },
+          1538421600.0: { lat:40.431538009656485, lng:-86.91875286909861 },
+          1538421800.0: { lat:40.43544610236486, lng:-86.91330686634143 },
+          1538422000.0: { lat:40.43056429746268, lng:-86.91368738017171 },
+          1538422200.0: { lat:40.43026926722642, lng:-86.9147584331821 },
+          1538422400.0: { lat:40.42796567137539, lng:-86.92307402396072 },
+          1538422600.0: { lat:40.422225882031476, lng:-86.91794372787146 },
+          1538422800.0: { lat:40.42735852929478, lng:-86.90870139501737 },
+          1538423000.0: { lat:40.423921287196876, lng:-86.9052136724548 },
+          1538423200.0: { lat:40.41942517123402, lng:-86.91576053363247 },
+          1538423400.0: { lat:40.42477188588591, lng:-86.91730717742041 },
+          1538423600.0: { lat:40.42545183404067, lng:-86.91306467598758 },
+          1538423800.0: { lat:40.42269687308246, lng:-86.90883491033493 },
+        },
+        heartbeats: {
+          1538420400.0: {
+            genTime:1538420400.0,
+            recTime:1538420406.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-93, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-92, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-91, active: false, name:"AT&T"},
+            },
+          },
+          1538421132.0: {
+            genTime:1538421132.0,
+            recTime:1538421135.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-86, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538421781.0: {
+            genTime:1538421781.0,
+            recTime:1538421785.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-83, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-94, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-92, active: false, name:"AT&T"},
+            },
+          },
+          1538422390.0: {
+            genTime:1538422390.0,
+            recTime:1538422395.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-80, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-88, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-113, active: false, name:"AT&T"},
+            },
+          },
+          1538422941.0: {
+            genTime:1538422941.0,
+            recTime:1538422944.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-69, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-103, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-95, active: false, name:"AT&T"},
+            },
+          },
+          1538423936.0: {
+            genTime:1538423936.0,
+            recTime:1538423939.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-81, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-83, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-87, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+      "22:00": {
+        gps: {
+          1538445600.0: { lat:40.42372491075055, lng:-86.92167805758267 },
+          1538445800.0: { lat:40.430465441012835, lng:-86.91233788534377 },
+          1538446000.0: { lat:40.433325234898895, lng:-86.91743257535977 },
+          1538446200.0: { lat:40.43102770386268, lng:-86.90841173744272 },
+          1538446400.0: { lat:40.42948362382084, lng:-86.92025914431491 },
+          1538446600.0: { lat:40.42292026337714, lng:-86.91080876640753 },
+          1538446800.0: { lat:40.42189360074566, lng:-86.90653139581623 },
+          1538447000.0: { lat:40.42484008343057, lng:-86.92375057083211 },
+          1538447200.0: { lat:40.433477248003044, lng:-86.91965177834217 },
+          1538447400.0: { lat:40.41929245867125, lng:-86.90487452824497 },
+          1538447600.0: { lat:40.42610832933382, lng:-86.92129974877759 },
+          1538447800.0: { lat:40.43070579022251, lng:-86.91755299890221 },
+          1538448000.0: { lat:40.43323363991826, lng:-86.92148440265473 },
+          1538448200.0: { lat:40.42150473828533, lng:-86.92252531131392 },
+          1538448400.0: { lat:40.42593819811274, lng:-86.91148436695963 },
+          1538448600.0: { lat:40.43159596808215, lng:-86.9124595399186 },
+          1538448800.0: { lat:40.42002798095803, lng:-86.92292775751957 },
+          1538449000.0: { lat:40.41997549663232, lng:-86.90538309371435 },
+        },
+        heartbeats: {
+          1538445600.0: {
+            genTime:1538445600.0,
+            recTime:1538445603.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-99, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-102, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-103, active: false, name:"AT&T"},
+            },
+          },
+          1538446393.0: {
+            genTime:1538446393.0,
+            recTime:1538446397.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-103, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-75, active: false, name:"AT&T"},
+            },
+          },
+          1538447227.0: {
+            genTime:1538447227.0,
+            recTime:1538447229.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-90, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-99, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-105, active: false, name:"AT&T"},
+            },
+          },
+          1538447843.0: {
+            genTime:1538447843.0,
+            recTime:1538447851.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-82, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-90, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-89, active: false, name:"AT&T"},
+            },
+          },
+          1538448696.0: {
+            genTime:1538448696.0,
+            recTime:1538448698.0,
+            interfaces:{
+              "Verizon":{type:"3G", rssi:-84, active: true, name:"Verizon"},
+              "Mobile Hotspot":{type:"Wifi", rssi:-97, active: false, name:"Mobile Hotspot"},
+              "AT&T":{type:"4G", rssi:-94, active: false, name:"AT&T"},
+            },
+          },
+        },
+      },
+    },
+  },
+};
 
 export default stateTree

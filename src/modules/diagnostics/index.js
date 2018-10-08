@@ -3,10 +3,11 @@ import * as signals from './sequences';
 
 export default Module({
   state: {
-    timePeriod: '60',
-    displayTimePeriod: '1 hour',
-    measurement: 'LTE Strength',
+    hour: null,
+    measurement: 'Latency',
     selectedUnit: null,
+    date: null,
+    mode: "map",
   },
   signals,
 });
