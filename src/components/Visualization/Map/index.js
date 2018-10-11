@@ -9,6 +9,7 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 import './Map.css';
+import Lines from './Lines/';
 
 const styles = theme => ({
   map: {
@@ -89,6 +90,7 @@ class map extends React.Component {
             url={mapTiles}
             attribution={attrib}
           />
+          <Lines/>
           {currentMarker}
           {unitMarkers}
         </Map>

@@ -50,7 +50,7 @@ class AppBarContent extends React.Component {
     return (
       <Toolbar>
         <Typography variant='title' color='inherit' className={classes.flex}>
-          ISOBlueApp [0.0.1]
+          ISOBlueApp [0.0.2]
         </Typography>
         {/*<TextField
           type="date"

@@ -1,6 +1,6 @@
 {
   "name": "ISOBlueApp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": true,
   "homepage": "https://OpenATK.github.io/ISOBlueApp",
   "dependencies": {

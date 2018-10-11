@@ -68,9 +68,11 @@ export const toggleMode = sequence("toggleMode", [
   {
     true: [
       set(state`diagnostics.mode`, 'graph'),
+      set(state`diagnostics.measurement`, 'Latency'),
     ],
     false: [
       set(state`diagnostics.mode`, 'map'),
+      set(state`diagnostics.measurement`, 'GPS'),
     ],
   },
 ]);

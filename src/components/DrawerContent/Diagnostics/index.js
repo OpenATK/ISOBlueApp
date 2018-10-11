@@ -1,5 +1,5 @@
 import React from 'react';
-
+import _ from 'lodash';
 import { withStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
 import List from '@material-ui/core/List';
@@ -29,12 +29,32 @@ class Diagnostics extends React.Component {
           <Button
             onClick = {() => this.props.toggleMode({})}
             variant="contained">
-            {(this.props.mode === "map") ? "View Graph" : "View Map"}
+            {(this.props.mode === "map") ? "Graphical Data" : "Map Data"}
           </Button>
         </ListItemText>
       </ListItem>
     );
-
+   
+    var measurements;
+    if (this.props.mode === "map") {
+      measurements = ["GPS"];
+    } else {
+      measurements = ["Latency", "Active RSSI", "All RSSIs"];
+    }
+    const measurementSelect = (
+      <Select 
+        value={this.props.measurement}
+        renderValue={value => `${value}`}
+        onChange={(value) => this.props.setMeasurement({measurement: value.target.value})}>
+        {measurements.map(measurement => (
+          <MenuItem key={measurement} 
+            value={measurement}>
+            {measurement}
+          </MenuItem>
+        ))}
+      </Select>
+    );
+ 
     const dateSelect = (
       <Select 
         value={this.props.date}
@@ -108,14 +128,7 @@ class Diagnostics extends React.Component {
         <ListItem> 
           <ListItemText
             align="center">
-            <Select 
-              value={this.props.measurement}
-              renderValue={value => `${value}`}
-              onChange={(value) => this.props.setMeasurement({measurement: value.target.value})}>
-              <MenuItem value={"Latency"}>Latency</MenuItem>
-              <MenuItem value={"Active RSSI"}>Active RSSI</MenuItem>
-              <MenuItem value={"All RSSI's"}>All RSSIs</MenuItem>
-            </Select>
+            {measurementSelect}
           </ListItemText>
         </ListItem> 
         <ListItem> 
