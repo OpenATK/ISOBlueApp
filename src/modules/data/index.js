@@ -1,15 +1,13 @@
 import { Module } from 'cerebral';
-//import { state, props } from 'cerebral/tags';
-//import { set, debounce } from 'cerebral/operators';
+import * as signals from './sequences';
 
 import stateTree from './stateTree.js'
 
 export default Module({
 
-  state: stateTree,
+  //state: stateTree,
   //state: {},
 
-  signals: {
-  
-  },
+  signals,
+
 });

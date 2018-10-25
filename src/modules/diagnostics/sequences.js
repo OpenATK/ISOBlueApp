@@ -4,6 +4,7 @@ import { set, when } from 'cerebral/operators';
 import _ from 'lodash';
 import * as map from '../map/sequences';
 import * as snapshots from '../snapshots/sequences';
+import * as data from '../data/sequences';
  
 export const setDefaultDate = sequence("setDefaultDate", [ 
   when(state`diagnostics.selectedUnit`),
@@ -21,10 +22,12 @@ export const setDefaultDate = sequence("setDefaultDate", [
 export const setDate =  sequence("setDate", [
   ({state, props}) => state.set(`diagnostics.date`, props.date),
   ({state, props}) => state.set('diagnostics.hour', _.max(Object.keys(state.get(`data.${state.get(`diagnostics.selectedUnit`)}.${state.get(`diagnostics.date`)}`)))),
+  data.getHour,
 ]); 
 
 export const setHour =  sequence("setHour", [
   set(state`diagnostics.hour`, props`hour`),
+  data.getHour,
 ]); 
 
 export const setDefaultHour = sequence("setDefaultHour", [ 

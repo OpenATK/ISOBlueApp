@@ -2,7 +2,6 @@ import React from 'react';
 import { render } from 'react-dom';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import App from './components/App/';
-import registerServiceWorker from './registerServiceWorker';
 
 import { Container } from '@cerebral/react';
 import controller from './controller';
@@ -36,4 +35,3 @@ render (
 );
 
 
-registerServiceWorker();

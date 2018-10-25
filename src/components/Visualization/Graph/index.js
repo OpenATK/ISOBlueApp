@@ -22,7 +22,7 @@ class Graph extends React.Component {
     var data = [];
     var chart;
     if (this.props.measurement === "Latency") {
-      _.forEach(Object.values(rawData.heartbeats), (value) => {
+      _.forEach(Object.values(rawData.heartbeats || {}), (value) => {
         value.latency = value.recTime - value.genTime;
         value.time = new Date(value.genTime*1000).toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric' });
         data.push(value);
@@ -30,7 +30,7 @@ class Graph extends React.Component {
 
       chart = (
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
-          <Line type="step" dataKey={"latency"} stroke="#8884d8" />
+          <Line type="step" isAnimationActive={false} dataKey={"latency"} stroke="#8884d8" />
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
           <XAxis dataKey={'time'}/>
           <YAxis dataKey={'latency'}/>
@@ -40,7 +40,7 @@ class Graph extends React.Component {
 
 
     } else if (this.props.measurement === "Active RSSI") {
-      _.forEach(Object.values(rawData.heartbeats), (value) => {
+      _.forEach(Object.values(rawData.heartbeats || {}), (value) => {
         var connection = _.findKey(value.interfaces, 'active');
         value.interfaces[connection].time = new Date(value.genTime*1000).toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric' });
         data.push(value.interfaces[connection]);
@@ -48,7 +48,7 @@ class Graph extends React.Component {
 
       chart = (
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
-          <Line type="step" dataKey={"rssi"} stroke="#8884d8" />
+          <Line type="step" isAnimationActive={false} dataKey={"rssi"} stroke="#8884d8" />
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
           <XAxis dataKey={'time'}/>
           <YAxis dataKey={'rssi'}/>
@@ -59,7 +59,7 @@ class Graph extends React.Component {
 
     } else if (this.props.measurement === "All RSSIs") {
       var count = 0;
-      _.forEach(Object.values(rawData.heartbeats), (value) => {
+      _.forEach(Object.values(rawData.heartbeats || {}), (value) => {
         var datapoint = {time: new Date(value.genTime*1000).toLocaleTimeString('en-US', {hour: 'numeric', minute: 'numeric' })};
         _.forEach(Object.values(value.interfaces), (value, key) => {
           datapoint["name"+String(key)] = value.name;
@@ -79,7 +79,7 @@ class Graph extends React.Component {
       chart = (
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
           {countList.map(index =>(
-            <Line key={index} type="step" dataKey={"rssi"+String(index)} stroke={'#0884d8'}/>
+            <Line key={index} type="step" isAnimationActive={false} dataKey={"rssi"+String(index)} stroke={'#0884d8'}/>
           ))} 
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
           <XAxis dataKey={'time'}/>

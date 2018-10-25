@@ -7,6 +7,9 @@
     "@cerebral/react": "^3.2.2",
     "@material-ui/core": "^3.0.3",
     "@material-ui/icons": "^3.0.1",
+    "@oada/cerebral-module": "^1.10.2",
+    "@oada/cerebral-provider": "^1.10.2",
+    "bluebird": "^3.5.2",
     "cerebral": "^4.2.2",
     "leaflet": "^1.3.4",
     "lodash": "^4.17.11",
@@ -14,10 +17,11 @@
     "react-dom": "^16.5.0",
     "react-leaflet": "^2.0.1",
     "react-scripts": "1.1.5",
-    "recharts": "^1.3.2"
+    "recharts": "^1.3.2",
+    "uuid": "^3.3.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "PORT=8000 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
