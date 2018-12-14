@@ -20,16 +20,19 @@ class Lines extends React.Component {
     var dataLines = [];
     var healthyLines = [];
     var sickLines = [];
-    _.forEach(Object.keys(this.props.snapshots), (unit) => {
+    _.forEach(Object.keys(this.props.snapshots) || {}, (unit) => {
       if (unit === this.props.selectedUnit) { 
         var gps = this.props.data[this.props.selectedUnit][this.props.date][this.props.hour].gps;
         var positions = [];
         _.forEach(gps, (instance) => {
-          var point = [instance.lat, instance.lng];
-          positions.push(point);
+          if (instance.lat && instance.lng) {
+            positions.push([instance.lat, instance.lng]);
+          }
         });
         dataLines.push(positions);       
 
+      //If no unit is selected, show the last fifteen minutes of data 
+      //from each unit.
       } else if (this.props.snapshots[unit].health === "Healthy" || this.props.snapshots[unit].health === "Sick") {
         var positions = [];
         var liveTime = Math.round(new Date().getTime() /1000);
@@ -38,26 +41,25 @@ class Lines extends React.Component {
         var currentHour = _.max(hours);
         var lastHour = _.max(_.remove(hours, (n) => {return n != currentHour}));
         var currentGPS = Object.keys(this.props.data[unit][date][currentHour].gps);
-        var lastGPS = Object.keys(this.props.data[unit][date][lastHour].gps);
-        
-        _.forEach(currentGPS, (time) => {
-          if ((liveTime - time) <= (15*60)) {
-            var point = [
-              this.props.data[unit][date][currentHour].gps[time].lat,
-              this.props.data[unit][date][currentHour].gps[time].lng,
-            ];
-            positions.push(point);
+        var lastGPS;
+        if (lastHour) lastGPS = Object.keys(this.props.data[unit][date][lastHour].gps || {} );
+       
+        //Creates a polyline of last 15 mins of data from both the current and 
+        //last hour of data 
+        _.forEach(currentGPS, (time, i) => {
+					var tempGPS = this.props.data[unit][date][currentHour].gps[time];
+          if ((liveTime - time) <= (15*60) && tempGPS.lat && tempGPS.lng) {
+            positions.push([tempGPS.lat, tempGPS.lng]);
           }
         });
-        _.forEach(lastGPS, (time) => {
-          if ((liveTime - time) <= (15*60)) {
-            var point = [
-              this.props.data[unit][date][lastHour].gps[time].lat,
-              this.props.data[unit][date][lastHour].gps[time].lng,
-            ];
-            positions.push(point);
+        _.forEach(lastGPS || [], (time) => {
+					var tempGPS = this.props.data[unit][date][lastHour].gps[time];
+          if ((liveTime - time) <= (15*60) && tempGPS.lat && tempGPS.lng) {
+            positions.push([tempGPS.lat, tempGPS.lng]);
           }
         });
+      
+        //This sorts the line into either healthy or sick catagories.
         if (this.props.snapshots[unit].health === "Healthy") {
           healthyLines.push(positions);      
         } else {

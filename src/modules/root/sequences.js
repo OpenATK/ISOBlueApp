@@ -27,7 +27,7 @@ export const init = sequence("init", [
     options: {
       redirect: _CURRENT_REDIRECT,
       metadata: _METADATA,
-      scope: 'oada.isoblue:all'
+      scope: 'oada.isoblue.data:all'
     },
   }),
   data.init,

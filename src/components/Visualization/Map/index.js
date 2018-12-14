@@ -1,15 +1,13 @@
 import React from 'react';
-//import _ from 'lodash';
 import { connect } from '@cerebral/react';
 import {state, signal} from 'cerebral/tags';
-//import uuid from 'uuid';
-//import Leaflet from 'leaflet';
-import { Map, Marker, CircleMarker, Tooltip, TileLayer } from 'react-leaflet';
+import { Map, Marker, TileLayer } from 'react-leaflet';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 
 import './Map.css';
 import Lines from './Lines/';
+import Markers from './Markers/';
 
 const styles = theme => ({
   map: {
@@ -29,8 +27,7 @@ class map extends React.Component {
   componentDidMount() {
     this.refs.map.leafletElement.locate()
   }
- 
- 
+  
   render() {
     const { classes } = this.props;
       
@@ -40,43 +37,10 @@ class map extends React.Component {
       <Marker
         key={"user"}
         position={[this.props.userLocation.lat, this.props.userLocation.lng]}>
+        zIndexOffset={1}
       </Marker>
     );
     }
- 
-    const unitMarkers=[];
-    Object.keys(this.props.snapshots).map(unit => (
-      unitMarkers.push(
-        <CircleMarker
-          ref={unit => {this.unit = unit}}
-          key={unit}
-          center={[
-            this.props.snapshots[unit].location.lat, 
-            this.props.snapshots[unit].location.lng
-          ]}
-          color={'#ffffff'}
-          fillColor={
-            (() => {
-              switch (this.props.snapshots[unit].health) {
-                case "Healthy": return '#008000'
-                case "Sick":    return '#ffbf00'
-                case "Down":    return '#707070'
-                default:        return '#707070'
-              }
-          })()} 
-          fillOpacity={1}
-          radius={12}
-          onClick={(e) => this.props.selectUnit({unit: unit})}>
-          <Tooltip 
-            direction='top'
-            offset={[0,-10]}>
-            <b>Unit: {unit}</b><br/>
-            <center><b>{this.props.snapshots[unit].health}</b></center> 
-          </Tooltip>
-        </CircleMarker>
-      )
-    ))
-
 
     return (
       <div className={classes.map}>
@@ -90,9 +54,9 @@ class map extends React.Component {
             url={mapTiles}
             attribution={attrib}
           />
+          <Markers/>
           <Lines/>
           {currentMarker}
-          {unitMarkers}
         </Map>
       </div>
     );

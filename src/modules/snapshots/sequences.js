@@ -16,7 +16,7 @@ export const createSnapshots = sequence("createSnapshots", [
         var lastTime = _.max(Object.keys(unitData[lastDate] || {}));
         var lastGPS = _.max(Object.keys(unitData[lastDate][lastTime].gps || {}));     
         var lastHeartbeat = _.max(Object.keys(unitData[lastDate][lastTime].heartbeats || {}));     
-      
+     
 				if (lastGPS && lastHeartbeat) {
 
           var heartbeat = unitData[lastDate][lastTime].heartbeats[lastHeartbeat];     

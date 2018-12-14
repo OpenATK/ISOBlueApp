@@ -39,7 +39,7 @@ class Diagnostics extends React.Component {
     if (this.props.mode === "map") {
       measurements = ["GPS"];
     } else {
-      measurements = ["Latency", "Active RSSI", "All RSSIs"];
+      measurements = ["Latency", "Wifi RSSI", "Cellular RSSI"];
     }
     const measurementSelect = (
       <Select 
@@ -110,14 +110,6 @@ class Diagnostics extends React.Component {
            <ListItemText
             align="center"
             primary={(this.props.snapshots[this.props.selectedUnit].lastReport === "NA")  ? "NA"  : this.props.snapshots[this.props.selectedUnit].lastReport+" min"}/>
-        </ListItem>
-        <ListItem>
-          <ListItemText
-            align="center"
-            primary={"Coverage:"}/>
-           <ListItemText
-            align="center"
-            primary={this.props.snapshots[this.props.selectedUnit].connection}/>
         </ListItem>
         <Divider/>
         <ListItem>

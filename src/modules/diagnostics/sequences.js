@@ -23,11 +23,13 @@ export const setDate =  sequence("setDate", [
   ({state, props}) => state.set(`diagnostics.date`, props.date),
   ({state, props}) => state.set('diagnostics.hour', _.max(Object.keys(state.get(`data.${state.get(`diagnostics.selectedUnit`)}.${state.get(`diagnostics.date`)}`)))),
   data.getHour,
+  map.centerOnUnit,
 ]); 
 
 export const setHour =  sequence("setHour", [
   set(state`diagnostics.hour`, props`hour`),
   data.getHour,
+  map.centerOnUnit,
 ]); 
 
 export const setDefaultHour = sequence("setDefaultHour", [ 
@@ -56,6 +58,8 @@ export const selectUnit = sequence("selectUnit", [
       set(state`diagnostics.selectedUnit`, null),
       setDefaultDate,
       setDefaultHour,
+      set(state`diagnostics.mode`, 'map'),
+      set(state`diagnostics.measurement`, 'GPS'),
     ],  
     false: [
       set(state`diagnostics.selectedUnit`, props`unit`),
