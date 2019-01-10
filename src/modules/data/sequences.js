@@ -129,7 +129,7 @@ export const handleHourUpdate = sequence('data.handleHourUpdate', [
   snapshots.createSnapshots,
 ]);
 
-export const initialFetch = sequence('data.fetch', [
+export const initialFetch = sequence('data.initialFetch', [
   ({state, props}) => ({
     connection_id: state.get('data.connection_id'),
     path: '/bookmarks/isoblue',
