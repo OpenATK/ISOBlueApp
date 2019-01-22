@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Toolbar from '@material-ui/core/Toolbar';
 //import TextField from '@material-ui/core/TextField';
 import MyLocationIcon from '@material-ui/icons/MyLocation';
+import MenuIcon from '@material-ui/icons/Menu';
 
 import { connect } from '@cerebral/react';
 import { state, signal } from 'cerebral/tags';
@@ -19,16 +20,14 @@ const styles = theme => ({
     [theme.breakpoints.up('xs')]: {
       width: 5*theme.spacing.unit,
       height: 5*theme.spacing.unit,
+      marginRight: theme.spacing.unit,
     },
     [theme.breakpoints.down('xs')]: {
       width: 4*theme.spacing.unit,
       height: 4*theme.spacing.unit,
+      marginRight: theme.spacing.unit,
     },
   },
-  //textField: {
-    //marginLeft: theme.spacing.unit,
-    //marginRight: theme.spacing.unit,
-  //},
 });
 
 class AppBarContent extends React.Component {
@@ -49,15 +48,16 @@ class AppBarContent extends React.Component {
 
     return (
       <Toolbar>
+        <IconButton
+          color="inherit"
+          aria-label="Open Drawer"
+          onClick={this.props.toggleDrawerOpen}
+          >
+          <MenuIcon className={classes.icon}/>
+        </IconButton>
         <Typography variant='title' color='inherit' className={classes.flex}>
           ISOBlueApp [1.0.0]
         </Typography>
-        {/*<TextField
-          type="date"
-          defaultValue={this.props.date}
-          className={classes.textField}
-          onChange={(e) => this.props.setDate({date: e.target.value})}
-        />*/}        
         {userLocationButton}
       </Toolbar>
     )
@@ -68,6 +68,7 @@ export default connect({
   userLocationAvailable: state`map.userLocationAvailable`,
 
   centerOnUser: signal`map.centerOnUser`,  
+  toggleDrawerOpen: signal`session.toggleDrawerOpen`,
 
   },
   withStyles(styles)(AppBarContent)

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from '@cerebral/react';
-import { state } from 'cerebral/tags';
+import { state, signal } from 'cerebral/tags';
 
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -31,7 +31,8 @@ class DrawerContent extends React.Component {
 
     return (
       <Drawer
-        variant="permanent"
+        open={this.props.drawerOpen}
+        onClose={this.props.toggleDrawerOpen}
         classes= {{
           paper: classes.drawerPaper
         }}>
@@ -44,6 +45,9 @@ class DrawerContent extends React.Component {
 
 export default connect({
   selectedUnit: state`diagnostics.selectedUnit`,
+  drawerOpen: state`session.drawerOpen`,
+
+  toggleDrawerOpen: signal`session.toggleDrawerOpen`,
   },
   withStyles(styles)(DrawerContent)
 );
