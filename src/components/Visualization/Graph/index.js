@@ -34,8 +34,8 @@ class Graph extends React.Component {
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
           <Line type="step" isAnimationActive={false} dataKey={"latency"} stroke="#8884d8" />
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
-          <XAxis dataKey={'time'}/>
-          <YAxis dataKey={'latency'}/>
+          <XAxis dataKey={'time'} label={{ value: "Time", position: "insideBottom", dy: 20}} />
+          <YAxis dataKey={'latency'} label={{ value: "Latency (sec)", position: "insideLeft", angle: -90}} />
           <Tooltip/>
         </LineChart>
       );
@@ -55,8 +55,8 @@ class Graph extends React.Component {
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
           <Line type="step" isAnimationActive={false} dataKey={"rssi"} stroke="#8884d8" />
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
-          <XAxis dataKey={'time'}/>
-          <YAxis dataKey={'rssi'}/>
+          <XAxis dataKey={'time'} label={{ value: "Time", position: "insideBottom", dy: 20}} />
+          <YAxis dataKey={'rssi'} label={{ value: "WiFi RSSI (dB)", position: "insideLeft", angle: -90}} />
           <Tooltip/>
         </LineChart>
       );
@@ -75,8 +75,8 @@ class Graph extends React.Component {
         <LineChart data={data} margin={{ top: 20, right: 30, left: 0, bottom: 80 }}>
           <Line type="step" isAnimationActive={false} dataKey={"rssi"} stroke="#8884d8" />
           <CartesianGrid stroke='#ccc' strokeDasharray="5 5"/>
-          <XAxis dataKey={'time'}/>
-          <YAxis dataKey={'rssi'}/>
+          <XAxis dataKey={'time'} label={{ value: "Time", position: "insideBottom", dy: 20}} />
+          <YAxis dataKey={'rssi'} label={{ value: "Cellular RSSI (dB)", position: "insideLeft", angle: -90}} />
           <Tooltip/>
         </LineChart>
       );
