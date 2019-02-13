@@ -13,7 +13,9 @@ export const createSnapshots = sequence("createSnapshots", [
       (acc, unit, unitkey) => {
         var unitData = state.get(`data.${[unit]}`);
         //var health, location, connection, lastReport;
-        var lastDate = _.max(Object.keys(unitData || {}));
+        var lastDate = Object.keys(unitData || {}).sort((a, b) => {
+          return new Date(b) - new Date(a);
+        })[0];
         var lastTime = _.max(Object.keys(unitData[lastDate] || {}));
         var lastGPS = _.max(
           Object.keys(unitData[lastDate][lastTime].gps || {}),

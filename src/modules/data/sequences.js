@@ -106,7 +106,9 @@ function getLastHour({ state, props }) {
   return Promise.map(
     _.without(Object.keys(state.get(`data`)), "connection_id"),
     device => {
-      let lastDate = _.max(Object.keys(state.get(`data.${device}`)));
+      var lastDate = Object.keys(state.get(`data.${device}`)).sort((a, b) => {
+        return new Date(b) - new Date(a);
+      })[0];
       let lastHour = _.max(
         Object.keys(state.get(`data.${device}.${lastDate}`)),
       );
@@ -124,7 +126,9 @@ function mapLastHour({ state, props }) {
   return Promise.map(
     _.without(Object.keys(state.get(`data`)), "connection_id"),
     device => {
-      let lastDate = _.max(Object.keys(state.get(`data.${device}`)));
+      var lastDate = Object.keys(state.get(`data.${device}`)).sort((a, b) => {
+        return new Date(b) - new Date(a);
+      })[0];
       let lastHour = _.max(
         Object.keys(state.get(`data.${device}.${lastDate}`)),
       );
@@ -142,7 +146,6 @@ function mapLastHour({ state, props }) {
 }
 
 export const handleIndexUpdate = sequence("data.handleIndexUpdate", [
-  () => console.log("data.handleIndexUpdate"),
   mapIndex,
   ({ state, props }) => ({
     requests: [
@@ -157,7 +160,6 @@ export const handleIndexUpdate = sequence("data.handleIndexUpdate", [
 ]);
 
 export const handleHourUpdate = sequence("data.handleHourUpdate", [
-  () => console.log("data.handleHourUpdate"),
   mapLastHour,
   snapshots.createSnapshots,
 ]);
