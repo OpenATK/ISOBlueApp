@@ -1,56 +1,54 @@
-import React from 'react';
-import { connect } from '@cerebral/react';
-import { state, signal } from 'cerebral/tags';
+import React from "react";
+import { connect } from "@cerebral/react";
+import { state, signal } from "cerebral/tags";
 
-import { withStyles } from '@material-ui/core/styles';
-import Drawer from '@material-ui/core/Drawer';
+import { withStyles } from "@material-ui/core/styles";
+import Drawer from "@material-ui/core/Drawer";
 
-import Summary from './Summary/';
-import Diagnostics from './Diagnostics/';
+import Summary from "./Summary/";
+import Diagnostics from "./Diagnostics/";
 
 const styles = theme => ({
   drawerPaper: {
-    position: 'relative',
+    position: "relative",
     width: 240,
-    backgroundColor: '#eeeeee',
+    backgroundColor: "#eeeeee",
   },
   toolbar: theme.mixins.toolbar,
 });
 
 class DrawerContent extends React.Component {
-
   render() {
-    const { classes } = this.props
+    const { classes } = this.props;
 
-    var content; 
+    var content;
     if (this.props.selectedUnit) {
-      content = <Diagnostics/>
+      content = <Diagnostics />;
     } else {
-      content = <Summary/>
+      content = <Summary />;
     }
 
     return (
       <Drawer
         open={this.props.drawerOpen}
         onClose={this.props.toggleDrawerOpen}
-        classes= {{
-          paper: classes.drawerPaper
-        }}>
-        <div className={classes.toolbar}/>
+        classes={{
+          paper: classes.drawerPaper,
+        }}
+      >
+        <div className={classes.toolbar} />
         {content}
       </Drawer>
     );
   }
 }
 
-export default connect({
-  selectedUnit: state`diagnostics.selectedUnit`,
-  drawerOpen: state`session.drawerOpen`,
+export default connect(
+  {
+    selectedUnit: state`diagnostics.selectedUnit`,
+    drawerOpen: state`session.drawerOpen`,
 
-  toggleDrawerOpen: signal`session.toggleDrawerOpen`,
+    toggleDrawerOpen: signal`session.toggleDrawerOpen`,
   },
-  withStyles(styles)(DrawerContent)
+  withStyles(styles)(DrawerContent),
 );
-
-
-

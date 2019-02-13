@@ -5,72 +5,104 @@ import _ from "lodash";
 
 export const createSnapshots = sequence("createSnapshots", [
   ({ state, props }) => ({
-    unitList: _.without(Object.keys(state.get(`data`)), "connection_id"),
-  }),
-  ({ state, props }) => ({
     units: _.reduce(
-      props.unitList,
+      Object.keys(
+        state.get(
+          `oada.${props.connection_id}.bookmarks.isoblue.device-index`,
+        ) || {},
+      ),
       (acc, unit, unitkey) => {
-        var unitData = state.get(`data.${[unit]}`);
-        //var health, location, connection, lastReport;
-        var lastDate = Object.keys(unitData || {}).sort((a, b) => {
-          return new Date(b) - new Date(a);
-        })[0];
-        var lastTime = _.max(Object.keys(unitData[lastDate] || {}));
-        var lastGPS = _.max(
-          Object.keys(unitData[lastDate][lastTime].gps || {}),
+        // iterate over all the ISOBlue units
+        var unitLocationData = state.get(
+          `oada.${
+            props.connection_id
+          }.bookmarks.isoblue.device-index.${unit}.location.day-index`,
         );
-        var lastHeartbeat = _.max(
-          Object.keys(unitData[lastDate][lastTime].heartbeats || {}),
+        //var health, location, connection, lastReport;
+        const lastDate = _.maxBy(Object.keys(unitLocationData || {}), function(
+          o,
+        ) {
+          return new Date(o);
+        });
+
+        if (!lastDate) return acc;
+        if (!unitLocationData[lastDate].hasOwnProperty("hour-index"))
+          return acc;
+
+        const lastHour = _.max(
+          Object.keys(unitLocationData[lastDate]["hour-index"] || {}),
         );
 
-        if (lastGPS && lastHeartbeat) {
-          var heartbeat =
-            unitData[lastDate][lastTime].heartbeats[lastHeartbeat];
-          var location = unitData[lastDate][lastTime].gps[lastGPS];
-          var lastReport = Math.round(
-            (Math.round(new Date().getTime() / 1000) -
-              _.max([lastHeartbeat, lastGPS])) /
-              60,
+        if (!lastHour) return acc;
+        var lastGPS =
+          _.max(
+            Object.keys(
+              unitLocationData[lastDate]["hour-index"][lastHour]["sec-index"] ||
+                {},
+            ),
+          ) || null;
+
+        // get messages
+        const msg_gps = lastGPS
+          ? unitLocationData[lastDate]["hour-index"][lastHour]["sec-index"][
+              lastGPS
+            ]
+          : null;
+        // const msg_hb = lastHeartbeat
+        //   ? unitData[lastDate]["hour-index"][lastTime]["heartbeats"][
+        //       lastHeartbeat
+        //     ]
+        //   : null;
+        if (msg_gps) {
+          var lastLocationReport = Math.round(
+            (Math.round(new Date().getTime() / 1000) - lastGPS) / 60,
           );
-          var latency = heartbeat
-            ? heartbeat.recTime - heartbeat.genTime
-            : "NA";
+
+          var latency = null;
+          // if (
+          //   msg_hb.hasOwnProperty("recTime") &&
+          //   msg_hb.hasOwnProperty("genTime")
+          // ) {
+          //   latency = msg_hb.recTime - msg_hb.genTime;
+          // }
 
           var health = null;
-          if (lastReport < 2) {
+          if (lastLocationReport < 2) {
             if (latency < 20) {
               health = "Healthy";
             } else {
               health = "Sick";
             }
-          } else if (lastReport < 10) {
+          } else if (lastLocationReport < 10) {
             health = "Sick";
           } else {
             health = "Down";
           }
 
-          var connection = null;
-          if (health === "Healthy" || health === "Sick") {
-            connection = _.findKey(heartbeat.interfaces, "active");
-          } else {
-            connection = "NA";
-            lastReport = "NA";
+          var location = null;
+          if (msg_gps.hasOwnProperty("lat") && msg_gps.hasOwnProperty("lng")) {
+            location = msg_gps;
           }
+
+          var connection = null;
 
           acc[unit] = {
             health,
             connection,
             location,
-            lastReport,
+            lastLocationReport,
+            lastHeartbeatTime: lastLocationReport,
           };
+          state.set(`health.${unit}`, health);
         } else {
           acc[unit] = {
             health: "Down",
-            connection: "NA",
-            location: "NA",
+            connection: null,
+            location: null,
             lastReport: "NA",
+            lastHeartbeatTime: 60,
           };
+          state.set(`health.${unit}`, "Down");
         }
         return acc;
       },

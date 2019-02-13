@@ -1,11 +1,10 @@
-import { Module } from 'cerebral';
-import * as signals from './sequences'
+import { Module } from "cerebral";
+import * as signals from "./sequences";
 
 export default Module({
   state: {
-    drawerOpen: true,
+    drawerOpen: false,
+    dataReady: false,
   },
   signals,
 });
-
-

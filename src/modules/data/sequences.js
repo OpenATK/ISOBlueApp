@@ -1,29 +1,31 @@
 import { sequence } from "cerebral";
 import { state, props } from "cerebral/tags";
 import { set } from "cerebral/operators";
-import Promise from "bluebird";
 import _ from "lodash";
 import oada from "@oada/cerebral-module/sequences";
-import * as snapshots from "../snapshots/sequences";
 
 var masterTree = {
   bookmarks: {
-    _type: "applications/vnd.oada.bookmarks.1+json",
+    _type: "application/vnd.oada.bookmarks.1+json",
     _rev: "0-0",
     isoblue: {
-      _type: "applications/vnd.oada.isoblue.1+json",
+      _type: "application/vnd.oada.isoblue.1+json",
       _rev: "0-0",
       "device-index": {
         "*": {
-          _type: "applications/vnd.oada.isoblue.device.1+json",
+          _type: "application/vnd.oada.isoblue.device.1+json",
           _rev: "0-0",
-          "day-index": {
-            "*": {
-              _type: "applications/vnd.oada.isoblue.day.1+json",
-              _rev: "0-0",
-              "hour-index": {
-                "*": {
-                  _type: "applications/vnd.oada.isoblue.hour.1+json",
+          "*": {
+            _type: "application/vnd.oada.isoblue.dataset.1+json",
+            _rev: "0-0",
+            "day-index": {
+              "*": {
+                _type: "application/vnd.oada.isoblue.day.1+json",
+                _rev: "0-0",
+                "hour-index": {
+                  "*": {
+                    _type: "application/vnd.oada.isoblue.hour.1+json",
+                  },
                 },
               },
             },
@@ -45,10 +47,14 @@ var dayTree = {
         "*": {
           _type: "applications/vnd.oada.isoblue.device.1+json",
           _rev: "0-0",
-          "day-index": {
-            "*": {
-              _type: "applications/vnd.oada.isoblue.day.1+json",
-              _rev: "0-0",
+          "*": {
+            _type: "application/vnd.oada.isoblue.dataset.1+json",
+            _rev: "0-0",
+            "day-index": {
+              "*": {
+                _type: "applications/vnd.oada.isoblue.day.1+json",
+                _rev: "0-0",
+              },
             },
           },
         },
@@ -57,135 +63,107 @@ var dayTree = {
   },
 };
 
-export const mapIndex = sequence("data.mapIndex", [
-  ({ state, props }) => {
-    let id = state.get("data.connection_id");
-    let data = state.get(`oada.${id}.bookmarks.isoblue`) || {};
-    return Promise.map(Object.keys(data["device-index"] || {}), device => {
-      if (device.charAt(0) !== "_") state.set(`data.${device}`, {});
-      return Promise.map(
-        Object.keys(data["device-index"][device]["day-index"] || {}),
-        date => {
-          if (date.charAt(0) !== "_") state.set(`data.${device}.${date}`, {});
-          return Promise.map(
-            Object.keys(
-              data["device-index"][device]["day-index"][date]["hour-index"] ||
-                {},
-            ),
-            hour => {
-              if (
-                hour.charAt(0) !== "_" &&
-                !state.get(`data.${device}.${date}.${hour}`)
-              ) {
-                state.set(`data.${device}.${date}.${hour}`, {});
-              }
-            },
-          );
+var deviceTree = {
+  bookmarks: {
+    _type: "applications/vnd.oada.bookmarks.1+json",
+    _rev: "0-0",
+    isoblue: {
+      _type: "applications/vnd.oada.isoblue.1+json",
+      _rev: "0-0",
+      "device-index": {
+        "*": {
+          _type: "applications/vnd.oada.isoblue.device.1+json",
+          _rev: "0-0",
+          "*": {
+            _type: "application/vnd.oada.isoblue.dataset.1+json",
+            _rev: "0-0",
+          },
         },
-      );
-      return;
-    }).then(() => {
-      return;
-    });
+      },
+    },
   },
-]);
-
-const mapHourData = function({ state, props }) {
-  let device = state.get(`diagnostics.selectedUnit`);
-  let date = state.get(`diagnostics.date`);
-  let hour = state.get(`diagnostics.hour`);
-  let id = state.get("data.connection_id");
-  let hourData = state.get(
-    `oada.${id}.bookmarks.isoblue.device-index.${device}.day-index.${date}.hour-index.${hour}`,
-  );
-  let strippedData = _.pick(hourData, ["gps", "heartbeats"]);
-  state.set(`data.${device}.${date}.${hour}`, strippedData);
 };
 
-function getLastHour({ state, props }) {
-  return Promise.map(
-    _.without(Object.keys(state.get(`data`)), "connection_id"),
-    device => {
-      var lastDate = Object.keys(state.get(`data.${device}`)).sort((a, b) => {
-        return new Date(b) - new Date(a);
-      })[0];
-      let lastHour = _.max(
-        Object.keys(state.get(`data.${device}.${lastDate}`)),
-      );
-      return {
-        path: `/bookmarks/isoblue/device-index/${device}/day-index/${lastDate}/hour-index/${lastHour}`,
-        watch: { signals: ["data.handleHourUpdate"] },
-      };
-    },
-  ).then(requests => {
-    return { requests: requests };
-  });
-}
+/* Set requests */
+function setRequestLastHour({ state, props }) {
+  const devices = Object.keys(
+    state.get(`oada.${props.connection_id}.bookmarks.isoblue.device-index`) ||
+      {},
+  );
 
-function mapLastHour({ state, props }) {
-  return Promise.map(
-    _.without(Object.keys(state.get(`data`)), "connection_id"),
-    device => {
-      var lastDate = Object.keys(state.get(`data.${device}`)).sort((a, b) => {
-        return new Date(b) - new Date(a);
-      })[0];
-      let lastHour = _.max(
-        Object.keys(state.get(`data.${device}.${lastDate}`)),
-      );
-      let id = state.get("data.connection_id");
-      let hourData = state.get(
-        `oada.${id}.bookmarks.isoblue.device-index.${device}.day-index.${lastDate}.hour-index.${lastHour}`,
-      );
-      let strippedData = _.pick(hourData, ["gps", "heartbeats"]);
-      state.set(`data.${device}.${lastDate}.${lastHour}`, strippedData);
+  var requests = []; // OADA requests
+
+  devices.forEach(device_name => {
+    var device_data =
+      state.get(
+        `oada.${
+          props.connection_id
+        }.bookmarks.isoblue.device-index.${device_name}.location.day-index`,
+      ) || {};
+
+    // find the most recent day
+    const date_list = Object.keys(device_data);
+    if (date_list.length === 0) {
       return;
-    },
-  ).then(() => {
-    return;
+    }
+    const last_date = _.maxBy(date_list, function(o) {
+      return new Date(o);
+    });
+
+    //find the most recent hour
+    const last_hour = _.max(
+      Object.keys(device_data[last_date]["hour-index"] || {}),
+    );
+
+    // add request
+    requests.push({
+      path: `/bookmarks/isoblue/device-index/${device_name}/location/day-index/${last_date}/hour-index/${last_hour}`,
+      watch: { signals: ["snapshots.createSnapshots"] },
+      tree: masterTree,
+    });
   });
+
+  return { requests };
 }
 
-export const handleIndexUpdate = sequence("data.handleIndexUpdate", [
-  mapIndex,
-  ({ state, props }) => ({
-    requests: [
-      {
-        tree: masterTree,
-      },
-    ],
-  }),
-  getLastHour,
+/* Called when the device list was modified */
+export const handleDeviceUpdate = sequence("data.handleDeviceUpdate", [
+  set(state`data.ready`, false),
+  setRequestLastHour,
   oada.get,
-  mapLastHour,
+  set(state`data.ready`, true),
 ]);
 
-export const handleHourUpdate = sequence("data.handleHourUpdate", [
-  mapLastHour,
-  snapshots.createSnapshots,
-]);
-
-export const init = sequence("data.init", [
-  oada.connect,
-  set(state`data.connection_id`, props`connection_id`),
+// Get devices and watch for changes
+export const getDevices = sequence("data.getDevices", [
+  // get devices
   ({ state, props }) => ({
     requests: [
       {
         path: "/bookmarks/isoblue",
         tree: dayTree,
-        watch: { signals: ["data.handleIndexUpdate"] },
+        watch: { signals: ["data.handleDeviceUpdate"] },
       },
     ],
   }),
   oada.get,
-  mapIndex,
-  ({ state, props }) => ({
-    requests: [{ tree: masterTree }],
-  }),
-  getLastHour,
-  oada.get,
-  mapLastHour,
 ]);
 
+/* Initial sequence. Only called at startup. */
+export const init = sequence("data.init", [
+  set(state`data.ready`, false),
+  set(state`health`, {}),
+  // connect to server
+  set(state`data.connection_id`, props`connection_id`),
+
+  // get most recent data
+  getDevices,
+  setRequestLastHour,
+  oada.get,
+  set(state`data.ready`, true),
+]);
+
+/* Set request to OADA server based on currently selected device, date, and hour */
 export const getHour = sequence("data.getHour", [
   ({ state, props }) => ({
     requests: [
@@ -193,13 +171,12 @@ export const getHour = sequence("data.getHour", [
         connection_id: state.get("data.connection_id"),
         path: `/bookmarks/isoblue/device-index/${state.get(
           `diagnostics.selectedUnit`,
-        )}/day-index/${state.get(`diagnostics.date`)}/hour-index/${state.get(
-          `diagnostics.hour`,
-        )}`,
+        )}/location/day-index/${state.get(
+          `diagnostics.date`,
+        )}/hour-index/${state.get(`diagnostics.hour`)}`,
         tree: masterTree,
       },
     ],
   }),
   oada.get,
-  mapHourData,
 ]);

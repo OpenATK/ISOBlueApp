@@ -1,36 +1,26 @@
-import React from 'react';
-import { connect } from '@cerebral/react';
-import {state, signal} from 'cerebral/tags';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import React from "react";
+import { connect } from "@cerebral/react";
+import { state } from "cerebral/tags";
 
-import Map from './Map/';
-import Graph from './Graph/';
+import Map from "./Map/";
+import Graph from "./Graph/";
 
 class Visualization extends React.Component {
- 
   render() {
-    
     var graphic;
     if (this.props.mode === "map") {
-      graphic = (<Map/>);
+      graphic = <Map />;
     } else {
-      graphic = (<Graph/>);
+      graphic = <Graph />;
     }
 
-    return (
-      graphic
-    );
+    return graphic;
   }
 }
 
-
-export default connect({
-
-  mode: state`diagnostics.mode`,
-  
+export default connect(
+  {
+    mode: state`diagnostics.mode`,
   },
-  (Visualization)
+  Visualization,
 );
-
-

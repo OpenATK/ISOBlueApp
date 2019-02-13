@@ -1,7 +1,7 @@
 import React from "react";
 import _ from "lodash";
 import { connect } from "@cerebral/react";
-import { state, signal } from "cerebral/tags";
+import { state } from "cerebral/tags";
 import uuid from "uuid";
 //import Leaflet from 'leaflet';
 import { Polyline } from "react-leaflet";
@@ -11,85 +11,144 @@ const styles = theme => ({});
 
 class Lines extends React.Component {
   render() {
-    const { classes } = this.props;
+    // get connection id
+    const conn_id = this.props.connection_id;
+
+    // do not render lines if data is not ready
+    if (!this.props.ready) return null;
 
     var dataLines = [];
-    var healthyLines = [];
-    var sickLines = [];
-    _.forEach(Object.keys(this.props.snapshots) || {}, unit => {
-      if (unit === this.props.selectedUnit) {
-        var gps = this.props.data[this.props.selectedUnit][this.props.date][
-          this.props.hour
-        ].gps;
-        var positions = [];
-        _.forEach(gps, instance => {
-          if (instance.lat && instance.lng) {
-            positions.push([instance.lat, instance.lng]);
-          }
-        });
-        dataLines.push(positions);
 
-        //If no unit is selected, show the last fifteen minutes of data
-        //from each unit.
-      } else if (
-        this.props.snapshots[unit].health === "Healthy" ||
-        this.props.snapshots[unit].health === "Sick"
-      ) {
-        var positions = [];
-        var liveTime = Math.round(new Date().getTime() / 1000);
-        var date = Object.keys(this.props.data[unit]).sort((a, b) => {
-          return new Date(b) - new Date(a);
-        })[0];
-        var hours = Object.keys(this.props.data[unit][date]);
-        var currentHour = _.max(hours);
-        var lastHour = _.max(
-          _.remove(hours, n => {
-            return n != currentHour;
+    if (!this.props.oada[conn_id].bookmarks.hasOwnProperty("isoblue")) {
+      return null;
+    }
+
+    const devices =
+      this.props.oada[conn_id].bookmarks.isoblue["device-index"] || {};
+
+    // Unit is selected
+    if (this.props.selectedUnit && this.props.date && this.props.hour) {
+      // ensure that the target resource actually exists
+      var gps_data = null;
+      try {
+        gps_data =
+          devices[this.props.selectedUnit]["location"]["day-index"][
+            this.props.date
+          ]["hour-index"][this.props.hour]["sec-index"];
+      } catch (e) {
+        console.error("hmm");
+        return null;
+      }
+
+      // make a line
+      var points = [];
+      _.forEach(gps_data, instance => {
+        if (
+          instance.hasOwnProperty("lat") &&
+          instance.hasOwnProperty("lng") &&
+          instance.lat &&
+          instance.lng
+        ) {
+          points.push([instance.lat, instance.lng]);
+        }
+      });
+
+      // add line
+      dataLines.push(points);
+    }
+
+    // None of the units is selected
+    else {
+      _.forEach(devices, (unit_resource, unit) => {
+        // get the most recent date
+        if (!unit_resource.hasOwnProperty("location")) return;
+        if (!unit_resource.location.hasOwnProperty("day-index")) return;
+        const date_list = Object.keys(unit_resource["location"]["day-index"]);
+        if (date_list.length === 0) return;
+        const last_date = _.maxBy(date_list, function(o) {
+          return new Date(o);
+        });
+
+        // get hours
+        if (
+          !unit_resource["location"]["day-index"][last_date].hasOwnProperty(
+            "hour-index",
+          )
+        )
+          return;
+        const hour_list = Object.keys(
+          unit_resource["location"]["day-index"][last_date]["hour-index"],
+        );
+
+        const current_hour = _.max(hour_list);
+        const last_hour = _.max(
+          _.remove(hour_list, n => {
+            return n !== current_hour;
           }),
         );
-        var currentGPS = Object.keys(
-          this.props.data[unit][date][currentHour].gps,
-        );
-        var lastGPS;
-        if (lastHour)
-          lastGPS = Object.keys(
-            this.props.data[unit][date][lastHour].gps || {},
-          );
+        var current_time_sec = Math.round(new Date().getTime() / 1000);
+        var positions = [];
 
-        //Creates a polyline of last 15 mins of data from both the current and
-        //last hour of data
-        _.forEach(currentGPS, (time, i) => {
-          var tempGPS = this.props.data[unit][date][currentHour].gps[time];
-          if (liveTime - time <= 15 * 60 && tempGPS.lat && tempGPS.lng) {
-            positions.push([tempGPS.lat, tempGPS.lng]);
-          }
-        });
-        _.forEach(lastGPS || [], time => {
-          var tempGPS = this.props.data[unit][date][lastHour].gps[time];
-          if (liveTime - time <= 15 * 60 && tempGPS.lat && tempGPS.lng) {
-            positions.push([tempGPS.lat, tempGPS.lng]);
-          }
-        });
-
-        //This sorts the line into either healthy or sick catagories.
-        if (this.props.snapshots[unit].health === "Healthy") {
-          healthyLines.push(positions);
-        } else {
-          sickLines.push(positions);
+        if (
+          last_hour !== undefined &&
+          unit_resource["location"]["day-index"][last_date]["hour-index"][
+            last_hour
+          ].hasOwnProperty("sec-index")
+        ) {
+          const prev_gps_data =
+            unit_resource["location"]["day-index"][last_date]["hour-index"][
+              last_hour
+            ]["sec-index"];
+          var prev_gps_ts = Object.keys(prev_gps_data || {});
+          prev_gps_ts.forEach(o => {
+            if (
+              current_time_sec - o <= 15 * 60 &&
+              prev_gps_data[o].hasOwnProperty("lat") &&
+              prev_gps_data[o].hasOwnProperty("lng") &&
+              prev_gps_data[o].lat &&
+              prev_gps_data[o].lng
+            ) {
+              positions.push([prev_gps_data[o].lat, prev_gps_data[o].lng]);
+            }
+          });
         }
-      }
-    });
+
+        if (
+          unit_resource["location"]["day-index"][last_date]["hour-index"][
+            current_hour
+          ].hasOwnProperty("sec-index")
+        ) {
+          const current_gps_data =
+            unit_resource["location"]["day-index"][last_date]["hour-index"][
+              current_hour
+            ]["sec-index"];
+          var current_gps_ts = Object.keys(current_gps_data || {});
+          current_gps_ts.forEach(o => {
+            if (
+              current_time_sec - o <= 15 * 60 &&
+              current_gps_data[o].hasOwnProperty("lat") &&
+              current_gps_data[o].hasOwnProperty("lng") &&
+              current_gps_data[o].lat &&
+              current_gps_data[o].lng
+            ) {
+              positions.push([
+                current_gps_data[o].lat,
+                current_gps_data[o].lng,
+              ]);
+            }
+          });
+        }
+
+        // FIXME: currentGPS and lastGPS are not guaranteed to be sorted
+
+        dataLines.push(positions);
+      });
+    }
 
     return (
       <div>
         {dataLines.map(positions => (
           <Polyline key={uuid.v4()} positions={positions} color="#ffffff" />
-        ))}
-        {healthyLines.map(positions => (
-          <Polyline key={uuid.v4()} positions={positions} color="#008000" />
-        ))}
-        {sickLines.map(positions => (
-          <Polyline key={uuid.v4()} positions={positions} color="#ffbf00" />
         ))}
       </div>
     );
@@ -98,8 +157,9 @@ class Lines extends React.Component {
 
 export default connect(
   {
-    snapshots: state`snapshots`,
-    data: state`data`,
+    connection_id: state`data.connection_id`,
+    ready: state`data.ready`,
+    oada: state`oada`,
     date: state`diagnostics.date`,
     hour: state`diagnostics.hour`,
     selectedUnit: state`diagnostics.selectedUnit`,
