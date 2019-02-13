@@ -91,7 +91,6 @@ export const mapIndex = sequence("data.mapIndex", [
 ]);
 
 const mapHourData = function({ state, props }) {
-  console.log("map");
   let device = state.get(`diagnostics.selectedUnit`);
   let date = state.get(`diagnostics.date`);
   let hour = state.get(`diagnostics.hour`);
@@ -117,7 +116,6 @@ function getLastHour({ state, props }) {
       };
     },
   ).then(requests => {
-    console.log(requests);
     return { requests: requests };
   });
 }

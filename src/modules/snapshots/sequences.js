@@ -11,7 +11,6 @@ export const createSnapshots = sequence("createSnapshots", [
     units: _.reduce(
       props.unitList,
       (acc, unit, unitkey) => {
-        console.log("unit " + unit);
         var unitData = state.get(`data.${[unit]}`);
         //var health, location, connection, lastReport;
         var lastDate = _.max(Object.keys(unitData || {}));
@@ -71,7 +70,6 @@ export const createSnapshots = sequence("createSnapshots", [
             lastReport: "NA",
           };
         }
-        console.log(acc);
         return acc;
       },
       {},
