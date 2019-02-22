@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ISOBlueApp/precache-manifest.788cbcc1f20019bf766d4cee79f727a4.js"
+  "/ISOBlueApp/precache-manifest.df3c665e7747143e3ee080c28a9b6ecd.js"
 );
 
 workbox.clientsClaim();
