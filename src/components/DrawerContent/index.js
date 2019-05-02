@@ -31,7 +31,7 @@ class DrawerContent extends React.Component {
     return (
       <Drawer
         open={this.props.drawerOpen}
-        onClose={this.props.toggleDrawerOpen}
+        onClose={() => this.props.toggleDrawerOpen({})}
         classes={{
           paper: classes.drawerPaper,
         }}

@@ -148,7 +148,7 @@ class Lines extends React.Component {
     return (
       <div>
         {dataLines.map(positions => (
-          <Polyline key={uuid.v4()} positions={positions} color="#ffffff" />
+          <Polyline positions={positions} color="#ffffff" />
         ))}
       </div>
     );

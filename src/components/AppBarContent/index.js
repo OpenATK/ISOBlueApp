@@ -50,12 +50,12 @@ class AppBarContent extends React.Component {
         <IconButton
           color="inherit"
           aria-label="Open Drawer"
-          onClick={this.props.toggleDrawerOpen}
+          onClick={() => this.props.toggleDrawerOpen({})}
         >
           <MenuIcon className={classes.icon} />
         </IconButton>
         <Typography variant="h6" color="inherit" className={classes.flex}>
-          ISOBlueApp [1.1.0]
+          ISOBlueApp [1.1.1]
         </Typography>
         {userLocationButton}
       </Toolbar>
