@@ -66,10 +66,36 @@ class Diagnostics extends React.Component {
       </Select>
     );
 
+    // Get timezone offset
+    const tzOffsetMinutes = new Date().getTimezoneOffset();
+    const genTimeLabel = hour => {
+      // UTC -> Local time zone conversion
+      // Assume hour has format hh:mm
+      const hhmm = hour.split(":");
+      const utcMinutes = 60 * parseInt(hhmm[0]) + parseInt(hhmm[1]);
+      var localMinutes = utcMinutes - tzOffsetMinutes;
+      var msg = "";
+      if (localMinutes < 0) {
+        localMinutes += 1440;
+        msg = " (-1 day)";
+      } else if (localMinutes > 1440) {
+        localMinutes -= 1440;
+        msg = " (+1 day)";
+      }
+      const localHH = Math.floor(localMinutes / 60);
+      const localMM = localMinutes % 60;
+      return (
+        localHH.toString().padStart(2, "0") +
+        ":" +
+        localMM.toString().padStart(2, "0") +
+        msg
+      );
+    };
+
     const hourSelect = (
       <Select
         value={this.props.hour}
-        renderValue={value => `${value}`}
+        renderValue={value => `${genTimeLabel(value)}`}
         onChange={value => this.props.setHour({ hour: value.target.value })}
       >
         {Object.keys(
@@ -78,11 +104,13 @@ class Diagnostics extends React.Component {
           ][this.props.selectedUnit]["location"]["day-index"][this.props.date][
             "hour-index"
           ],
-        ).map(hour => (
-          <MenuItem key={hour} value={hour}>
-            {hour}
-          </MenuItem>
-        ))}
+        ).map(hour => {
+          return (
+            <MenuItem key={hour} value={hour}>
+              {genTimeLabel(hour)}
+            </MenuItem>
+          );
+        })}
         ;
       </Select>
     );
