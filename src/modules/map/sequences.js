@@ -19,15 +19,23 @@ export const centerOnUser = sequence("centerOnUser", [
 ]);
 
 export const centerOnUnit = sequence("centerOnUnit", [
-  set(state`map.targetCenter`, { lat: 40.428641, lng: -86.913783 }),
-  debounce(1),
-  {
-    continue: [
-      set(
-        state`map.targetCenter`,
-        state`snapshots.${state`diagnostics.selectedUnit`}.location`,
-      ),
-    ],
-    discard: [],
+  ({ state, props }) => {
+    const conn_id = state.get("data.connection_id");
+    let unit = state.get(`diagnostics.selectedUnit`);
+    let date = state.get(`diagnostics.date`);
+    let hour = state.get(`diagnostics.hour`);
+    if (unit && date && hour) {
+      const gps_list =
+        state.get(
+          `oada.${conn_id}.bookmarks.isoblue.device-index.${unit}.location.day-index.${date}.hour-index.${hour}.sec-index`,
+        ) || {};
+      const last = _.max(Object.keys(gps_list));
+      if (last) {
+        const unitLocation = gps_list[last];
+        if (unitLocation.lat && unitLocation.lng) {
+          state.set(`map.targetCenter`, unitLocation);
+        }
+      }
+    }
   },
 ]);
