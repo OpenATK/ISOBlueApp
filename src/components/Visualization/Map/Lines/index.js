@@ -54,7 +54,7 @@ class Lines extends React.Component {
       });
 
       // add line
-      dataLines.push(points);
+      dataLines.push({ unit: this.props.selectedUnit, positions: points });
     }
 
     // None of the units is selected
@@ -140,15 +140,18 @@ class Lines extends React.Component {
         }
 
         // FIXME: currentGPS and lastGPS are not guaranteed to be sorted
-
-        dataLines.push(positions);
+        dataLines.push({ unit, positions });
       });
     }
 
     return (
       <div>
-        {dataLines.map(positions => (
-          <Polyline positions={positions} color="#ffffff" />
+        {dataLines.map(posobj => (
+          <Polyline
+            key={posobj.unit}
+            positions={posobj.positions}
+            color="#ffffff"
+          />
         ))}
       </div>
     );
