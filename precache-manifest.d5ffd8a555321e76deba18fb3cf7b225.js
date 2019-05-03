@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c709b0816b321372a126",
+    "revision": "4fee836a1d1d29284b4d",
     "url": "/ISOBlueApp/static/css/main.ffeb54b3.chunk.css"
   },
   {
-    "revision": "c709b0816b321372a126",
-    "url": "/ISOBlueApp/static/js/main.a39e20d4.chunk.js"
+    "revision": "4fee836a1d1d29284b4d",
+    "url": "/ISOBlueApp/static/js/main.f8781002.chunk.js"
   },
   {
     "revision": "7ad3b0802d877c47a094",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/ISOBlueApp/static/js/2.a3aae9f2.chunk.js"
   },
   {
-    "revision": "032ffda0711123ecaeb9c524d1dae7a8",
+    "revision": "441c28abea5f10ea514791331a82f616",
     "url": "/ISOBlueApp/index.html"
   }
 ];
