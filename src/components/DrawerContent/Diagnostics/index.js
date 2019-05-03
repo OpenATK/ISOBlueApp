@@ -159,7 +159,6 @@ class Diagnostics extends React.Component {
         <ListItem>
           <ListItemText align="center">{hourSelect}</ListItemText>
         </ListItem>
-        {visualizing}
         <Divider />
         <ListItem>
           <ListItemText align="center">
