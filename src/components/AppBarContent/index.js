@@ -55,7 +55,7 @@ class AppBarContent extends React.Component {
           <MenuIcon className={classes.icon} />
         </IconButton>
         <Typography variant="h6" color="inherit" className={classes.flex}>
-          ISOBlueApp [1.1.1]
+          ISOBlueApp [1.1.2]
         </Typography>
         {userLocationButton}
       </Toolbar>
