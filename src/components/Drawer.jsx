@@ -68,7 +68,9 @@ class Component extends React.Component {
         // UTC -> Local time zone conversion
         // Assume hour has format hh:mm
         const hhmm = hour.split(":");
-        const utcMinutes = 60 * parseInt(hhmm[0]) + parseInt(hhmm[1]);
+        const utcMinutes = hhmm[1]
+          ? 60 * parseInt(hhmm[0]) + parseInt(hhmm[1])
+          : 60 * parseInt(hour);
         var localMinutes = utcMinutes - tzOffsetMinutes;
         var msg = "";
         if (localMinutes < 0) {
