@@ -23,8 +23,11 @@ export default App(
     };
   },
   {
-    devtools: DevTools({
-      host: "localhost:8787",
-    }),
+    devtools:
+      process.env.NODE_ENV === "production"
+        ? null
+        : DevTools({
+            host: "localhost:8787",
+          }),
   },
 );
