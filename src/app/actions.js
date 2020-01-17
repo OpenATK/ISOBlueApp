@@ -6,7 +6,11 @@ import * as oadatrees from "./oadatrees";
 export const initialize = () => {};
 
 export const setConnectionArgs = () => {
-  return { domain: "https://128.46.71.115", token: "abc", cache: false };
+  return {
+    domain: "https://cloudradio33.ecn.purdue.edu",
+    token: "abc",
+    cache: false,
+  };
 };
 
 export const setDeviceListRequest = ({ get }) => {
