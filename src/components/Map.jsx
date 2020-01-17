@@ -59,6 +59,7 @@ class MapComponent extends React.Component {
             fillOpacity={1}
             radius={12}
             zIndexOffset={1}
+            onClick={e => this.props.selectDevice({ device })}
           >
             <Tooltip direction="top" offset={[0, -10]} permanent={true}>
               <b>{device}</b>
@@ -94,7 +95,7 @@ class MapComponent extends React.Component {
       <div className={classes.map}>
         <Map
           center={[this.props.mapCenter.lat, this.props.mapCenter.lng]}
-          zoom={13}
+          zoom={15}
           style={{ height: "100%", width: "100%", position: "relative" }}
         >
           <TileLayer
@@ -123,6 +124,7 @@ export default connect(
     connection: state`connection`,
     oada: state`oada`,
     selectedDevice: state`selectedDevice`,
+    selectDevice: sequences`selectDevice`,
   },
   withStyles(styles, { withTheme: true })(MapComponent),
 );
