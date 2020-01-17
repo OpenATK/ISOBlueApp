@@ -15,6 +15,7 @@ export var connect = [
   oada.get,
   actions.updateDeviceListState,
   set(state`devices`, props`devices`),
+  set(state`modalOverlay`, false)
 ];
 
 export const handleNewDevice = [
@@ -60,6 +61,7 @@ export const handleDayUpdate = [
 export const toggleDrawer = toggle(state`components.drawer`);
 
 export const selectDevice = [
+  set(state`modalOverlay`, true),
   set(props`connection_id`, state`connection.connection_id`),
 
   actions.setDayListRequest,
@@ -87,6 +89,7 @@ export const selectDevice = [
   set(state`selectedDevice.device`, props`device`),
   set(state`selectedDevice.day`, props`day`),
   set(state`selectedDevice.hour`, props`hour`),
+  set(state`modalOverlay`, false)
 ];
 
 export const unselectDevice = [
@@ -96,22 +99,27 @@ export const unselectDevice = [
 ];
 
 export const selectDay = [
+  set(state`modalOverlay`, true),
   set(props`connection_id`, state`connection.connection_id`),
   set(props`device`, state`selectedDevice.device`),
   set(state`selectedDevice.day`, props`day`),
   actions.setHourListRequest,
   oada.get,
+  set(state`modalOverlay`, false),
 ];
 export const selectHour = [
+  set(state`modalOverlay`, true),
   set(props`connection_id`, state`connection.connection_id`),
   set(props`device`, state`selectedDevice.device`),
   set(props`day`, state`selectedDevice.day`),
   set(state`selectedDevice.hour`, props`hour`),
   actions.setLocationDataRequest,
   oada.get,
+  set(state`modalOverlay`, false),
 ];
 
 export const toggleDeviceSync = [
+  set(state`modalOverlay`, true),
   when(state`devices.${props`device`}.sync`),
   {
     true: [set(state`devices.${props`device`}.sync`, false)],
@@ -140,4 +148,5 @@ export const toggleDeviceSync = [
       set(state`devices.${props`device`}.sync`, true),
     ],
   },
+  set(state`modalOverlay`, false),
 ];

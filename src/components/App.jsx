@@ -2,7 +2,7 @@ import React from "react";
 import { state, sequences } from "cerebral";
 import { connect } from "@cerebral/react";
 import { withStyles } from "@material-ui/core/styles";
-import { AppBar, Typography } from "@material-ui/core";
+import { AppBar, Typography, Modal } from "@material-ui/core";
 
 // Components
 import AppBarComponent from "./AppBar";
@@ -41,13 +41,20 @@ class AppComponent extends React.Component {
           <div className={classes.toolbar} />
           <Map />
         </main>
+        <Modal
+          aria-labelledby="simple-modal-title"
+          aria-describedby="simple-modal-description"
+          open={this.props.modalOverlay}
+        >
+          <div />
+        </Modal>
       </div>
     );
   }
 }
 
 const App = connect(
-  {},
+  { modalOverlay: state`modalOverlay` },
   withStyles(styles, { withTheme: true })(AppComponent),
 );
 

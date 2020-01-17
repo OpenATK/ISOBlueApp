@@ -6,4 +6,5 @@ export default {
   devices: {},
   components: { drawer: false },
   selectedDevice: { device: null, day: null, hour: null },
+  modalOverlay: true,
 };
