@@ -81,7 +81,9 @@ class MapComponent extends React.Component {
             "sec-index"
           ] || {};
         Object.keys(data).forEach(key => {
-          pts[data[key].time] = [data[key].lat, data[key].lng];
+          if (!isNaN(data[key].lat) && !isNaN(data[key].lng)) {
+            pts[data[key].time] = [data[key].lat, data[key].lng];
+          }
         });
       } catch {
         console.log("failed to get location points.");
