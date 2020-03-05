@@ -29,7 +29,7 @@ class Component extends React.Component {
           <MenuIcon className={classes.icon} />
         </IconButton>
         <Typography variant="h6" color="inherit" className={classes.flex}>
-          ISOBlueApp [2.0.0]
+          ISOBlueApp [2.0.1]
         </Typography>
         <div className={classes.connectopmStatusIndicator}>
           <Typography variant="h6" color="inherit">
