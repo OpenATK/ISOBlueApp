@@ -109,8 +109,8 @@ export const getMostRecentHour = ({ get }) => {
   if (hour_list.length === 0) {
     return {};
   }
-  const last_hour = _.max(Object.keys(hour_index || {}));
-  return { hour: last_hour };
+  const last_hour = _.max(Object.keys(hour_index || {}).map(Number));
+  return { hour: last_hour.toString() };
 };
 
 export const getMostRecentLocation = ({ get }) => {
