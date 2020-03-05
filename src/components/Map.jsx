@@ -71,7 +71,7 @@ class MapComponent extends React.Component {
 
     // Track Line
     const selectedDevice = this.props.selectedDevice;
-    let pts = {};
+    let pts = [];
     if (selectedDevice.device && selectedDevice.day && selectedDevice.hour) {
       try {
         const data =
@@ -83,7 +83,14 @@ class MapComponent extends React.Component {
           ] || {};
         Object.keys(data).forEach(key => {
           if (!isNaN(data[key].lat) && !isNaN(data[key].lng)) {
-            pts[data[key].time] = [data[key].lat, data[key].lng];
+            pts.push(
+              <CircleMarker
+                key={key}
+                center={[data[key].lat, data[key].lng]}
+                radius={1}
+                color={"#ffffff"}
+              />,
+            );
           }
         });
       } catch {
@@ -96,21 +103,16 @@ class MapComponent extends React.Component {
         <Map
           center={[this.props.mapCenter.lat, this.props.mapCenter.lng]}
           zoom={15}
+          maxZoom={18}
+          preferCanvas={true}
           style={{ height: "100%", width: "100%", position: "relative" }}
         >
           <TileLayer
             attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community"
             url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
           />
+          <div>{pts}</div>
           {markers}
-
-          <div>
-            <Polyline
-              key={"trackline"}
-              positions={Object.values(pts) || []}
-              color="#ffffff"
-            />
-          </div>
         </Map>
       </div>
     );
