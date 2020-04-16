@@ -3,7 +3,6 @@ import * as sequences from "./sequences";
 //import * as providers from "./providers";
 import state from "./state";
 import DevTools from "cerebral/devtools";
-import oadaProvider from "@oada/cerebral-provider";
 import oadaModule from "@oada/cerebral-module";
 
 export default App(
@@ -17,9 +16,6 @@ export default App(
       },
       state,
       sequences,
-      providers: {
-        oada: oadaProvider,
-      },
     };
   },
   {

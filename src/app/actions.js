@@ -122,12 +122,18 @@ export const getMostRecentLocation = ({ get }) => {
     throw new Error("Missing parameters");
   }
   const hour_dataset = get(
-    state`oada.${connection_id}.bookmarks.isoblue.device-index.${device}.location.day-index.${day}.hour-index.${hour}.sec-index`,
+    state`oada.${connection_id}.bookmarks.isoblue.device-index.${device}.location.day-index.${day}.hour-index.${hour}.data`,
   );
 
   const latest_data_point = Object.values(hour_dataset || {}).reduce(
     (latest, data_point) => {
-      return latest.time > data_point.time ? latest : data_point;
+      return latest.time.value > data_point.time.value
+        ? latest
+        : {
+            time: data_point.time.value,
+            lat: data_point.location.lat,
+            lng: data_point.location.lng,
+          };
     },
     { time: 0, lat: 0, lng: 0 },
   );

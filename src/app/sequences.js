@@ -1,21 +1,24 @@
 import { state, props } from "cerebral";
 import { set, when, toggle, unset } from "cerebral/factories";
-import oada from "@oada/cerebral-module/sequences";
+import oadaModule from "@oada/cerebral-module";
 import * as actions from "./actions";
 import * as oadatrees from "./oadatrees";
 
+const oada = oadaModule.sequences;
+
 export const initialize = actions.initialize;
 
-export var connect = [
+export const connect = [
   actions.setConnectionArgs,
   oada.connect,
+  //set(state`connection`,{}),
   set(state`connection.connection_id`, props`connection_id`),
 
   actions.setDeviceListRequest,
   oada.get,
   actions.updateDeviceListState,
   set(state`devices`, props`devices`),
-  set(state`modalOverlay`, false)
+  set(state`modalOverlay`, false),
 ];
 
 export const handleNewDevice = [
@@ -64,17 +67,27 @@ export const selectDevice = [
   set(state`modalOverlay`, true),
   set(props`connection_id`, state`connection.connection_id`),
 
-  actions.setDayListRequest,
-  oada.get,
-  actions.getMostRecentDay,
+  when(state`devices.${props`device`}.sync`),
+  {
+    true: [
+      actions.getMostRecentDay,
+      actions.getMostRecentHour,
+      actions.getMostRecentLocation,
+    ],
+    false: [
+      actions.setDayListRequest,
+      oada.get,
+      actions.getMostRecentDay,
 
-  actions.setHourListRequest,
-  oada.get,
-  actions.getMostRecentHour,
+      actions.setHourListRequest,
+      oada.get,
+      actions.getMostRecentHour,
 
-  actions.setLocationDataRequest,
-  oada.get,
-  actions.getMostRecentLocation,
+      actions.setLocationDataRequest,
+      oada.get,
+      actions.getMostRecentLocation,
+    ],
+  },
   set(
     state`devices.${props`device`}.location.lng`,
     props`latest_data_point.lng`,
@@ -89,7 +102,7 @@ export const selectDevice = [
   set(state`selectedDevice.device`, props`device`),
   set(state`selectedDevice.day`, props`day`),
   set(state`selectedDevice.hour`, props`hour`),
-  set(state`modalOverlay`, false)
+  set(state`modalOverlay`, false),
 ];
 
 export const unselectDevice = [
@@ -145,6 +158,8 @@ export const toggleDeviceSync = [
         state`devices.${props`device`}.location.lat`,
         props`latest_data_point.lat`,
       ),
+      set(state`mapCenter.lat`, props`latest_data_point.lat`),
+      set(state`mapCenter.lng`, props`latest_data_point.lng`),
       set(state`devices.${props`device`}.sync`, true),
     ],
   },

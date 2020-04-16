@@ -78,15 +78,17 @@ class MapComponent extends React.Component {
           this.props.oada[this.props.connection.connection_id].bookmarks
             .isoblue["device-index"][selectedDevice.device]["location"][
             "day-index"
-          ][selectedDevice.day]["hour-index"][selectedDevice.hour][
-            "sec-index"
-          ] || {};
+          ][selectedDevice.day]["hour-index"][selectedDevice.hour]["data"] ||
+          {};
         Object.keys(data).forEach(key => {
-          if (!isNaN(data[key].lat) && !isNaN(data[key].lng)) {
+          if (
+            !isNaN(data[key].location.lat) &&
+            !isNaN(data[key].location.lng)
+          ) {
             pts.push(
               <CircleMarker
                 key={key}
-                center={[data[key].lat, data[key].lng]}
+                center={[data[key].location.lat, data[key].location.lng]}
                 radius={1}
                 color={"#ffffff"}
               />,
