@@ -118,6 +118,12 @@ export const selectDay = [
   set(state`selectedDevice.day`, props`day`),
   actions.setHourListRequest,
   oada.get,
+  actions.getMostRecentHour,
+  actions.setLocationDataRequest,
+  oada.get,
+  actions.getMostRecentLocation,
+  set(state`mapCenter.lat`, props`latest_data_point.lat`),
+  set(state`mapCenter.lng`, props`latest_data_point.lng`),
   set(state`modalOverlay`, false),
 ];
 export const selectHour = [
@@ -128,6 +134,9 @@ export const selectHour = [
   set(state`selectedDevice.hour`, props`hour`),
   actions.setLocationDataRequest,
   oada.get,
+  actions.getMostRecentLocation,
+  set(state`mapCenter.lat`, props`latest_data_point.lat`),
+  set(state`mapCenter.lng`, props`latest_data_point.lng`),
   set(state`modalOverlay`, false),
 ];
 
