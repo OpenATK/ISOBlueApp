@@ -86,7 +86,7 @@ export const getMostRecentDay = ({ get }) => {
   if (date_list.length === 0) {
     return {};
   }
-  const last_date = _.maxBy(date_list, function(o) {
+  const last_date = _.maxBy(date_list, function (o) {
     return new Date(o);
   });
   return { day: last_date };
@@ -109,8 +109,10 @@ export const getMostRecentHour = ({ get }) => {
   if (hour_list.length === 0) {
     return {};
   }
-  const last_hour = _.max(Object.keys(hour_index || {}).map(Number));
-  return { hour: last_hour.toString() };
+  const last_hour = _.maxBy(Object.keys(hour_index || {}), function (o) {
+    return o.toString();
+  });
+  return { hour: last_hour };
 };
 
 export const getMostRecentLocation = ({ get }) => {
@@ -127,13 +129,17 @@ export const getMostRecentLocation = ({ get }) => {
 
   const latest_data_point = Object.values(hour_dataset || {}).reduce(
     (latest, data_point) => {
-      return latest.time.value > data_point.time.value
-        ? latest
-        : {
-            time: data_point.time.value,
-            lat: data_point.location.lat,
-            lng: data_point.location.lng,
-          };
+      if (!data_point.time.value) {
+        return latest;
+      } else {
+        return latest.time.value > data_point.time.value
+          ? latest
+          : {
+              time: data_point.time.value,
+              lat: data_point.location.lat,
+              lng: data_point.location.lng,
+            };
+      }
     },
     { time: 0, lat: 0, lng: 0 },
   );
