@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ISOBlueApp/precache-manifest.fce299183b72a0caebc03d95b4c7a743.js"
+  "/ISOBlueApp/precache-manifest.8b040476c72e945c93782f53f4ab8afe.js"
 );
 
 self.addEventListener('message', (event) => {

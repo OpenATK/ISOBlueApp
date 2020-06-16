@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "87f11d4d8b0c9ffc5d52013c5cc87075",
+    "revision": "400745fe88bb115fb3f7e9bcefaabebe",
     "url": "/ISOBlueApp/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ISOBlueApp/static/js/2.cfd6f60a.chunk.js.LICENSE"
   },
   {
-    "revision": "6a6b7b828e8384d82634",
-    "url": "/ISOBlueApp/static/js/main.e86bea0b.chunk.js"
+    "revision": "7a8fd2d588d1ff68d099",
+    "url": "/ISOBlueApp/static/js/main.2730f49f.chunk.js"
   },
   {
     "revision": "774e172e4eb929ef8f34",
