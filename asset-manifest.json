@@ -1,22 +1,13 @@
 {
-  "files": {
-    "main.js": "/ISOBlueApp/static/js/main.218bfc56.chunk.js",
-    "main.js.map": "/ISOBlueApp/static/js/main.218bfc56.chunk.js.map",
-    "runtime-main.js": "/ISOBlueApp/static/js/runtime-main.ebdfa41d.js",
-    "runtime-main.js.map": "/ISOBlueApp/static/js/runtime-main.ebdfa41d.js.map",
-    "static/css/2.098bc035.chunk.css": "/ISOBlueApp/static/css/2.098bc035.chunk.css",
-    "static/js/2.cfd6f60a.chunk.js": "/ISOBlueApp/static/js/2.cfd6f60a.chunk.js",
-    "static/js/2.cfd6f60a.chunk.js.map": "/ISOBlueApp/static/js/2.cfd6f60a.chunk.js.map",
-    "index.html": "/ISOBlueApp/index.html",
-    "precache-manifest.400eb4c8ada82429c0f32df01f8a9594.js": "/ISOBlueApp/precache-manifest.400eb4c8ada82429c0f32df01f8a9594.js",
-    "service-worker.js": "/ISOBlueApp/service-worker.js",
-    "static/css/2.098bc035.chunk.css.map": "/ISOBlueApp/static/css/2.098bc035.chunk.css.map",
-    "static/js/2.cfd6f60a.chunk.js.LICENSE": "/ISOBlueApp/static/js/2.cfd6f60a.chunk.js.LICENSE"
-  },
-  "entrypoints": [
-    "static/js/runtime-main.ebdfa41d.js",
-    "static/css/2.098bc035.chunk.css",
-    "static/js/2.cfd6f60a.chunk.js",
-    "static/js/main.218bfc56.chunk.js"
-  ]
+  "main.css": "/ISOBlueApp/static/css/main.84c5dac5.chunk.css",
+  "main.js": "/ISOBlueApp/static/js/main.5d54b0eb.chunk.js",
+  "main.js.map": "/ISOBlueApp/static/js/main.5d54b0eb.chunk.js.map",
+  "runtime~main.js": "/ISOBlueApp/static/js/runtime~main.055ca672.js",
+  "runtime~main.js.map": "/ISOBlueApp/static/js/runtime~main.055ca672.js.map",
+  "static/js/2.01913942.chunk.js": "/ISOBlueApp/static/js/2.01913942.chunk.js",
+  "static/js/2.01913942.chunk.js.map": "/ISOBlueApp/static/js/2.01913942.chunk.js.map",
+  "index.html": "/ISOBlueApp/index.html",
+  "precache-manifest.0823594aec0669484d9042d5387c659d.js": "/ISOBlueApp/precache-manifest.0823594aec0669484d9042d5387c659d.js",
+  "service-worker.js": "/ISOBlueApp/service-worker.js",
+  "static/css/main.84c5dac5.chunk.css.map": "/ISOBlueApp/static/css/main.84c5dac5.chunk.css.map"
 }
