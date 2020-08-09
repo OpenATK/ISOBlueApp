@@ -5,9 +5,10 @@
   "homepage": "https://OpenATK.github.io/ISOBlueApp",
   "dependencies": {
     "@cerebral/react": "^4.2.1",
-    "@material-ui/core": "^4.9.10",
+    "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@oada/cerebral-module": "^4.0.0",
+    "@oada/oada-cache": "^4.0.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -18,7 +19,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-leaflet": "^2.6.3",
+    "react-leaflet": "^2.7.0",
     "react-leaflet-canvas-markers": "^1.0.1",
     "react-leaflet-markercluster": "^2.0.0",
     "react-scripts": "3.3.0"

@@ -7,8 +7,8 @@ export const initialize = () => {};
 
 export const setConnectionArgs = () => {
   return {
-    domain: "https://cloudradio33.ecn.purdue.edu",
-    token: "abc",
+    domain: "https://oats2.ecn.purdue.edu",
+    token: "pIhEHwLtQiyuEpT1xKLtPzTasTJl58kGFNqBGlpd",
     cache: false,
   };
 };
